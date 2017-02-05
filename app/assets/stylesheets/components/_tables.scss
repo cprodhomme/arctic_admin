@@ -1,0 +1,47 @@
+table {
+  width: 100%;
+}
+
+thead th {
+  font-size: 12px;
+  text-align: left;
+
+  a {
+    color: $text-color-important;
+    font-weight: normal;
+    width: 100%;
+    display: inline-block;
+    padding: 8px 20px 8px 8px;
+  }
+
+  &.col-selectable {
+    padding-left: 8px;
+  }
+}
+
+tbody tr {
+  &:nth-of-type(odd) {
+    background-color: rgba(243,247,249,.3);
+  }
+  
+  &:hover {
+    background-color: #f3f7f9;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  td {
+    padding: 8px;
+    line-height: 1.57142857;
+    vertical-align: top;
+    border-top: 1px solid #e4eaec;
+    color: #7A8392;
+    font-size: 12px;
+
+    &.col-actions {
+      padding: 6px 8px;
+    }
+  }
+}

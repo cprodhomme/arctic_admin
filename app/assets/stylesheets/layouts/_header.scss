@@ -1,0 +1,203 @@
+.admin_namespace {
+  padding-left: $header-width;
+  padding-top: 60px;
+
+  #active_admin_content {
+    padding: 30px 25px;
+    
+    @include clear-fix();
+  }
+}
+
+.header {
+  .site_title {
+    width: $header-width;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid $header-border-color;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    line-height: 60px;
+  }
+
+  #tabs {
+    width: $header-width;
+    height: calc(100% - 60px);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: $left-menu-background;
+    border-right: 1px solid $header-border-color;
+
+    li {
+      width: 100%;
+      font-size: 14px;
+      line-height: 38px;
+      cursor: pointer;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        color: $text-color;
+        padding: 0 20px;
+
+        &:hover {
+          background-color: $left-menu-item-hover-background;
+        }
+      }
+
+      &.current {
+        a {
+          color: $primary-color;
+        }
+      }
+
+      &.has_nested {
+        ul {
+          border-top: 1px solid $header-border-color;
+          border-bottom: 1px solid $header-border-color;
+          background-color: $body-background;
+          padding: 10px 0;
+          cursor: auto;
+
+          a {
+            padding: 0px 15px 0px 40px;
+            color: $text-color;
+
+            &:hover {
+              background-color: $left-menu-item-nested-hover-background;
+            }
+          }
+
+          .current a {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  #utility_nav {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      @include transition-button();
+
+      &:hover {
+        background-color: $left-menu-background;
+      }
+
+      &:active {
+        background-color: $left-menu-item-hover-background;
+      }
+    }
+
+    #current_user {
+      a {
+        visibility: hidden;
+        position: relative;
+        width: 60px;
+        height: 59px;
+        display: inline-block;
+
+        &:before {
+          @include icon("\f007");
+
+          display: inline;
+          visibility: visible;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: $text-color;
+          padding: 20px 0;
+          text-align: center;
+          width: 60px;
+          font-size: 20px;
+        }
+      }
+      // a {
+      //   color: $text-color;
+      //   padding: 20px 10px;
+      //   display: inline-block;
+      // }
+    }
+
+    #logout {
+      min-width: 60px;
+      min-height: 59px;
+      float: right;
+
+      a {
+        visibility: hidden;
+        position: relative;
+
+        &:before {
+          @include icon("\f011");
+
+          display: inline;
+          visibility: visible;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: $text-color;
+          padding: 20px 0;
+          text-align: center;
+          width: 60px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#title_bar {
+  height: 60px;
+  width: $screen-header-width;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: $header-width;
+  border-bottom: 1px solid $header-border-color;
+  padding: 0 20px;
+  z-index: 2;
+
+  #titlebar_left {
+    padding-top: 6px;
+    display: inline-block;
+    float: left;
+  }
+
+  #titlebar_right {
+    display: inline-block;
+    margin-left: 20px;
+
+    .action_item a {
+      color: $text-color;
+      display: inline-block;
+      @include transition-button();
+      padding: 20px 12px;
+      float: left;
+
+      &:hover {
+        background-color: $left-menu-background;
+      }
+    }
+  }
+
+  #page_title {
+    margin: 0;
+  }
+}

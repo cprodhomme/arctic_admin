@@ -1,0 +1,17 @@
+.status_tag {
+  background: #cacaca;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 3px 5px 2px 5px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.status_tag.ok, .status_tag.published, .status_tag.complete, .status_tag.completed, .status_tag.green {
+  background-color: #46be8a;
+}
+
+.status_tag.cancel, .status_tag.red {
+  background-color: #f73737;
+}

@@ -1,0 +1,34 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+
+@import "mixins/mixins";
+
+@import "components/inputs";
+@import "components/flash";
+@import "components/tables";
+@import "components/date_picker";
+@import "components/status_tag";
+@import "components/panel_contents";
+@import "components/form";
+
+@import "layouts/header";
+@import "layouts/main_content";
+@import "layouts/sidebar";
+@import "layouts/footer";
+
+@import "pages/login";
+@import "pages/index";
+@import "pages/show";
+@import "pages/edit";
+
+body {
+  font-family: "LatoWeb";
+  background-color: $body-background;
+  color: $text-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}

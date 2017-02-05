@@ -1,0 +1,99 @@
+body.index {
+  .table_tools {
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .batch_actions_selector {
+      display: inline-block;
+    }
+
+    .dropdown_menu_button{
+      @include secondary-dropdown($primary-color);
+    }
+
+    .dropdown_menu_list {
+      background-color: #fff;
+      padding: 10px 15px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .paginated_collection_contents {
+    margin-bottom: 20px;
+  }
+
+  #index_footer {
+    font-size: 14px;
+  }
+
+  .sortable {
+    position: relative;
+
+    &:after {
+      @include icon("\f0dc");
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      @include transform(translateY(-50%));
+    }
+
+    &.sorted-desc:after {
+      content: "\f0dd";
+    }
+
+    &.sorted-asc:after {
+      content: "\f0de";
+    }
+  }
+
+  .table_actions {
+    .member_link {
+      @include primary-button($primary-color, white);
+      padding: 2px 9px;
+      margin-right: 4px;
+    }
+
+    .view_link {
+      &:after {
+        
+      }
+    }
+  }
+  
+  .scopes {
+    .scope {
+      @include group-button($primary-color);
+    }
+  }
+
+  #sidebar {
+    position: absolute;
+    right: - $sidebar-width;
+
+    &:before {
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      left: -40px;
+      width: 40px;
+      height: 50px;
+      background-color: #fff;
+      box-shadow: -1px 0 4px 0 rgba(0,0,0,.04);
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      @include icon("\f0b0");
+      font-size: 20px;
+      padding: 15px 10px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+#active_admin_content {
+  .formtastic {
+    legend {
+      margin-bottom: 20px;
+    }
+
+    .actions {
+
+      .action {
+        display: inline-block;
+        margin-right: 10px;
+
+        input[type="submit"] {
+          line-height: 43px;
+        }
+      }
+
+      .cancel {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#login {  
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  background-color: white;
+  border-top: 3px solid $primary-color;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
+  border-radius: 3px;
+  padding: 30px;
+  margin-top: 100px;
+
+  color: $text-color;
+
+  h2 {
+    text-align: center;
+  }
+
+  .label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  a {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .input_action {
+    width: 50%;
+  }
+
+  input[type="submit"] {
+    line-height: 43px;
+  }
+}

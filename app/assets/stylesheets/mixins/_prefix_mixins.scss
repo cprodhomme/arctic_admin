@@ -1,0 +1,29 @@
+@mixin transform($var) {
+  -webkit-transform: $var;
+     -moz-transform: $var;
+      -ms-transform: $var;
+          transform: $var;
+}
+
+@mixin transition-button() {
+  -webkit-transition: border .2s linear,color .2s linear,width .2s linear,background-color .2s linear;
+  -o-transition: border .2s linear,color .2s linear,width .2s linear,background-color .2s linear;
+  transition: border .2s linear,color .2s linear,width .2s linear,background-color .2s linear;
+}
+
+@mixin clear-fix() {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin icon($code-icon) {
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: $code-icon;
+}
