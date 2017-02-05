@@ -9,6 +9,27 @@ gem 'font-awesome-rails'
 gem 'arctic_admin'
 ```
 
+## Screens
+
+<table>
+  <tr>
+    <td>
+      <a href="./doc/login.png"><img src="./doc/login.png"></a>
+    </td>
+    <td>
+      <a href="./doc/dashboard.png"><img src="./doc/dashboard.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./doc/index.png"><img src="./doc/index.png"></a>
+    </td>
+    <td>
+      <a href="./doc/show.png"><img src="./doc/show.png"></a>
+    </td>
+  </tr>
+</table>
+
 ## Usage
 
 include arctic admin css
@@ -43,7 +64,7 @@ $primary-color: #2dbb43;
 
 ## Contributing
 
-1. Fork it ( http://github.com/KMPgroup/active_skin/fork )
+1. Fork it ( https://github.com/cle61/arctic_admin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
