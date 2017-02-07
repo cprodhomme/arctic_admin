@@ -3,7 +3,7 @@ Simple theme for ActiveAdmin
 
 ## Installation
 
-add the following line to your application's Gemfile:
+add the following lines to your application's Gemfile:
 ```
 gem 'font-awesome-rails'
 gem 'arctic_admin'
