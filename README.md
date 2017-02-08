@@ -1,6 +1,10 @@
 # ArcticAdmin
 Simple theme for ActiveAdmin
 
+Complete demo here : https://arctic-admin.herokuapp.com/
+
+admin user : admin@example.com / password
+
 ## Installation
 
 add the following lines to your application's Gemfile:
