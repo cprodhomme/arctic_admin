@@ -178,6 +178,10 @@
     padding-top: 6px;
     display: inline-block;
     float: left;
+
+    h2:nth-child(1) {
+      line-height: 48px;
+    }
   }
 
   #titlebar_right {
@@ -193,6 +197,10 @@
 
       &:hover {
         background-color: $left-menu-background;
+      }
+
+      &:active {
+        background-color: $left-menu-item-hover-background;
       }
     }
   }
