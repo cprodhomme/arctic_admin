@@ -77,7 +77,7 @@ body.index {
   }
 
   #sidebar {
-    position: absolute;
+    position: fixed;
     right: - $sidebar-width;
 
     &:before {

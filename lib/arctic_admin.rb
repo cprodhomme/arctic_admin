@@ -1,4 +1,4 @@
-require 'arctic_admin/active_admin/views/pages/base'
+require 'arctic_admin/active_admin/views/pages/bases'
 
 module ArcticAdmin
   module Rails
