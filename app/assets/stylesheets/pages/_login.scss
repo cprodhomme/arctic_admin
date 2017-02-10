@@ -1,13 +1,24 @@
+body.logged_out {
+  .flash {
+    position: fixed;
+  }
+
+  #active_admin_content {
+    height: 100vh;
+    width: 100%;
+    display: inline-flex;
+  }
+}
+
 #login {  
   width: 400px;
-  max-width: 100%;
+  max-width: 95%;
   margin: auto;
   background-color: white;
   border-top: 3px solid $primary-color;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
   border-radius: 3px;
   padding: 30px;
-  margin-top: 100px;
 
   color: $text-color;
 
@@ -27,7 +38,7 @@
   }
 
   .input_action {
-    width: 50%;
+    min-width: 50%;
   }
 
   input[type="submit"] {
