@@ -1,4 +1,6 @@
 # ArcticAdmin
+[![Gem Version](https://img.shields.io/gem/v/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
+
 Simple theme for ActiveAdmin
 
 Complete demo here : https://arctic-admin.herokuapp.com/
