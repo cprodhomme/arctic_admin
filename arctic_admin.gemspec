@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'arctic_admin'
-  s.version     = '1.0.1'
+  s.version     = '1.0.3'
   s.date        = '2017-02-05'
   s.summary     = "Arctic Admin theme for ActiveAdmin"
   s.description = "A simple theme for Active Admin"
