@@ -1,60 +1,58 @@
-#sidebar {
-  width: $sidebar-width;
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
-  margin-bottom: 30px;
+.header #tabs {
+  width: $header-width;
+  height: calc(100% - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: $sidebar-background;
+  border-right: 1px solid $sidebar-border-color;
+  z-index: 1;
 
-  .sidebar_section {
-    padding: 15px 20px;
-
-    h3 {
-      margin: 0 0 10px 0;
-    }
-
-    .label {
-      display: block;
-      text-align: left;
-    }
-
-    .input {
-      margin-bottom: 15px;
-
-      input, select {
-        height: 30px;
-        padding: 3px 5px;
-        font-size: 12px;
-      }
-    }
-
-    .select_and_search {
-      input, select {
-        width: 45%;
-        display: inline-block;  
-      }
-
-      input {
-        float: right;
-      }
-    }
-
-    .filter_select select {
-      width: 100%;
-    }
-
-    .filter_date_range input {
-      width: 45%;
-      display: inline-block;
-    }
-
-    input[type="submit"] {
-      width: auto;
-      line-height: 31px;
-      margin-right: 10px;
-    }
-  }
-
-  #search-status-_sidebar_section {
+  li {
+    width: 100%;
     font-size: 14px;
+    line-height: 38px;
+    cursor: pointer;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      color: $text-color;
+      padding: 0 20px;
+
+      &:hover {
+        background-color: $left-menu-item-hover-background;
+      }
+    }
+
+    &.current {
+      a {
+        color: $primary-color;
+      }
+    }
+
+    &.has_nested {
+      ul {
+        border-top: 1px solid $sidebar-border-color;
+        border-bottom: 1px solid $sidebar-border-color;
+        background-color: $body-background;
+        padding: 10px 0;
+        cursor: auto;
+
+        a {
+          padding: 0px 15px 0px 40px;
+          color: $text-color;
+
+          &:hover {
+            background-color: $left-menu-item-nested-hover-background;
+          }
+        }
+
+        .current a {
+          color: $primary-color;
+        }
+      }
+    }
   }
 }

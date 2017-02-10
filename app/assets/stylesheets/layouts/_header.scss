@@ -16,70 +16,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: $header-background;
     border-bottom: 1px solid $header-border-color;
     font-size: 20px;
     text-align: center;
     margin: 0;
     line-height: 60px;
-  }
-
-  #tabs {
-    width: $header-width;
-    height: calc(100% - 60px);
-    position: fixed;
-    top: 60px;
-    left: 0;
-    background-color: $left-menu-background;
-    border-right: 1px solid $header-border-color;
-
-    li {
-      width: 100%;
-      font-size: 14px;
-      line-height: 38px;
-      cursor: pointer;
-
-      a {
-        width: 100%;
-        height: 100%;
-        display: inline-block;
-        color: $text-color;
-        padding: 0 20px;
-
-        &:hover {
-          background-color: $left-menu-item-hover-background;
-        }
-      }
-
-      &.current {
-        a {
-          color: $primary-color;
-        }
-      }
-
-      &.has_nested {
-        ul {
-          border-top: 1px solid $header-border-color;
-          border-bottom: 1px solid $header-border-color;
-          background-color: $body-background;
-          padding: 10px 0;
-          cursor: auto;
-
-          a {
-            padding: 0px 15px 0px 40px;
-            color: $text-color;
-
-            &:hover {
-              background-color: $left-menu-item-nested-hover-background;
-            }
-          }
-
-          .current a {
-            color: $primary-color;
-          }
-        }
-      }
-    }
   }
 
   #utility_nav {
@@ -95,7 +37,7 @@
       @include transition-button();
 
       &:hover {
-        background-color: $left-menu-background;
+        background-color: $sidebar-background;
       }
 
       &:active {
@@ -127,11 +69,6 @@
           font-size: 20px;
         }
       }
-      // a {
-      //   color: $text-color;
-      //   padding: 20px 10px;
-      //   display: inline-block;
-      // }
     }
 
     #logout {
@@ -166,7 +103,7 @@
 #title_bar {
   height: 60px;
   width: $screen-header-width;
-  background-color: #fff;
+  background-color: $header-background;
   position: fixed;
   top: 0;
   left: $header-width;
@@ -196,7 +133,7 @@
       float: left;
 
       &:hover {
-        background-color: $left-menu-background;
+        background-color: $sidebar-background;
       }
 
       &:active {
