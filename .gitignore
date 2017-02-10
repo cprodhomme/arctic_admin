@@ -1,0 +1,9 @@
+*.gem
+.bundle
+Gemfile.lock
+gemfiles/*.lock
+pkg/*
+vendor/ruby
+gemfiles/vendor/ruby
+.rbenv-version
+.sass-cache
