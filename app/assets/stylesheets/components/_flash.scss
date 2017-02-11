@@ -6,22 +6,22 @@
   color: #fff;
 }
 
-.flash_alert {
-  background-color: #f96868;
+.flash_alert, .flash_error {
+  background-color: $error;
   color: #fff;
 }
 
 .flash_warning {
-  background-color: #f2a654;
+  background-color: $warning;
   color: #fff;
 }
 
 .flash_notice {
-  background-color: #46be8a;
+  background-color: $success;
   color: #fff;
 }
 
 .flash_info {
-  background-color: #57c7d4;
+  background-color: $info;
   color: #fff;
 }

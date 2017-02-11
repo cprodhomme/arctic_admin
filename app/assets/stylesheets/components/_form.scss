@@ -11,6 +11,19 @@
   .formtastic {
     legend {
       margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .field_with_errors {
+      input {
+        border-color: $error;
+      }
+    }
+
+    .inline-errors {
+      color: $error;
+      margin-top: 5px;
+      margin-bottom: 20px;
     }
 
     .actions {
