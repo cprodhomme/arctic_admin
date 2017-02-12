@@ -2,6 +2,10 @@
   padding-left: $header-width;
   padding-top: 60px;
 
+  @media screen and (min-width: $lg-width) {
+    padding-left: $lg-header-width;
+  }
+
   #active_admin_content {
     padding: 30px 25px;
     
@@ -22,6 +26,10 @@
     text-align: center;
     margin: 0;
     line-height: 60px;
+
+    @media screen and (min-width: $lg-width) {
+      width: $lg-header-width;
+    }
   }
 
   #utility_nav {
@@ -37,11 +45,11 @@
       @include transition-button();
 
       &:hover {
-        background-color: $sidebar-background;
+        background-color: $header-nav-action-hover-background;
       }
 
       &:active {
-        background-color: $left-menu-item-hover-background;
+        background-color: $header-nav-action-active-background;
       }
     }
 
@@ -111,6 +119,11 @@
   padding: 0 20px;
   z-index: 2;
 
+  @media screen and (min-width: $lg-width) {
+    width: $lg-screen-header-width;
+    left: $lg-header-width;
+  }
+
   #titlebar_left {
     padding-top: 6px;
     display: inline-block;
@@ -133,11 +146,11 @@
       float: left;
 
       &:hover {
-        background-color: $sidebar-background;
+        background-color: $header-nav-action-hover-background;
       }
 
       &:active {
-        background-color: $left-menu-item-hover-background;
+        background-color: $header-nav-action-active-background;
       }
     }
   }

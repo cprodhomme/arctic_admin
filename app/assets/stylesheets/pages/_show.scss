@@ -1,7 +1,11 @@
 body.show {
   #active_admin_content.with_sidebar {
     #main_content_wrapper {
-      width: $screen-sidebar-width;
+      width: $screen-filter-width;
+
+      @media screen and (min-width: $lg-width) {
+        width: $lg-screen-filter-width;
+      }
     }
 
     #sidebar {

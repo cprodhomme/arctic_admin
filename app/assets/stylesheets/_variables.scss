@@ -1,4 +1,4 @@
-// COLOR
+// BASIC COLOR
 $red: #b34247;
 $green: #2dbb43;
 $blue: #4bacfe;
@@ -8,19 +8,25 @@ $warning: #f2a654;
 $success: #46be8a;
 $info: #57c7d4;
 
+// body
 $body-background: #eee !default;
 
+// header
 $header-border-color: #e6e6e6 !default;
 $header-background: #fff !default;
 
-$sidebar-border-color: $header-border-color !default;
-$sidebar-border-color: #e6e6e6;
+// nav action
+$header-nav-action-hover-background: #f5f5f5 !default;
+$header-nav-action-active-background: #f0f0f0 !default;
 
+//sidebar
+$sidebar-border-color: $header-border-color !default;
 $sidebar-background: #f5f5f5 !default;
 
-$left-menu-item-hover-background: #f0f0f0 !default;
-$left-menu-item-nested-hover-background: #e7e7e7 !default;
+$sidebar-item-hover-background: #f0f0f0 !default;
+$sidebar-nested-item-hover-background: #e7e7e7 !default;
 
+// text
 $text-color: #5a5a5a !default;
 $text-color-important: #526069 !default;
 
@@ -29,6 +35,12 @@ $primary-color: $blue !default;
 // SIZE
 $header-width: 200px !default;
 $screen-header-width: calc(100% - 200px) !default;
+$lg-header-width: 250px !default;
+$lg-screen-header-width: calc(100% - 250px) !default;
 
-$sidebar-width: 230px !default;
-$screen-sidebar-width: calc(100% - 230px) !default;
+$filter-width: 230px !default;
+$screen-filter-width: calc(100% - 230px) !default;
+$lg-filter-width: 270px !default;
+$lg-screen-filter-width: calc(100% - 270px) !default;
+
+$lg-width: 1300px;

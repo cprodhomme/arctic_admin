@@ -78,7 +78,11 @@ body.index {
 
   #sidebar {
     position: fixed;
-    right: - $sidebar-width;
+    right: - $filter-width;
+
+    @media screen and (min-width: $lg-width) {
+      right: - $lg-filter-width;
+    }
 
     &:before {
       cursor: pointer;
