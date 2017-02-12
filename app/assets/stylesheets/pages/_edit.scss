@@ -1,15 +1,19 @@
-body.edit {
+body.new, body.edit, body.create, body.update {
   .input {
     .label {
-      min-width: 25%;
+      width: 25%;
       float: left;
-      text-align: right;
+      text-align: left;
       padding-right: 20px;
-      padding-top: 6px;
+      margin: auto 0;
     }
 
     input {
       width: 50%;
+    }
+
+    .inline-errors {
+      padding-left: 25%;
     }
   }
 
