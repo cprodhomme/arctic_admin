@@ -1,23 +1,25 @@
-body.new, body.edit, body.create, body.update {
-  .input {
-    .label {
-      width: 25%;
-      float: left;
-      text-align: left;
-      padding-right: 20px;
-      margin: auto 0;
+body.logged_in {
+  &.new, &.edit, &.create, &.update {
+    .input {
+      .label {
+        width: 25%;
+        float: left;
+        text-align: left;
+        padding-right: 20px;
+        margin: auto 0;
+      }
+
+      input {
+        width: 50%;
+      }
+
+      .inline-errors {
+        padding-left: 25%;
+      }
     }
 
-    input {
-      width: 50%;
-    }
-
-    .inline-errors {
+    .actions {
       padding-left: 25%;
     }
-  }
-
-  .actions {
-    padding-left: 25%;
   }
 }
