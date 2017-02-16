@@ -12,7 +12,7 @@ admin user : admin@example.com / password
 ## Installation
 
 add the following line to your application's Gemfile:
-```
+```ruby
 gem 'arctic_admin'
 ```
 
@@ -39,32 +39,69 @@ gem 'arctic_admin'
 
 ## Usage
 
-include arctic admin css
+### CSS
 
+In your `active_admin.css`, include the css file:
+
+```css
+/*
+ *= require arctic_admin
+ */
 ```
-# active_admin.css.scss
+Then restart your webserver if it was previously running.
 
+### Sass Support
+
+If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
+`active_admin.css.scss` file:
+
+```scss
 @import "arctic_admin";
 ```
 
-include arctic admin js
+If you use the
+[Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
+add this to your `active_admin.css.sass` file:
 
+```sass
+@import arctic_admin
 ```
-# active_admin.js
 
+### JS
+
+In your `active_admin.js`, include the js file:
+
+```js
 //= require active_admin/base
 //= require arctic_admin
 ```
 
+### Customization
+
+For this, you need to use sass to custom the theme.
+
 You can even change basic color of the theme by placing some other variables:
 
-```
-# active_admin.css.scss
+If you use the [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
+`active_admin.css.scss` file:
 
+```scss
 $primary-color: #2dbb43;
 
 @import "arctic_admin";
 ```
+
+If you use the
+[Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
+add this to your `active_admin.css.sass` file:
+
+```sass
+$primary-color: #2dbb43
+
+@import arctic_admin
+```
+
+Then restart your webserver if it was previously running.
 
 ## Contributing
 
