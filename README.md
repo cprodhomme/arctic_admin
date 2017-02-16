@@ -11,10 +11,13 @@ admin user : admin@example.com / password
 
 ## Installation
 
-add the following line to your application's Gemfile:
+Add this to your Gemfile:
+
 ```ruby
 gem 'arctic_admin'
 ```
+
+and run `bundle install`.
 
 ## Screens
 
