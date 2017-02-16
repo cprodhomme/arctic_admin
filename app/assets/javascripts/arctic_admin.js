@@ -1,3 +1,6 @@
+//= require jquery
+//= require jquery_ujs
+
 $(function() {
   $('#sidebar').click(function (e) {
     var position = $(this).position();
