@@ -9,6 +9,8 @@ Complete demo here : https://arctic-admin.herokuapp.com/
 
 admin user : admin@example.com / password
 
+![Screenshot](doc/index.png)
+
 ## Installation
 
 Add this to your Gemfile:
@@ -18,27 +20,6 @@ gem 'arctic_admin'
 ```
 
 and run `bundle install`.
-
-## Screens
-
-<table>
-  <tr>
-    <td>
-      <a href="./doc/login.png"><img src="./doc/login.png"></a>
-    </td>
-    <td>
-      <a href="./doc/dashboard.png"><img src="./doc/dashboard.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./doc/index.png"><img src="./doc/index.png"></a>
-    </td>
-    <td>
-      <a href="./doc/show.png"><img src="./doc/show.png"></a>
-    </td>
-  </tr>
-</table>
 
 ## Usage
 
