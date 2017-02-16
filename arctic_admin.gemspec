@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.description = "A simple theme for Active Admin"
   s.authors     = ["Clément Prod'homme"]
   s.files       = `git ls-files -z`.split("\x0")
+  s.files       = Dir["{app,lib}/**/*"] + ["Readme.md", 'LICENCE.txt']
   s.homepage    = 'https://github.com/cle61/arctic_admin'
   s.license     = 'MIT'
   s.require_paths = ["lib"]
