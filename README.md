@@ -1,5 +1,7 @@
 # ArcticAdmin
 [![Gem Version](https://img.shields.io/gem/v/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
+[![Gem Downloads](https://img.shields.io/gem/dt/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
+
 
 Simple theme for ActiveAdmin
 
@@ -9,9 +11,8 @@ admin user : admin@example.com / password
 
 ## Installation
 
-add the following lines to your application's Gemfile:
+add the following line to your application's Gemfile:
 ```
-gem 'font-awesome-rails'
 gem 'arctic_admin'
 ```
 
@@ -43,7 +44,6 @@ include arctic admin css
 ```
 # active_admin.css.scss
 
-@import "font-awesome";
 @import "arctic_admin";
 ```
 
@@ -52,8 +52,6 @@ include arctic admin js
 ```
 # active_admin.js
 
-//= require jquery
-//= require jquery_ujs
 //= require active_admin/base
 //= require arctic_admin
 ```
