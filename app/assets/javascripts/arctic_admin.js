@@ -18,4 +18,30 @@ $(function() {
     }
   });
 
+  var animationDone = true;
+  $('#title_bar').click(function (e) {
+    var position = $(this).position();
+    var tabs = $('#tabs');
+    var width = tabs.width() + 1;
+
+    if (e.pageX < (position.left + 40)) {
+      if(animationDone == true) {
+        animationDone = false;
+        if (tabs.css('left') == '0px') {
+          tabs.animate({
+            left: "-="+width
+          }, 400, function() {
+            animationDone = true;
+          });
+        } else {
+          tabs.animate({
+            left: "+="+width
+          }, 400, function() {
+            animationDone = true;
+          });
+        }
+      }
+    }
+  });
+
 });

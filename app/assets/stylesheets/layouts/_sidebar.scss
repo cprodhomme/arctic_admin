@@ -3,10 +3,17 @@
   height: calc(100% - 60px);
   position: fixed;
   top: 60px;
-  left: 0;
   background-color: $sidebar-background;
   border-right: 1px solid $sidebar-border-color;
   z-index: 1;
+
+  @media screen and (min-width: $sm-width) {
+    left: - $header-width;
+  }
+
+  @media screen and (min-width: $md-width) {
+    left: 0px;
+  }
 
   @media screen and (min-width: $lg-width) {
     width: $lg-header-width;

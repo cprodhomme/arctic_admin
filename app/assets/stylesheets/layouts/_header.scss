@@ -1,6 +1,9 @@
 .admin_namespace {
-  padding-left: $header-width;
   padding-top: 60px;
+
+  @media screen and (min-width: $md-width) {
+    padding-left: $header-width;
+  }
 
   @media screen and (min-width: $lg-width) {
     padding-left: $lg-header-width;
@@ -116,8 +119,35 @@
   top: 0;
   left: $header-width;
   border-bottom: 1px solid $header-border-color;
-  padding: 0 20px;
   z-index: 2;
+
+  @media screen and (min-width: $sm-width) {
+    padding: 0 20px 0 50px;
+
+    &:before {
+      @include icon("\f0c9");
+
+      display: inline;
+      visibility: visible;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $text-color;
+      padding: 20px 0;
+      text-align: center;
+      width: 40px;
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (min-width: $md-width) {
+    padding: 0 20px;
+
+    &:before {
+      display: none;
+    }
+  }
 
   @media screen and (min-width: $lg-width) {
     width: $lg-screen-header-width;
