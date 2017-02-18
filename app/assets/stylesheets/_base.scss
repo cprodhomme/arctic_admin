@@ -1,6 +1,6 @@
 @import "reset";
 @import "fonts";
-@import "variables";
+@import "variables/variables";
 
 @import "mixins/mixins";
 
@@ -27,6 +27,8 @@ body {
   font-family: "LatoWeb";
   background-color: $body-background;
   color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
