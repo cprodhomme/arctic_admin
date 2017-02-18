@@ -55,7 +55,7 @@ $(function() {
       var tabs = $('#tabs');
       var width = tabs.width() + 1;
       if (tabs.css('left') == '0px') {
-        if (e.pageX > width && e.pageY > 50) {
+        if (e.pageX > width && e.pageY > 60) {
           if(animationDone == true) {
             animationDone = false;
             tabs.animate({
