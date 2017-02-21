@@ -10,9 +10,12 @@
   }
 
   #active_admin_content {
-    padding: 30px 25px;
-    
+    padding: 30px 0;
     @include clear-fix();
+
+    @media screen and (min-width: $md-width) {
+      padding: 30px 25px;
+    }
   }
 }
 

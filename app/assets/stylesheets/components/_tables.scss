@@ -11,11 +11,19 @@ thead th {
     font-weight: normal;
     width: 100%;
     display: inline-block;
-    padding: 8px 20px 8px 8px;
+    padding: 4px 20px 4px 4px;
+
+    @media screen and (min-width: $md-width) {
+      padding: 8px 20px 8px 8px;
+    }
   }
 
   &.col-selectable {
-    padding-left: 8px;
+    padding-left: 4px;
+
+    @media screen and (min-width: $md-width) {
+      padding-left: 8px;
+    }
   }
 }
 
@@ -33,7 +41,7 @@ tbody tr {
   }
 
   td {
-    padding: 8px;
+    padding: 4px;
     line-height: 1.57142857;
     vertical-align: top;
     border-top: 1px solid #e4eaec;
@@ -42,6 +50,10 @@ tbody tr {
 
     &.col-actions {
       padding: 6px 8px;
+    }
+
+    @media screen and (min-width: $md-width) {
+      padding: 8px;
     }
   }
 }
