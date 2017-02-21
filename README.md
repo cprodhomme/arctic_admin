@@ -1,7 +1,7 @@
 # ArcticAdmin
 [![Gem Version](https://img.shields.io/gem/v/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
 [![Gem Downloads](https://img.shields.io/gem/dt/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
-
+[![Dependency Status](https://gemnasium.com/badges/github.com/cle61/arctic_admin.svg)](https://gemnasium.com/github.com/cle61/arctic_admin)
 
 Simple theme for ActiveAdmin
 
