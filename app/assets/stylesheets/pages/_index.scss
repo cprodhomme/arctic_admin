@@ -41,10 +41,15 @@ body.index {
 
     &:after {
       @include icon("\f0dc");
+      font-size: 12px;
       position: absolute;
       top: 50%;
       right: 5px;
       @include transform(translateY(-50%));
+
+      @media screen and (min-width: $md-width) {
+        font-size: 14px/1;
+      }
     }
 
     &.sorted-desc:after {

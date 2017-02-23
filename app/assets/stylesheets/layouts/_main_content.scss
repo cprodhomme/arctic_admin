@@ -8,14 +8,20 @@
 #active_admin_content.with_sidebar #main_content_wrapper {
   width: 100%;
 
-  #main_content {
-    margin-right: 20px;
+  @media screen and (min-width: $md-width) {
+    #main_content {
+      margin-right: 20px;
+    }
   }
 }
 
 #main_content {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
+  padding: 10px 5px;
+
+  @media screen and (min-width: $md-width) {
+    padding: 20px;
+    border-radius: 3px;
+  }
 }
