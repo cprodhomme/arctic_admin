@@ -1,5 +1,9 @@
 body.logged_in {
   &.new, &.edit, &.create, &.update {
+    .formtastic legend {
+      font-weight: normal;
+    }
+
     .input {
       .label {
         width: 25%;
@@ -11,6 +15,22 @@ body.logged_in {
 
       input {
         width: 50%;
+
+        &[type='radio'] {
+          width: auto;
+        }
+      }
+
+      &.boolean {
+        margin-left: 25%;
+
+        input {
+          width: auto;
+        }
+      }
+
+      li.fragment {
+        display: inline;
       }
 
       .inline-errors {
