@@ -6,6 +6,7 @@
   background-color: $sidebar-background;
   border-right: 1px solid $sidebar-border-color;
   z-index: 1;
+  overflow: auto;
 
   @media screen and (min-width: $sm-width) {
     left: - $header-width;
@@ -44,24 +45,57 @@
     }
 
     &.has_nested {
+      & > a:nth-child(1) {
+        position: relative;
+
+        &:after {
+          @include icon("\f0d7");
+          display: inline;
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          @include transform(translateY(-50%));
+          color: $text-color;
+        }
+      }
+
       ul {
         border-top: 1px solid $sidebar-border-color;
         border-bottom: 1px solid $sidebar-border-color;
         background-color: $body-background;
         padding: 10px 0;
         cursor: auto;
+        display: none;
 
         a {
-          padding: 0px 15px 0px 40px;
+          padding: 0px 15px 0px 35px;
           color: $text-color;
 
           &:hover {
             background-color: $sidebar-nested-item-hover-background;
           }
+
+          @media screen and (min-width: $lg-width) {
+            padding: 0px 15px 0px 40px;
+          }
         }
 
         .current a {
           color: $primary-color;
+        }
+      }
+
+      &.open, &.current {
+        & > a:nth-child(1) {
+          position: relative;
+
+          &:after {
+            @include icon("\f0d8");
+          }
+        }
+
+        ul {
+          display: block;
         }
       }
     }

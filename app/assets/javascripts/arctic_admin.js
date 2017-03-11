@@ -68,4 +68,12 @@ $(function() {
       }
     }
   });
+
+  $('#tabs .has_nested').click(function (e) {
+    if ($(this).hasClass('open') == true) {
+      $(this).removeClass('open');
+    } else {
+      $(this).addClass('open');
+    }
+  });
 });
