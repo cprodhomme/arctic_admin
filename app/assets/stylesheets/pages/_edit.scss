@@ -47,4 +47,29 @@ body.logged_in {
       padding-left: 25%;
     }
   }
+
+  #sidebar {
+    position: fixed;
+    right: - $filter-width;
+
+    @media screen and (min-width: $lg-width) {
+      right: - $lg-filter-width;
+    }
+
+    &:before {
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      left: -40px;
+      width: 40px;
+      height: 50px;
+      background-color: #fff;
+      box-shadow: -1px 0 4px 0 rgba(0,0,0,.04);
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      @include icon("\f129");
+      font-size: 20px;
+      padding: 15px 10px;
+    }
+  }
 }
