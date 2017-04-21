@@ -39,8 +39,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
     -moz-appearance: none;
   }
 
-  &:-webkit-autofill {
+  &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #76838f;
   }
 }
 
