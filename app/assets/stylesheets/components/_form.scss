@@ -9,6 +9,10 @@
 
 #active_admin_content {
   .formtastic {
+    li {
+      list-style: none;
+    }
+    
     legend {
       margin-bottom: 20px;
       font-weight: bold;
