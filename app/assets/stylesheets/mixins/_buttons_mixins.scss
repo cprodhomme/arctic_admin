@@ -1,9 +1,18 @@
-@mixin primary-button($background-color, $color) {
-  background-color: $background-color;
-  color: $color;
+@mixin button() {
   border-radius: 3px;
   display: inline-block;
   @include transition-button();
+  cursor: pointer;
+
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+@mixin primary-button($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+  @include button();
 
   &:hover {
     background-color: lighten($background-color, 10%);
@@ -18,9 +27,7 @@
   background-color: #fff;
   color: $color;
   border: 1px solid $color;
-  border-radius: 3px;
-  display: inline-block;
-  @include transition-button();
+  @include button();
 
   &:hover {
     color: #fff;
