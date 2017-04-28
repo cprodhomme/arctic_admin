@@ -22,6 +22,11 @@ body.logged_in {
         }
       }
 
+      select {
+        min-width: 50%;
+        height: 30px;
+      }
+
       &.boolean {
         margin-left: 25%;
 
