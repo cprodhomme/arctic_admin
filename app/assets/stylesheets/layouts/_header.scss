@@ -45,6 +45,37 @@
     right: 0;
     z-index: 3;
     text-align: right;
+    background-color: $header-background;
+    border-bottom: 1px solid $header-border-color;
+    width: $screen-header-width;
+
+    @media screen and (min-width: $sm-width) {
+      &:before {
+        @include icon("\f0c9");
+
+        display: inline;
+        visibility: visible;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $text-color;
+        padding: 20px 0;
+        text-align: center;
+        width: 40px;
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width: $md-width) {
+      &:before {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: $lg-width) {
+      width: $lg-screen-header-width;
+    }
 
     li {
       display: inline-block;
@@ -115,76 +146,36 @@
 }
 
 #title_bar {
-  height: 60px;
-  width: $screen-header-width;
-  background-color: $header-background;
-  position: fixed;
-  top: 0;
-  left: $header-width;
-  border-bottom: 1px solid $header-border-color;
-  z-index: 2;
-
-  @media screen and (min-width: $sm-width) {
-    padding: 0 20px 0 50px;
-
-    &:before {
-      @include icon("\f0c9");
-
-      display: inline;
-      visibility: visible;
-      cursor: pointer;
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: $text-color;
-      padding: 20px 0;
-      text-align: center;
-      width: 40px;
-      font-size: 20px;
-    }
-  }
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  margin: 15px 0 0 0;
+  padding: 8px 10px;
+  @include clear-fix();
 
   @media screen and (min-width: $md-width) {
-    padding: 0 20px;
-
-    &:before {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: $lg-width) {
-    width: $lg-screen-header-width;
-    left: $lg-header-width;
+    padding: 8px 20px;
+    border-radius: 3px;
+    margin: 15px 25px 0 25px;
   }
 
   #titlebar_left {
-    padding-top: 6px;
     display: inline-block;
     float: left;
+    line-height: 29px;
 
-    h2:nth-child(1) {
-      line-height: 48px;
+    h2 {
+      display: inline-block;
+      font-size: 16px;
     }
   }
 
   #titlebar_right {
     display: inline-block;
-    margin-left: 20px;
+    float: right;
 
     .action_item a {
-      color: $text-color;
-      display: inline-block;
-      @include transition-button();
-      padding: 20px 12px;
-      float: left;
-
-      &:hover {
-        background-color: $header-nav-action-hover-background;
-      }
-
-      &:active {
-        background-color: $header-nav-action-active-background;
-      }
+      @include primary-button($primary-color, #fff);
+      padding: 5px 8px;
     }
   }
 

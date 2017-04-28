@@ -23,7 +23,7 @@ $(function() {
   });
 
   var animationDone = true;
-  $('#title_bar').click(function (e) {
+  $('#utility_nav').click(function (e) {
     if ($(window).width() < 960) {
       var position = $(this).position();
       var tabs = $('#tabs');
