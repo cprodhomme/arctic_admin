@@ -1,0 +1,54 @@
+.comments {
+  background-color: $sidebar-background;
+  padding: 10px 15px 15px 15px;
+  border-radius: 3px;
+  margin-top: 20px;
+  @include clear-fix();
+
+  h3 {
+    margin: 0 0 5px 0;
+  }
+
+  .active_admin_comment {
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
+    position: relative;
+
+    .active_admin_comment_meta {
+      .active_admin_comment_author {
+        margin: 0;
+        display: inline-block;
+      }
+
+      span { // date
+        float: right;
+        font-size: 14px;
+        font-style: italic;
+        margin-right: 30px;
+        line-height: 21px;
+      }
+
+      a[data-method="delete"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+
+        &:after {
+          @include icon("\f1f8");
+          visibility: visible;
+          color: #5a5a5a;
+          font-size: 16px;
+          padding: 6px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .active_admin_comment_body {
+      p {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}
