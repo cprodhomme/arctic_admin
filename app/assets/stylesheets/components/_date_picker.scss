@@ -2,28 +2,37 @@
   background-color: #fff;
   padding: 5px;
   border-radius: 3px;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
   z-index: 3!important;
+  padding: 8px 10px;
 
-  .ui-datepicker-prev {
-    float: left;
-  }
+  .ui-datepicker-header {
+    @include clear-fix();
+    margin-bottom: 10px;
 
-  .ui-datepicker-next {
-    float: right;
-  }
+    .ui-datepicker-prev, .ui-datepicker-next {
+      @include primary-button($primary-color, #fff);
+      padding: 2px 5px;
+      font-size: 14px;
+    }
 
-  .ui-datepicker-title {
-    text-align: center;
+    .ui-datepicker-prev {
+      float: left;
+    }
+
+    .ui-datepicker-next {
+      float: right;
+    }
+
+    .ui-datepicker-title {
+      text-align: center;
+    }
   }
 
   .ui-datepicker-calendar {
-    tr:hover {
-      background-color: #fff;
-    }
-
     td {
       border: none;
+      text-align: center;
     }
   }
 }
