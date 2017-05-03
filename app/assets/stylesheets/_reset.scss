@@ -29,3 +29,9 @@ ol, ul {
 th {
   font-weight: normal;
 }
+
+abbr[title] {
+  border-bottom: none;
+  cursor: inherit;
+  text-decoration: none;
+}
