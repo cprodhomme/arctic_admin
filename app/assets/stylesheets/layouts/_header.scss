@@ -124,6 +124,8 @@
       a {
         visibility: hidden;
         position: relative;
+        width: 60px;
+        display: block;
 
         &:before {
           @include icon("\f011");
