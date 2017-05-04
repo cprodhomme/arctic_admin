@@ -36,6 +36,11 @@
     @media screen and (min-width: $lg-width) {
       width: $lg-header-width;
     }
+    
+    #site_title_image {
+      height: 100%;
+      padding: 10px 0;
+    }
   }
 
   #utility_nav {
