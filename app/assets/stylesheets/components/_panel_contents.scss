@@ -1,6 +1,19 @@
 .panel_contents {
+  .attributes_table {
+    th {
+      border-top: 1px solid #e4eaec;
+    }
+  }
+  
+  .paginated_collection {
+    #index_footer {
+      margin: 10px;
+      text-align: right;
+      font-size: 12px;
+    }
+  }
+
   th {
-    border-top: 1px solid #e4eaec;
     text-align: left;
     padding: 8px;
   }
