@@ -7,6 +7,7 @@ $(function() {
     var width = $(this).width();
     if (e.pageX < position.left) {
       if ($(this).css('right') == '0px') {
+        $(this).css('position', 'fixed');
         $(this).animate({
           right: "-="+width
         }, 600, function() {
@@ -16,6 +17,7 @@ $(function() {
         $(this).animate({
           right: "+="+width
         }, 600, function() {
+          $(this).css('position', 'absolute');
           animationFilterDone = true;
         });
       }
