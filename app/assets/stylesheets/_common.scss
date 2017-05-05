@@ -1,0 +1,14 @@
+.button {
+  @include primary-button($primary-color, #fff);
+  padding: 5px 8px;
+  font-size: 16px;
+
+  &.small {
+    padding: 2px 9px;
+    font-size: 12px;
+  }
+
+  &.action {
+    margin-right: 4px;
+  }
+}
