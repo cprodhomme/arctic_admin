@@ -27,6 +27,18 @@ body.logged_in {
         height: 30px;
       }
 
+      .fragment {
+        margin-right: 10px;
+        
+        label {
+          padding-right: 5px;
+        }
+
+        select {
+          min-width: auto;
+        }
+      }
+
       &.boolean {
         margin-left: 25%;
 
