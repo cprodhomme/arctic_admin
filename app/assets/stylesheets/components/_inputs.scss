@@ -57,6 +57,23 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none!important;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  box-sizing: border-box;
+  @include outline();
+  @include transition-button();
+
+  &:checked {
+    border-color: $primary-color;
+    background-color: $primary-color;
+  }
+}
+
 select {
   background-color: #fff;
   background-image: none;

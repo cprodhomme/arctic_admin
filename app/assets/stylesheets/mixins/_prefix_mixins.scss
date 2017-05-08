@@ -19,6 +19,12 @@
   }
 }
 
+@mixin outline() {
+  &:focus {
+    outline: 0;
+  }
+}
+
 @mixin icon($code-icon) {
   font-size: inherit;
   text-rendering: auto;
