@@ -8,7 +8,7 @@
 #active_admin_content.with_sidebar #main_content_wrapper {
   width: 100%;
 
-  @media screen and (min-width: $md-width) {
+  @media screen and (min-width: $lg-width) {
     #main_content {
       margin-right: 20px;
     }
@@ -20,7 +20,7 @@
   box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
   padding: 10px 5px;
 
-  @media screen and (min-width: $md-width) {
+  @media screen and (min-width: $lg-width) {
     padding: 20px;
     border-radius: 3px;
   }

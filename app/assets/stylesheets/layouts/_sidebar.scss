@@ -7,16 +7,13 @@
   border-right: 1px solid $sidebar-border-color;
   z-index: 1;
   overflow: auto;
+  left: - $header-width;
 
-  @media screen and (min-width: $sm-width) {
-    left: - $header-width;
-  }
-
-  @media screen and (min-width: $md-width) {
+  @media screen and (min-width: $lg-width) {
     left: 0px;
   }
 
-  @media screen and (min-width: $lg-width) {
+  @media screen and (min-width: $x-lg-width) {
     width: $lg-header-width;
   }
 
@@ -75,7 +72,7 @@
             background-color: $sidebar-nested-item-hover-background;
           }
 
-          @media screen and (min-width: $lg-width) {
+          @media screen and (min-width: $x-lg-width) {
             padding: 0px 15px 0px 40px;
           }
         }
