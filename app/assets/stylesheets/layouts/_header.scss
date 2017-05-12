@@ -1,5 +1,9 @@
 .admin_namespace {
-  padding-top: 60px;
+  padding-top: 50px;
+
+  @media screen and (min-width: $sm-width) {
+    padding-top: 60px;
+  }
 
   @media screen and (min-width: $lg-width) {
     padding-left: $header-width;
@@ -21,17 +25,24 @@
 
 .header {
   .site_title {
-    width: $header-width;
-    height: 60px;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: $header-background;
     border-bottom: 1px solid $header-border-color;
-    font-size: 20px;
     text-align: center;
     margin: 0;
-    line-height: 60px;
+
+    @media screen and (min-width: $sm-width) {
+      width: $header-width;
+      height: 60px;
+      font-size: 20px;
+      line-height: 60px;
+    }
 
     @media screen and (min-width: $x-lg-width) {
       width: $lg-header-width;
@@ -44,7 +55,8 @@
   }
 
   #utility_nav {
-    height: 60px;
+    height: 50px;
+    width: calc(100% - 160px);
     position: fixed;
     top: 0;
     right: 0;
@@ -52,7 +64,6 @@
     text-align: right;
     background-color: $header-background;
     border-bottom: 1px solid $header-border-color;
-    width: $screen-header-width;
 
     &:before {
       @include icon("\f0c9");
@@ -64,10 +75,19 @@
       top: 0;
       left: 0;
       color: $text-color;
-      padding: 20px 0;
+      padding: 15px 0;
       text-align: center;
       width: 40px;
       font-size: 20px;
+    }
+
+    @media screen and (min-width: $sm-width) {
+      height: 60px;
+      width: $screen-header-width;
+
+      &:before {
+        padding: 20px 0;
+      }
     }
 
     @media screen and (min-width: $lg-width) {
@@ -97,8 +117,8 @@
       a {
         visibility: hidden;
         position: relative;
-        width: 60px;
-        height: 59px;
+        width: 50px;
+        height: 49px;
         display: inline-block;
 
         &:before {
@@ -111,23 +131,33 @@
           top: 0;
           right: 0;
           color: $text-color;
-          padding: 20px 0;
+          padding: 15px 0;
           text-align: center;
-          width: 60px;
+          width: 50px;
           font-size: 20px;
+        }
+
+        @media screen and (min-width: $sm-width) {
+          width: 60px;
+          height: 59px;
+
+          &:before {
+            padding: 20px 0;
+            width: 60px;
+          }
         }
       }
     }
 
     #logout {
-      min-width: 60px;
-      min-height: 59px;
+      min-width: 50px;
+      min-height: 49px;
       float: right;
 
       a {
         visibility: hidden;
         position: relative;
-        width: 60px;
+        width: 50px;
         display: block;
 
         &:before {
@@ -140,10 +170,26 @@
           top: 0;
           right: 0;
           color: $text-color;
-          padding: 20px 0;
+          padding: 15px 0;
           text-align: center;
-          width: 60px;
+          width: 50px;
           font-size: 20px;
+        }
+
+      }
+      
+      @media screen and (min-width: $sm-width) {
+        min-width: 60px;
+        min-height: 59px;
+
+        a {
+          width: 60px;
+          height: 59px;
+
+          &:before {
+            padding: 20px 0;
+            width: 60px;
+          }
         }
       }
     }

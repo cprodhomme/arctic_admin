@@ -2,12 +2,16 @@
   width: $header-width;
   height: calc(100% - 60px);
   position: fixed;
-  top: 60px;
+  top: 50px;
   background-color: $sidebar-background;
   border-right: 1px solid $sidebar-border-color;
   z-index: 1;
   overflow: auto;
   left: - $header-width;
+
+  @media screen and (min-width: $sm-width) {
+    top: 60px;
+  }
 
   @media screen and (min-width: $lg-width) {
     left: 0px;
