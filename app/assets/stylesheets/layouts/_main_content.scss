@@ -20,6 +20,10 @@
   box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
   padding: 10px 5px;
 
+  @media screen and (max-width: 576px) {
+    overflow-x: scroll;
+  }
+
   @media screen and (min-width: $lg-width) {
     padding: 20px;
     border-radius: 3px;
