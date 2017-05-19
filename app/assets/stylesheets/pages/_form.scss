@@ -6,16 +6,23 @@ body.logged_in {
 
     .input {
       .label {
-        width: 25%;
-        float: left;
-        height: 25px;
+        padding-bottom: 5px;
         text-align: left;
-        padding-right: 20px;
         margin: auto 0;
+
+        @media screen and (min-width: $sm-width) {
+          padding-bottom: 0;
+          height: 25px;
+          width: 25%;
+          float: left;
+          padding-right: 20px;
+        }
       }
 
       input {
-        width: 50%;
+        @media screen and (min-width: $sm-width) {
+          width: 50%;
+        }
 
         &[type='radio'] {
           width: auto;
