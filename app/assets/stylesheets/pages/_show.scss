@@ -3,7 +3,12 @@ body.show {
     #main_content_wrapper {
       width: $screen-filter-width;
 
+      @media screen and (min-width: $sm-width) {
+        padding-right: 10px;
+      }
+
       @media screen and (min-width: $lg-width) {
+        padding-right: 0;
         width: $lg-screen-filter-width;
       }
     }
