@@ -48,9 +48,15 @@ body.logged_in {
 
       &.boolean {
         margin-left: 25%;
+        @include disable-user-select();
 
         input {
           width: auto;
+        }
+
+        input[type='checkbox'] {
+          width: 15px;
+          margin: 0 5px -1px 0;
         }
       }
 
