@@ -3,6 +3,7 @@
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
   border-radius: 3px;
   padding: 15px 10px;
+  z-index: 1;
 
   &:focus, &:active {
     -webkit-tap-highlight-color: rgba(0,0,0,0);

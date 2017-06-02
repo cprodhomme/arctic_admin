@@ -35,6 +35,20 @@ body.logged_out {
     margin-bottom: 5px;
   }
 
+  .input.boolean {
+    @include disable-user-select();
+    label {
+      font-size: 15px;
+      cursor: pointer;
+      padding: 5px 5px 5px 0;
+    }
+
+    input[type='checkbox'] {
+      width: 15px;
+      margin: 0 5px -2px 0;
+    }
+  }
+
   a {
     margin-top: 10px;
     display: inline-block;
