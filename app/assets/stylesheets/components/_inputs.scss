@@ -67,6 +67,7 @@ input[type="checkbox"] {
   box-sizing: border-box;
   @include outline();
   @include transition-button();
+  cursor: pointer;
 
   &:checked {
     border-color: $primary-color;

@@ -14,8 +14,12 @@
     }
     
     legend {
-      margin-bottom: 20px;
-      font-weight: bold;
+      margin-bottom: 28px;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $body-background;
     }
 
     .field_with_errors {

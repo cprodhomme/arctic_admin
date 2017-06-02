@@ -1,7 +1,11 @@
 body.logged_in {
   &.new, &.edit, &.create, &.update {
     .formtastic legend {
-      font-weight: normal!important;
+      font-weight: normal;
+    }
+
+    fieldset.inputs {
+      margin-bottom: 20px;
     }
 
     .input {
@@ -52,6 +56,11 @@ body.logged_in {
 
         input {
           width: auto;
+        }
+
+        label {
+          cursor: pointer;
+          padding: 5px 5px 5px 0;
         }
 
         input[type='checkbox'] {
