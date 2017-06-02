@@ -9,6 +9,14 @@ body.index {
       clear: both;
     }
 
+    input[type='checkbox'] {
+      display: flex;
+    }
+
+    .collection_selection_toggle_all {
+      display: flex !important;
+    }
+
     .batch_actions_selector {
       display: inline-block;
     }
