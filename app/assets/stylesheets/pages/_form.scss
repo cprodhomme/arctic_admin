@@ -13,6 +13,9 @@ body.logged_in {
         padding-bottom: 5px;
         text-align: left;
         margin: auto 0;
+        padding-top: 8px;
+        text-align: right;
+        font-size: 14px;
 
         @media screen and (min-width: $sm-width) {
           padding-bottom: 0;
@@ -23,7 +26,7 @@ body.logged_in {
         }
       }
 
-      input {
+      input, textarea {
         @media screen and (min-width: $sm-width) {
           width: 50%;
         }
@@ -59,13 +62,14 @@ body.logged_in {
         }
 
         label {
+          font-size: 14px;
           cursor: pointer;
           padding: 5px 5px 5px 0;
         }
 
         input[type='checkbox'] {
           width: 15px;
-          margin: 0 5px -1px 0;
+          margin: 0 5px -2px 0;
         }
       }
 
