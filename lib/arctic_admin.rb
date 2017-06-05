@@ -1,3 +1,4 @@
+require "arctic_admin/version"
 require 'font-awesome-rails'
 require 'arctic_admin/active_admin/views/pages/bases'
 
