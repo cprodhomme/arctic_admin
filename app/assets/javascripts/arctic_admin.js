@@ -1,7 +1,12 @@
 //= require jquery
 //= require jquery_ujs
+//= require jquery.validate
 
 $(function() {
+  $('form').each(function() {
+    $(this).validate();
+  });
+  
   $('#sidebar').click(function (e) {
     var position = $(this).position();
     var width = $(this).width();
