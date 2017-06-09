@@ -1,14 +1,8 @@
 //= require jquery
 //= require jquery_ujs
-//= require jquery.validate
-//= require jquery.validate.addition-methods
-//= require_tree jquery.validate.localization
+//= require arctic_admin/jquery_validate
 
 $(function() {
-  $('form').each(function() {
-    $(this).validate();
-  });
-
   $('#sidebar').click(function (e) {
     var position = $(this).position();
     var width = $(this).width();
