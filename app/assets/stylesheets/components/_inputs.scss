@@ -68,6 +68,22 @@ input[type="checkbox"] {
   }
 }
 
+input[type="radio"] {
+  -webkit-appearance: none;
+  border: 2px solid $primary-color;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 1px;
+  display: inline-flex;
+  @include outline();
+  @include transition-button();
+
+  &:checked {
+    background-color: $primary-color;
+  }
+}
+
 select {
   background-color: #fff;
   background-image: none;
