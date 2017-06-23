@@ -22,17 +22,28 @@
       border-bottom: 1px solid $body-background;
     }
 
-    .field_with_errors {
-      input {
+    .error {
+      input, select {
         border-color: $error;
       }
     }
 
-    .inline-errors {
+    input, select {
+      &.error {
+        border-color: $error; 
+      }
+    }
+
+    .inline-errors, label.error {
       color: $error;
       margin-top: 5px;
       margin-bottom: 20px;
       font-size: 14px;
+    }
+
+    label.error {
+      display: block;
+      margin-left: 25%;
     }
 
     .actions {

@@ -3,6 +3,12 @@
 //= require arctic_admin/jquery_validate
 
 $(function() {
+  $('form').each(function() {  
+    $(this).validate({
+      onfocusout: true
+    });
+  });
+
   $('#sidebar').click(function (e) {
     var position = $(this).position();
     var width = $(this).width();
