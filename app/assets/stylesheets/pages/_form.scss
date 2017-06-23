@@ -36,6 +36,17 @@ body.logged_in {
         }
       }
 
+      .select2-container {
+        @media screen and (min-width: $sm-width) {
+          width: 50% !important;
+        }
+
+        a {
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+
       select {
         min-width: 50%;
         height: 30px;
