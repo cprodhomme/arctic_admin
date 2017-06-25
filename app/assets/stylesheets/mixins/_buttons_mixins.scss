@@ -12,6 +12,7 @@
 @mixin primary-button($background-color, $color) {
   background-color: $background-color;
   color: $color;
+  border: none; 
   @include button();
 
   &:hover {

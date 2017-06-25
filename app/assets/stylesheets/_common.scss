@@ -8,7 +8,20 @@
     font-size: 12px;
   }
 
+  &.large {
+    padding: 10px;
+    font-size: 18px;
+  }
+
   &.action {
     margin-right: 4px;
   }
+}
+
+code {
+  display: block;
+  background-color: #272822;
+  padding: 5px;
+  margin: 10px 0;
+  color: white;
 }
