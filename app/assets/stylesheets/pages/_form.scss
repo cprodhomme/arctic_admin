@@ -32,7 +32,18 @@ body.logged_in {
         }
 
         &[type='radio'] {
-          width: auto;
+          width: 15px;
+        }
+      }
+
+      .select2-container {
+        @media screen and (min-width: $sm-width) {
+          width: 50% !important;
+        }
+
+        a {
+          height: 30px;
+          line-height: 30px;
         }
       }
 

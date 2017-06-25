@@ -1,0 +1,34 @@
+.tabs.ui-tabs {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+  border-radius: 3px;
+
+  .nav {
+    text-align: center;
+    border-bottom: 1px solid $body-background;
+    
+    li {
+      display: inline-block;
+      @include outline();
+
+      a {
+        color: $text-color;
+        display: inline-block;
+        padding: 15px 25px;
+        @include outline();
+        @include transition-button();
+      }
+      
+      &.ui-tabs-active {
+        border-bottom: 2px solid $primary-color;
+
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 10px 20px;
+  }
+}

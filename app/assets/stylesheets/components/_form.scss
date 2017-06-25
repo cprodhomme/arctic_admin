@@ -13,7 +13,7 @@
       list-style: none;
     }
     
-    legend {
+    legend:not(.label) {
       margin-bottom: 28px;
       font-size: 18px;
       display: block;
