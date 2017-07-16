@@ -5,7 +5,7 @@
   letter-spacing: 0.15em;
   padding: 3px 5px 2px 5px;
   font-size: 0.8em;
-  border-radius: 3px;
+  border-radius: $border-radius;
 }
 
 .status_tag.ok, .status_tag.published, .status_tag.complete, .status_tag.completed, .status_tag.green {

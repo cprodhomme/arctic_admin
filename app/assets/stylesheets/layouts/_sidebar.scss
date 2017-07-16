@@ -14,7 +14,7 @@
   }
 
   @media screen and (min-width: $lg-width) {
-    left: 0px;
+    left: 0px !important;
   }
 
   @media screen and (min-width: $x-lg-width) {

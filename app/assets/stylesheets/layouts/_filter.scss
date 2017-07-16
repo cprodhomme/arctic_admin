@@ -1,8 +1,8 @@
 #sidebar {
   width: $filter-width;
   background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
+  border-radius: $border-radius;
+  @include box-shadow(0 0 4px 0 rgba(0,0,0,.04));
   margin-bottom: 30px;
 
   @media screen and (min-width: $x-lg-width) {

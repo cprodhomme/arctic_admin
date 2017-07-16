@@ -28,8 +28,8 @@ body.index {
     .dropdown_menu_list {
       background-color: #fff;
       padding: 10px 15px;
-      border-radius: 3px;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: $border-radius;
+      @include box-shadow(0 0 4px 0 rgba(0, 0, 0, 0.1));
       display: inline-block;
       position: absolute;
       z-index: 1;
@@ -99,9 +99,9 @@ body.index {
       width: 40px;
       height: 50px;
       background-color: #fff;
-      box-shadow: -1px 0 4px 0 rgba(0,0,0,.04);
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
+      @include box-shadow(-1px 0 4px 0 rgba(0,0,0,.04));
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
       @include icon("\f0b0");
       font-size: 20px;
       padding: 15px 10px;

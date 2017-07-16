@@ -1,4 +1,4 @@
-body.active_admin {
+body.active_admin.logged_in {
   padding-top: 50px;
 
   @media screen and (min-width: $sm-width) {
@@ -198,14 +198,14 @@ body.active_admin {
 
 #title_bar {
   background-color: #fff;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  @include box-shadow(0 0 4px 0 rgba(0, 0, 0, 0.1));
   margin: 15px 0 0 0;
   padding: 8px 10px;
   @include clear-fix();
 
   @media screen and (min-width: $lg-width) {
     padding: 8px 20px;
-    border-radius: 3px;
+    border-radius: $border-radius;
     margin: 15px 25px 0 25px;
   }
 

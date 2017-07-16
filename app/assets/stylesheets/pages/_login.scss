@@ -14,13 +14,13 @@ body.logged_out {
   width: 100%;
   margin: auto;
   background-color: white;
-  border-top: 3px solid $primary-color;
+  border-top: $border-radius solid $primary-color;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
   color: $text-color;
   padding: 20px;
 
   @media screen and (min-width: 400px) {
-    border-radius: 3px;
+    border-radius: $border-radius;
     width: 400px;
     padding: 30px;
   }

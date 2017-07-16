@@ -1,7 +1,7 @@
 .comments {
   background-color: $sidebar-background;
   padding: 10px 15px 15px 15px;
-  border-radius: 3px;
+  border-radius: $border-radius;
   margin-top: 20px;
   @include clear-fix();
 

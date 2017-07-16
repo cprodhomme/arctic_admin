@@ -1,11 +1,10 @@
-input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: -webkit-box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
-  -o-transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
-  transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+input[type="text"], input[type="email"], input[type="password"],
+input[type="tel"], input[type="date"], input[type="datetime-local"],
+input[type="month"], input[type="range"], input[type="search"],
+input[type="time"], input[type="url"], input[type="week"],
+input[type="number"], textarea {
+  @include appearance();
+  @include box-shadow(none);
 
   display: block;
   width: 100%;
@@ -18,18 +17,17 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
   background-image: none;
   border: 1px solid #e4eaec;
   outline: 0;
-  border-radius: 3px;
-  -webkit-transition: border-color ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s;
-  transition: border-color ease-in-out .15s;
+  border-radius: $border-radius;
+  @include transition(border-color ease-in-out .15s);
 
   &:focus {
     border-color: $primary-color;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    -o-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    transition: border .25s linear,color .25s linear,background-color .25s linear;
+    @include appearance();
+    @include transition(border .25s linear,color .25s linear,background-color .25s linear);
+  }
+
+  &:disabled {
+    opacity: 0.6;
   }
 
   &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
@@ -39,13 +37,13 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 
 input[type="submit"] {
-  -webkit-appearance: none;
+  @include appearance();
   @include primary-button($primary-color, white);
   width: 100%;
   padding: 0 12px;
   font-size: 15px;
   font-weight: 500;
-  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  @include box-shadow(0 1px 0 rgba(0,0,0,.05));
   border: none;
   cursor: pointer;
 }
@@ -56,7 +54,7 @@ input[type="checkbox"] {
   -webkit-appearance: none!important;
   background-color: #fff;
   border: 1px solid #e6e6e6;
-  border-radius: 3px;
+  border-radius: $border-radius;
   box-sizing: border-box;
   @include outline();
   @include transition-button();
@@ -69,7 +67,7 @@ input[type="checkbox"] {
 }
 
 input[type="radio"] {
-  -webkit-appearance: none;
+  @include appearance();
   border: 2px solid $primary-color;
   width: 15px;
   height: 15px;
@@ -89,18 +87,13 @@ select {
   background-image: none;
   border: 1px solid #e4eaec;
   outline: 0;
-  border-radius: 3px;
-  -webkit-transition: border-color ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s;
-  transition: border-color ease-in-out .15s;
+  border-radius: $border-radius;
+  @include transition(border-color ease-in-out .15s);
 
   &:focus {
     border-color: $primary-color;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    -o-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    transition: border .25s linear,color .25s linear,background-color .25s linear;
+    @include box-shadow(none);
+    @include transition(border .25s linear,color .25s linear,background-color .25s linear);
   }
 
   &:-webkit-autofill {
