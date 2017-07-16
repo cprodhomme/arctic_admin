@@ -21,7 +21,7 @@ input[type="number"], textarea {
   background-image: none;
   border: 1px solid #e4eaec;
   outline: 0;
-  border-radius: 3px;
+  border-radius: $border-radius;
   -webkit-transition: border-color ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s;
   transition: border-color ease-in-out .15s;
@@ -58,7 +58,7 @@ input[type="checkbox"] {
   -webkit-appearance: none!important;
   background-color: #fff;
   border: 1px solid #e6e6e6;
-  border-radius: 3px;
+  border-radius: $border-radius;
   box-sizing: border-box;
   @include outline();
   @include transition-button();
@@ -91,7 +91,7 @@ select {
   background-image: none;
   border: 1px solid #e4eaec;
   outline: 0;
-  border-radius: 3px;
+  border-radius: $border-radius;
   -webkit-transition: border-color ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s;
   transition: border-color ease-in-out .15s;
