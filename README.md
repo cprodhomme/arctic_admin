@@ -39,13 +39,14 @@ Then restart your webserver if it was previously running.
 
 ### Sass Support
 
+![Remove the line @import "active_admin/base"](http://messages.hellobits.com/warning.svg?message=Remove%20the%20line%20%40import%20%22active_admin%2Fbase%22)
+
 If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
 `active_admin.css.scss` file:
 
 ```scss
 @import "arctic_admin";
 ```
-**Remove the line `@import "active_admin/base"`**
 
 If you use the
 [Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
@@ -54,7 +55,6 @@ add this to your `active_admin.css.sass` file:
 ```sass
 @import arctic_admin
 ```
-**Remove the line `@import active_admin/base`**
 
 ### JS
 
