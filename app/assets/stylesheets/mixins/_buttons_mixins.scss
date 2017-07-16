@@ -7,6 +7,11 @@
   &:active, &:focus {
     outline: 0;
   }
+
+  &.disabled, &:disabled {
+    opacity: 0.6;
+    cursor: no-drop;
+  }
 }
 
 @mixin primary-button($background-color, $color) {
@@ -21,6 +26,10 @@
 
   &:active, &:focus {
     background-color: darken($background-color, 10%); 
+  }
+
+  &:disabled {
+    background-color: $background-color;
   }
 }
 
@@ -61,7 +70,6 @@
     color: #76838f;
     background-color: #f3f7f9;
     border-color: #f3f7f9;
-    cursor: not-allowed;
     box-shadow: none;
     opacity: .65;
   }
