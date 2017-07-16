@@ -5,6 +5,12 @@
           transform: $var;
 }
 
+@mixin appearance($effect:none) {
+  -webkit-appearance: $effect;
+  -moz-appearance: $effect;
+  appearance: $effect;
+}
+
 @mixin transition-button() {
   -webkit-transition: border .2s linear,color .2s linear,width .2s linear,background-color .2s linear;
   -o-transition: border .2s linear,color .2s linear,width .2s linear,background-color .2s linear;

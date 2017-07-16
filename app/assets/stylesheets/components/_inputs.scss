@@ -1,6 +1,9 @@
-input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+input[type="text"], input[type="email"], input[type="password"],
+input[type="tel"], input[type="date"], input[type="datetime-local"],
+input[type="month"], input[type="range"], input[type="search"],
+input[type="time"], input[type="url"], input[type="week"],
+input[type="number"], textarea {
+  @include appearance();
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: -webkit-box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
@@ -25,8 +28,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 
   &:focus {
     border-color: $primary-color;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    @include appearance();
     -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
     -o-transition: border .25s linear,color .25s linear,background-color .25s linear;
     transition: border .25s linear,color .25s linear,background-color .25s linear;
@@ -39,7 +41,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 
 input[type="submit"] {
-  -webkit-appearance: none;
+  @include appearance();
   @include primary-button($primary-color, white);
   width: 100%;
   padding: 0 12px;
@@ -69,7 +71,7 @@ input[type="checkbox"] {
 }
 
 input[type="radio"] {
-  -webkit-appearance: none;
+  @include appearance();
   border: 2px solid $primary-color;
   width: 15px;
   height: 15px;
