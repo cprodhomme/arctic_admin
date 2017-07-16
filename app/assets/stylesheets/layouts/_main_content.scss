@@ -10,8 +10,8 @@
 
   @media screen and (min-width: $sm-width) {
     #main_content {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
   }
 
@@ -30,7 +30,7 @@
 
 #main_content {
   background-color: #fff;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
+  @include box-shadow(0 0 4px 0 rgba(0,0,0,.04));
   padding: 15px 10px;
 
   @media screen and (max-width: 576px) {
@@ -39,6 +39,6 @@
 
   @media screen and (min-width: $lg-width) {
     padding: 20px;
-    border-radius: 3px;
+    border-radius: $border-radius;
   }
 }

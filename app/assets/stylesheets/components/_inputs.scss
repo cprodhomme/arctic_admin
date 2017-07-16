@@ -4,11 +4,7 @@ input[type="month"], input[type="range"], input[type="search"],
 input[type="time"], input[type="url"], input[type="week"],
 input[type="number"], textarea {
   @include appearance();
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: -webkit-box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
-  -o-transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
-  transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+  @include box-shadow(none);
 
   display: block;
   width: 100%;
@@ -22,16 +18,12 @@ input[type="number"], textarea {
   border: 1px solid #e4eaec;
   outline: 0;
   border-radius: $border-radius;
-  -webkit-transition: border-color ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s;
-  transition: border-color ease-in-out .15s;
+  @include transition(border-color ease-in-out .15s);
 
   &:focus {
     border-color: $primary-color;
     @include appearance();
-    -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    -o-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    transition: border .25s linear,color .25s linear,background-color .25s linear;
+    @include transition(border .25s linear,color .25s linear,background-color .25s linear);
   }
 
   &:disabled {
@@ -51,7 +43,7 @@ input[type="submit"] {
   padding: 0 12px;
   font-size: 15px;
   font-weight: 500;
-  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  @include box-shadow(0 1px 0 rgba(0,0,0,.05));
   border: none;
   cursor: pointer;
 }
@@ -96,17 +88,12 @@ select {
   border: 1px solid #e4eaec;
   outline: 0;
   border-radius: $border-radius;
-  -webkit-transition: border-color ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s;
-  transition: border-color ease-in-out .15s;
+  @include transition(border-color ease-in-out .15s);
 
   &:focus {
     border-color: $primary-color;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    -o-transition: border .25s linear,color .25s linear,background-color .25s linear;
-    transition: border .25s linear,color .25s linear,background-color .25s linear;
+    @include box-shadow(none);
+    @include transition(border .25s linear,color .25s linear,background-color .25s linear);
   }
 
   &:-webkit-autofill {

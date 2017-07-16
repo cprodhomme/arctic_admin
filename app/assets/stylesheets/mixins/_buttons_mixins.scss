@@ -1,5 +1,5 @@
 @mixin button() {
-  border-radius: 3px;
+  border-radius: $border-radius;
   display: inline-block;
   @include transition-button();
   cursor: pointer;
@@ -70,7 +70,7 @@
     color: #76838f;
     background-color: #f3f7f9;
     border-color: #f3f7f9;
-    box-shadow: none;
+    @include box-shadow(none);
     opacity: .65;
   }
 }
@@ -89,13 +89,13 @@
 
   &:first-child a {
     border-left: 1px solid $color;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
   }
 
   &:last-child a {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 
   &:hover {
