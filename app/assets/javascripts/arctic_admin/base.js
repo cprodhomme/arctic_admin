@@ -1,15 +1,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require active_admin/base
-//= require ./jquery_validate
 
 $(function() {
-  $('form').each(function() {  
-    $(this).validate({
-      onfocusout: true
-    });
-  });
-
   $('#sidebar').click(function (e) {
     var position = $(this).position();
     var width = $(this).width();
