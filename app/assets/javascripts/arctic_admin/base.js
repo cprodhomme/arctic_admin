@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery_ujs
-//= require arctic_admin/jquery_validate
+//= require active_admin/base
+//= require ./jquery_validate
 
 $(function() {
   $('form').each(function() {  
