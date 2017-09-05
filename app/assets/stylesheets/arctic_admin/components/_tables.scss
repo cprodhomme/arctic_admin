@@ -1,8 +1,8 @@
 table {
   width: 100%;
+  border-collapse: collapse;
 
   &:not(.index_table) {
-    @include box-shadow(0 0 4px 0 rgba(0, 0, 0, 0.1));
     border-radius: $border-radius;
     margin-bottom: 10px;
   }
@@ -34,10 +34,8 @@ thead th {
 }
 
 tbody tr {
-  &:nth-of-type(odd) {
-    background-color: rgba(243,247,249,.3);
-  }
-  
+  border: 1px solid #e4eaec;
+
   &:hover {
     background-color: #f3f7f9;
   }
@@ -49,7 +47,6 @@ tbody tr {
   td {
     padding: 4px;
     vertical-align: middle;
-    border-top: 1px solid #e4eaec;
     color: #7A8392;
     font-size: 12px;
 
