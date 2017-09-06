@@ -34,6 +34,11 @@ body.logged_in {
         &[type='radio'] {
           width: 15px;
         }
+
+        &[type='checkbox'] {
+          width: 15px;
+          margin: 0 5px -2px 0;
+        }
       }
 
       .select2-container {
@@ -54,7 +59,7 @@ body.logged_in {
 
       .fragment {
         margin-right: 10px;
-        
+
         label {
           padding-right: 5px;
         }
