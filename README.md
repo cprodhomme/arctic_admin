@@ -29,7 +29,7 @@ In your `active_admin.css`, include the css file:
 
 ```css
 /*
- *= require arctic_admin
+ *= require arctic_admin/base
  */
 ```
 
@@ -45,7 +45,7 @@ If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 `active_admin.css.scss` file:
 
 ```scss
-@import "arctic_admin";
+@import "arctic_admin/base";
 ```
 
 If you use the
@@ -53,7 +53,7 @@ If you use the
 add this to your `active_admin.css.sass` file:
 
 ```sass
-@import arctic_admin
+@import arctic_admin/base
 ```
 
 ### JS
@@ -61,8 +61,7 @@ add this to your `active_admin.css.sass` file:
 In your `active_admin.js`, include the js file:
 
 ```js
-//= require active_admin/base
-//= require arctic_admin
+//= require arctic_admin/base
 ```
 
 ### Customization
@@ -77,7 +76,7 @@ If you use the [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.htm
 ```scss
 $primary-color: #2dbb43;
 
-@import "arctic_admin";
+@import "arctic_admin/base";
 ```
 
 If you use the
@@ -87,7 +86,7 @@ add this to your `active_admin.css.sass` file:
 ```sass
 $primary-color: #2dbb43
 
-@import arctic_admin
+@import arctic_admin/base
 ```
 
 Then restart your webserver if it was previously running.
