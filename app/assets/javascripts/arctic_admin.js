@@ -3,7 +3,7 @@
 //= require arctic_admin/jquery_validate
 
 $(function() {
-  $('form').each(function() {  
+  $('form').each(function() {
     $(this).validate({
       onfocusout: true
     });
@@ -33,46 +33,42 @@ $(function() {
 
   var animationDone = true;
   $('#utility_nav').click(function (e) {
-    if ($(window).width() < 960) {
-      var position = $(this).position();
-      var tabs = $('#tabs');
-      var width = tabs.width() + 1;
+    var position = $(this).position();
+    var tabs = $('#tabs');
+    var width = tabs.width() + 1;
 
-      if (e.pageX < (position.left + 40)) {
-        if(animationDone == true) {
-          animationDone = false;
-          if (tabs.css('left') == '0px') {
-            tabs.animate({
-              left: "-="+width
-            }, 400, function() {
-              animationDone = true;
-            });
-          } else {
-            tabs.animate({
-              left: "+="+width
-            }, 400, function() {
-              animationDone = true;
-            });
-          }
+    if (e.pageX < (position.left + 40)) {
+      if(animationDone == true) {
+        animationDone = false;
+        if (tabs.css('left') == '0px') {
+          tabs.animate({
+            left: "-="+width
+          }, 400, function() {
+            animationDone = true;
+          });
+        } else {
+          tabs.animate({
+            left: "+="+width
+          }, 400, function() {
+            animationDone = true;
+          });
         }
       }
     }
   });
 
   $('body').click(function (e) {
-    if ($(window).width() < 960) {
-      var tabs = $('#tabs');
-      var width = tabs.width() + 1;
-      if (tabs.css('left') == '0px') {
-        if (e.pageX > width && e.pageY > 60) {
-          if(animationDone == true) {
-            animationDone = false;
-            tabs.animate({
-              left: "-="+width
-            }, 400, function() {
-              animationDone = true;
-            });
-          }
+    var tabs = $('#tabs');
+    var width = tabs.width() + 1;
+    if (tabs.css('left') == '0px') {
+      if (e.pageX > width && e.pageY > 60) {
+        if(animationDone == true) {
+          animationDone = false;
+          tabs.animate({
+            left: "-="+width
+          }, 400, function() {
+            animationDone = true;
+          });
         }
       }
     }
