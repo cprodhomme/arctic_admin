@@ -1,10 +1,9 @@
 .tabs.ui-tabs {
-  @include box-shadow(0 0 4px 0 rgba(0,0,0,.1));
-  border-radius: $border-radius;
+  border: 1px solid $border-color;
 
   .nav {
     text-align: center;
-    border-bottom: 1px solid $body-background;
+    border-bottom: 1px solid $border-color;
     
     li {
       display: inline-block;

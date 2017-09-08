@@ -1,4 +1,9 @@
 body.index {
+
+  .resource_selection_toggle_cell, .resource_selection_cell {
+    display: flex;
+  }
+
   .table_tools {
     margin-bottom: 20px;
     font-size: 14px;

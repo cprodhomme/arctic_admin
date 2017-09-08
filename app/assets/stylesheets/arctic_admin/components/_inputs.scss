@@ -15,7 +15,7 @@ input[type="number"], textarea {
   color: $text-color;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #e4eaec;
+  border: 1px solid $border-color;
   outline: 0;
   border-radius: $border-radius;
   @include transition(border-color ease-in-out .15s);
@@ -85,7 +85,7 @@ input[type="radio"] {
 select {
   background-color: #fff;
   background-image: none;
-  border: 1px solid #e4eaec;
+  border: 1px solid $border-color;
   outline: 0;
   border-radius: $border-radius;
   @include transition(border-color ease-in-out .15s);

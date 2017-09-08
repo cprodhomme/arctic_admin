@@ -4,10 +4,12 @@ $green: #00897B;
 $blue: #4bacfe;
 $black: #36393D;
 
-$error: #f96868;
-$warning: #f2a654;
-$success: #46be8a;
-$info: #57c7d4;
+$error: #f96868 !default;
+$warning: #f2a654 !default;
+$success: #46be8a !default;
+$info: #57c7d4 !default;
+
+$border-color: #e4eaec;
 
 // body
 $body-background: #eee !default;

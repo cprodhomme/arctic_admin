@@ -9,8 +9,8 @@ table {
 }
 
 thead tr {
-  border: 1px solid #e4eaec;
-  background-color: #e4eaec;
+  border: 1px solid $border-color;
+  background-color: $border-color;
 }
 
 thead th {
@@ -39,7 +39,7 @@ thead th {
 }
 
 tbody tr {
-  border: 1px solid #e4eaec;
+  border: 1px solid $border-color;
 
   &:hover {
     background-color: rgba(228, 234, 236, 0.3);
