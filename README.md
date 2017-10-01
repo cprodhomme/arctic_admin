@@ -64,6 +64,8 @@ In your `active_admin.js`, include the js file:
 //= require arctic_admin/base
 ```
 
+**Remove the line `//= require active_admin/base`**
+
 ### Customization
 
 For this, you need to use sass to custom the theme.
