@@ -72,7 +72,7 @@ input[type="radio"] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  margin: 1px;
+  margin: 1px 5px 1px 1px;
   display: inline-flex;
   @include outline();
   @include transition-button();
@@ -88,6 +88,8 @@ select {
   border: 1px solid $border-color;
   outline: 0;
   border-radius: $border-radius;
+  font-size: 14px;
+  color: #5a5a5a;
   @include transition(border-color ease-in-out .15s);
 
   &:focus {
