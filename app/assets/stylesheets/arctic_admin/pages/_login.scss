@@ -6,7 +6,8 @@ body.logged_out {
   #active_admin_content {
     height: 100vh;
     width: 100%;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
   }
 }
 
