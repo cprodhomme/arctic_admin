@@ -2,13 +2,16 @@
   -webkit-transform: $var;
      -moz-transform: $var;
       -ms-transform: $var;
+       -o-transform: $var;
           transform: $var;
 }
 
 @mixin appearance($effect:none) {
   -webkit-appearance: $effect;
-  -moz-appearance: $effect;
-  appearance: $effect;
+     -moz-appearance: $effect;
+      -ms-appearance: $effect;
+       -o-appearance: $effect;
+          appearance: $effect;
 }
 
 @mixin transition($args...) {
