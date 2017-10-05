@@ -95,6 +95,10 @@ body.logged_in {
 
       li.choice {
         margin-left: 25%;
+        
+        .field_with_errors {
+          float: left;
+        }
       }
 
       .inline-errors {
