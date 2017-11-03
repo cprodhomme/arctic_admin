@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_development_dependency "bundler", "~> 1.5"
   s.add_development_dependency "rake"
-  s.add_dependency 'activeadmin', '~> 1.1.0'
+  s.add_dependency 'activeadmin', '~> 2.0.0.alpha'
   s.add_dependency 'jquery-rails'
   s.add_dependency 'font-awesome-rails'
 end
