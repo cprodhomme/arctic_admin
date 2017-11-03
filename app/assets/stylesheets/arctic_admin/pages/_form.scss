@@ -25,7 +25,6 @@ body.logged_in {
           padding-right: 20px;
         }
       }
-
       input, textarea {
         @media screen and (min-width: $sm-width) {
           width: 50%;
@@ -33,6 +32,8 @@ body.logged_in {
 
         &[type='radio'] {
           width: 15px;
+          float: left;
+          margin-top: 3px;
         }
 
         &[type='checkbox'] {
