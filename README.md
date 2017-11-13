@@ -24,7 +24,7 @@ and run `bundle install`.
 if you use ActiveAdmin from Github, use the branch `2-0-alpha` like this :
 
 ```ruby
-gem 'arctic_admin', github: 'activeadmin/activeadmin', branch: '2-0-alpha'
+gem 'arctic_admin', github: 'cle61/arctic_admin', branch: '2-0-alpha'
 ```
 
 ## Usage
