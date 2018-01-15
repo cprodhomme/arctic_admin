@@ -3,25 +3,25 @@
   padding: 10px;
   text-align: center;
   background-color: #76838f;
-  color: #fff;
+  color: $flash-text-color;
 }
 
 .flash_alert, .flash_error {
   background-color: $error;
-  color: #fff;
+  color: $flash-text-color;
 }
 
 .flash_warning {
   background-color: $warning;
-  color: #fff;
+  color: $flash-text-color;
 }
 
 .flash_notice {
   background-color: $success;
-  color: #fff;
+  color: $flash-text-color;
 }
 
 .flash_info {
   background-color: $info;
-  color: #fff;
+  color: $flash-text-color;
 }
