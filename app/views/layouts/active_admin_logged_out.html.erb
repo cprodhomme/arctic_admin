@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
-  <title><%= [@page_title, render_or_call_method_or_proc_on(self, ActiveAdmin.application.site_title)].compact.join(" | ") %></title>
+  <title><%= [@page_title, ActiveAdmin.application.site_title(self)].compact.join(" | ") %></title>
 
   <% ActiveAdmin.application.stylesheets.each do |style, options| %>
     <%= stylesheet_link_tag style, options %>
@@ -20,7 +20,6 @@
   <% end %>
 
   <%= csrf_meta_tag %>
-
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body class="active_admin logged_out <%= controller.action_name %>">
