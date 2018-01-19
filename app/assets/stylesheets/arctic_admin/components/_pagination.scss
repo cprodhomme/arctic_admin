@@ -2,8 +2,24 @@
   font-size: 13px;
   margin-bottom: 10px;
 
+  .page {
+    text-align: center;
+  }
+
   .page a, .next a, .last a, .first a, .prev a {
-    @include primary-button($primary-color, white);
-    padding: 3px 4px;
+    padding: .3rem .4rem;
+    color: $text-color;
+    @include transition-button();
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .page.current {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: $border-radius;
+    padding: .3rem .4rem;
+    cursor: normal;
   }
 }
