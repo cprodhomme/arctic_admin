@@ -21,12 +21,12 @@ gem 'arctic_admin'
 
 - Run `bundle install`.
 
-- Add this line to the file `config/application.rb`
+- Add this line to the file `config/initializers/active_admin.rb`
 
 ```ruby
 meta_tags_options = { viewport: 'width=device-width, initial-scale=1' }
-ActiveAdmin.application.meta_tags = meta_tags_options
-ActiveAdmin.application.meta_tags_for_logged_out_pages = meta_tags_options
+config.meta_tags = meta_tags_options
+config.meta_tags_for_logged_out_pages = meta_tags_options
 ```
 
 if you use ActiveAdmin from Github, use the branch `2-0-alpha` like this :
