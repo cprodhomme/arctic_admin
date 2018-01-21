@@ -1,6 +1,6 @@
 .ui-dialog {
   background-color: #fff;
-  @include box-shadow(0 0 4px 0 rgba(0,0,0,0.1));
+  @include box-shadow($box-shadow);
   border-radius: $border-radius;
   padding: 15px 10px;
   z-index: 1;

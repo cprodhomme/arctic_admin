@@ -34,7 +34,7 @@ body.index {
       background-color: #fff;
       padding: 10px 15px;
       border-radius: $border-radius;
-      @include box-shadow(0 0 4px 0 rgba(0, 0, 0, 0.1));
+      @include box-shadow($box-shadow);
       display: inline-block;
       position: absolute;
       z-index: 1;
