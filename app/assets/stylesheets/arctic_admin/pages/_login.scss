@@ -16,7 +16,7 @@ body.logged_out {
   margin: auto;
   background-color: white;
   border-top: $border-radius solid $primary-color;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.04);
+  @include box-shadow($box-shadow);
   color: $text-color;
   padding: 20px;
 
