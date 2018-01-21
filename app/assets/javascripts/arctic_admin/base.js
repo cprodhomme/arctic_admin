@@ -3,7 +3,7 @@
 //= require active_admin/base
 
 $(function() {
-  $('#sidebar').click(function (e) {
+  $(document).on('click', '#sidebar', function(e) {
     var position = $(this).position();
     var width = $(this).width();
     if (e.pageX < position.left) {
@@ -26,7 +26,7 @@ $(function() {
   });
 
   var animationDone = true;
-  $('#utility_nav').click(function (e) {
+  $(document).on('click', '#utility_nav', function(e) {
     var position = $(this).position();
     var tabs = $('#tabs');
     var width = Math.round(tabs[0].getBoundingClientRect().width);
@@ -51,7 +51,7 @@ $(function() {
     }
   });
 
-  $('body').click(function (e) {
+  $(document).on('click', 'body', function(e) {
     var tabs = $('#tabs');
     var width = Math.round(tabs[0].getBoundingClientRect().width);
     if (tabs.css('left') == '0px') {
@@ -68,7 +68,7 @@ $(function() {
     }
   });
 
-  $('#tabs .has_nested').click(function (e) {
+  $(document).on('click', '#tabs .has_nested', function(e) {
     if ($(this).hasClass('open') == true) {
       $(this).removeClass('open');
     } else {
