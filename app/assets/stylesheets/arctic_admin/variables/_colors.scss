@@ -3,6 +3,7 @@ $red: #B02B2C;
 $green: #00897B;
 $blue: #4bacfe;
 $black: #36393D;
+$grey: #76838f;
 
 // flash
 $error: #dc4747 !default;
@@ -10,7 +11,7 @@ $warning: #f2a654 !default;
 $success: #46be8a !default;
 $info: #57c7d4 !default;
 $flash-text-color: #fff !default;
-$flash-background-color: #76838f !default;
+$flash-background-color: $grey !default;
 
 // status_tag
 $status-tag-text-color: #fff !default;

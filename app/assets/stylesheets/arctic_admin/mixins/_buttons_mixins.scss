@@ -67,7 +67,7 @@
   }
 
   &.disabled, &:disabled {
-    color: #76838f;
+    color: $grey;
     background-color: #f3f7f9;
     border-color: #f3f7f9;
     @include box-shadow(none);
