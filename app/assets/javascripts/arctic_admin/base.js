@@ -75,4 +75,8 @@ $(function() {
       $(this).addClass('open');
     }
   });
+  $(document).on('click', '.header-item .has_nested', function(e) {
+      $(this).addClass('current');
+      $('.header-item .has_nested>a').attr("data-turbolinks",false)
+  });
 });
