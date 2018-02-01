@@ -2,7 +2,11 @@
 //= require jquery_ujs
 //= require active_admin/base
 
+$(document).on('turbolinks:load', function(){
+  $('.header-item .has_nested>a').attr("data-turbolinks",false)
+})
 $(function() {
+  $('.header-item .has_nested>a').attr("data-turbolinks",false)
   $(document).on('click', '#sidebar', function(e) {
     var position = $(this).position();
     var width = $(this).width();
@@ -75,8 +79,12 @@ $(function() {
       $(this).addClass('open');
     }
   });
+
   $(document).on('click', '.header-item .has_nested', function(e) {
+    if ($(this).hasClass('current') == true) {
+      $(this).removeClass('current');
+    } else {
       $(this).addClass('current');
-      $('.header-item .has_nested>a').attr("data-turbolinks",false)
+    }
   });
 });
