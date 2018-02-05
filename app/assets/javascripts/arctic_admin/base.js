@@ -6,7 +6,6 @@ $(document).on('turbolinks:load', function(){
   $('.header-item .has_nested>a').attr("data-turbolinks",false)
 })
 $(function() {
-  $('.header-item .has_nested>a').attr("data-turbolinks",false)
   $(document).on('click', '#sidebar', function(e) {
     var position = $(this).position();
     var width = $(this).width();
@@ -30,11 +29,10 @@ $(function() {
   });
 
   var animationDone = true;
-  $(document).on('click', '#utility_nav', function(e) {
+  $(document).on('click touchstart', '#utility_nav', function(e) {
     var position = $(this).position();
     var tabs = $('#tabs');
     var width = Math.round(tabs[0].getBoundingClientRect().width);
-
     if (e.pageX < (position.left + 40)) {
       if(animationDone == true) {
         animationDone = false;
@@ -55,22 +53,22 @@ $(function() {
     }
   });
 
-  $(document).on('click', 'body', function(e) {
-    var tabs = $('#tabs');
-    var width = Math.round(tabs[0].getBoundingClientRect().width);
-    if (tabs.css('left') == '0px') {
-      if (e.pageX > width && e.pageY > 60) {
-        if(animationDone == true) {
-          animationDone = false;
-          tabs.animate({
-            left: "-="+width
-          }, 400, function() {
-            animationDone = true;
-          });
-        }
-      }
-    }
-  });
+  // $(document).on('click', 'body', function(e) {
+  //   var tabs = $('#tabs');
+  //   var width = Math.round(tabs[0].getBoundingClientRect().width);
+  //   if (tabs.css('left') == '0px') {
+  //     if (e.pageX > width && e.pageY > 60) {
+  //       if(animationDone == true) {
+  //         animationDone = false;
+  //         tabs.animate({
+  //           left: "-="+width
+  //         }, 400, function() {
+  //           animationDone = true;
+  //         });
+  //       }
+  //     }
+  //   }
+  // });
 
   $(document).on('click', '#tabs .has_nested', function(e) {
     if ($(this).hasClass('open') == true) {
