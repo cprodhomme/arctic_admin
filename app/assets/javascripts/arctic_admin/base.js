@@ -12,6 +12,7 @@ $(function() {
         $(this).animate({
           right: "-="+width
         }, 600, function() {
+          $(this).removeAttr('style');
           animationFilterDone = true;
         });
       } else {
