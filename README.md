@@ -29,12 +29,6 @@ config.meta_tags = meta_tags_options
 config.meta_tags_for_logged_out_pages = meta_tags_options
 ```
 
-if you use ActiveAdmin from Github, use the branch `2-0-alpha` like this :
-
-```ruby
-gem 'arctic_admin', github: 'cle61/arctic_admin', branch: '2-0-alpha'
-```
-
 ## Usage
 
 ### CSS
