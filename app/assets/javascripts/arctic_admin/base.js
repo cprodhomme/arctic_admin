@@ -6,7 +6,7 @@ $(document).on('turbolinks:load', function(){
   $('.header-item .has_nested>a').attr("data-turbolinks",false)
 })
 $(function() {
-  $(document).on('click', '#sidebar', function(e) {
+  $(document).on('click touchstart', '#sidebar', function(e) {
     var position = $(this).position();
     var width = $(this).width();
     if (e.pageX < position.left) {
