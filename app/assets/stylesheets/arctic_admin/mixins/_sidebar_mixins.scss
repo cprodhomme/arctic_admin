@@ -1,0 +1,24 @@
+@mixin sidebar-container() {
+  #active_admin_content.with_sidebar {
+    #main_content_wrapper {
+      width: $screen-filter-width;
+
+      @media screen and (min-width: $sm-width) {
+        padding-right: 10px;
+      }
+
+      @media screen and (min-width: $lg-width) {
+        padding-right: 0;
+        width: $lg-screen-filter-width;
+      }
+    }
+
+    #sidebar {
+      display: inline-block;
+
+      tr:hover {
+        background: rgba(243, 247, 249, 0.3);
+      }
+    }
+  }
+}

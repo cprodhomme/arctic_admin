@@ -1,0 +1,8 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .flashes {
+    order: -1;
+  }
+}
