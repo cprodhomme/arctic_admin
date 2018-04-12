@@ -115,7 +115,7 @@ body.active_admin.logged_in {
 
     #current_user {
       a {
-        visibility: hidden;
+        color: transparent;
         position: relative;
         width: 50px;
         height: 49px;
@@ -155,7 +155,7 @@ body.active_admin.logged_in {
       float: right;
 
       a {
-        visibility: hidden;
+        color: transparent;
         position: relative;
         width: 50px;
         display: block;
