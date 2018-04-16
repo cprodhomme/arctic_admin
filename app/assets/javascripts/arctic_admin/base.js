@@ -70,10 +70,7 @@ $(function() {
   });
 
   $(document).on('click', '#tabs .has_nested', function(e) {
-    if ($(this).hasClass('open') == true) {
-      $(this).removeClass('open');
-    } else {
-      $(this).addClass('open');
-    }
+    e.stopPropagation();
+    $(this).toggleClass('open');
   });
 });
