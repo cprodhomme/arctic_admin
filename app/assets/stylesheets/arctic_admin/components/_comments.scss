@@ -21,33 +21,22 @@
       }
 
       span { // date
-        float: right;
         font-size: 14px;
         font-style: italic;
-        margin-right: 30px;
         line-height: 21px;
       }
 
       a[data-method="delete"] {
-        position: absolute;
-        top: 0;
-        right: 0;
-        visibility: hidden;
-
-        &:after {
-          @include icon("\f1f8");
-          visibility: visible;
-          color: #5a5a5a;
-          font-size: 16px;
-          padding: 6px;
-          display: inline-block;
-        }
+        @include primary-button($primary-color, white);
+        padding: 2px 9px;
+        font-size: 12px;
+        float: right;
       }
     }
 
     .active_admin_comment_body {
       p {
-        margin: 5px 0 0;
+        margin: 5px 0 20px 0;
       }
     }
   }
