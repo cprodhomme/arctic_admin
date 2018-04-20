@@ -1,20 +1,19 @@
 .comments {
-  background-color: $sidebar-background;
-  padding: 10px 15px 15px 15px;
-  border-radius: $border-radius;
   margin-top: 20px;
   @include clear-fix();
 
   h3 {
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
   }
 
-  .active_admin_comment {
-    margin: 10px 0 0 0;
-    padding: 5px 0 0 0;
-    position: relative;
+  .active_admin_comment:not(#new_active_admin_comment) {
+    margin-bottom: 20px;
+    border: 1px solid $border-color;
 
     .active_admin_comment_meta {
+      background-color: $sidebar-background;
+      padding: 8px 10px;
+
       .active_admin_comment_author {
         margin: 0;
         display: inline-block;
@@ -35,9 +34,11 @@
     }
 
     .active_admin_comment_body {
-      p {
-        margin: 5px 0 20px 0;
-      }
+      padding: 0 10px;
     }
+  }
+
+  .pagination_information {
+    margin-bottom: 20px;
   }
 }
