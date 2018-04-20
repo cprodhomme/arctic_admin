@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'arctic_admin/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'arctic_admin'
+  s.name        = 'visagio-arctic_admin'
   s.version     = ArcticAdmin::VERSION
   s.summary     = "Arctic Admin theme for ActiveAdmin"
   s.description = "A responsive theme for Active Admin"
   s.authors     = ["Clément Prod'homme"]
-  s.files       = Dir["{app,lib}/**/*"] + ["Readme.md", 'LICENCE.txt']
+  s.files       = Dir["{app,lib}/**/*"]
   s.homepage    = 'https://github.com/cle61/arctic_admin'
   s.license     = 'MIT'
   s.require_paths = ["lib"]
