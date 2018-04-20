@@ -5,6 +5,10 @@
 
 .input {
   margin-bottom: 20px;
+
+  &.hidden {
+    margin: 0;
+  }
 }
 
 #active_admin_content {
