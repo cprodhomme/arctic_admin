@@ -14,7 +14,7 @@
 @import "pages/*";
 
 body {
-  font-family: "LatoWeb", Arial, sans-serif;
+  font-family: $font-family-body;
   background-color: $body-background;
   color: $text-color;
 }
