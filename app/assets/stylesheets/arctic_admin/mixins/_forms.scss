@@ -1,0 +1,7 @@
+@mixin input-valid() {
+  border-color: $success;
+}
+
+@mixin input-invalid() {
+  border-color: $error;
+}

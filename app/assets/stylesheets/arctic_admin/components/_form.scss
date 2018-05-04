@@ -27,14 +27,18 @@
     }
 
     .error {
-      input, select {
-        border-color: $error;
+      input, select, textarea {
+        @include input-invalid();
       }
     }
 
-    input, select {
-      &.error {
-        border-color: $error; 
+    input, select, textarea {
+      &.error, &:invalid {
+        @include input-invalid();
+      }
+
+      &.valid, &:valid {
+        @include input-valid();
       }
     }
     

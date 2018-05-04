@@ -9,19 +9,9 @@
 @import "common";
 @import "grid";
 
-@import "components/components";
-
-@import "layouts/wrapper";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/main_content";
-@import "layouts/filter";
-@import "layouts/footer";
-
-@import "pages/login";
-@import "pages/index";
-@import "pages/show";
-@import "pages/form";
+@import "components/*";
+@import "layouts/*";
+@import "pages/*";
 
 body {
   font-family: "LatoWeb", Arial, sans-serif;
