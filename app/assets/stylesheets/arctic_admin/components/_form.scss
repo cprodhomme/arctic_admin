@@ -33,12 +33,8 @@
     }
 
     input:not([disabled]):not([type="submit"]), select, textarea {
-      &.error, &.invalid, &:invalid {
+      &.error {
         @include input-invalid();
-      }
-
-      &.success, &.valid, &:valid {
-        @include input-valid();
       }
     }
     
