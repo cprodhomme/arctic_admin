@@ -32,12 +32,12 @@
       }
     }
 
-    input, select, textarea {
-      &.error, &:invalid {
+    input:not([disabled]):not([type="submit"]), select, textarea {
+      &.error, &.invalid, &:invalid {
         @include input-invalid();
       }
 
-      &.valid, &:valid {
+      &.success, &.valid, &:valid {
         @include input-valid();
       }
     }

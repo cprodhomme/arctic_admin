@@ -1,7 +1,9 @@
 @mixin input-valid() {
   border-color: $success;
+  background-color: rgba($success, .1);
 }
 
 @mixin input-invalid() {
   border-color: $error;
+  background-color: rgba($error, .1);
 }
