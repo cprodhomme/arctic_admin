@@ -5,6 +5,11 @@
   h3 {
     margin: 0 0 10px 0;
   }
+  
+  .panel_contents .empty {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
 
   .active_admin_comment:not(#new_active_admin_comment) {
     margin-bottom: 20px;
