@@ -55,6 +55,9 @@ body.active_admin.logged_in {
   }
 
   #utility_nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     height: 50px;
     width: calc(100% - 160px);
     position: fixed;
