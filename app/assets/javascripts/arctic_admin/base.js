@@ -6,7 +6,8 @@ $(function() {
   $(document).on('click', '#sidebar', function(e) {
     var position = $(this).position();
     var width = $(this).width();
-    if (e.pageX < position.left) {
+    var target = e.target;
+    if ((e.pageX < position.left) && (target.tagName != 'SELECT') && (target.tagName != 'OPTION')) {
       if ($(this).css('right') == '0px') {
         $(this).css('position', 'fixed');
         $(this).animate({
