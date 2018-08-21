@@ -3,7 +3,7 @@
 //= require active_admin/base
 
 $(function() {
-  $(document).on('click', '#sidebar', function(e) {
+  $(document).on('click touchstart', '#sidebar', function(e) {
     var position = $(this).position();
     var width = $(this).width();
     if (e.pageX < position.left) {
@@ -27,7 +27,7 @@ $(function() {
   });
 
   var animationDone = true;
-  $(document).on('click', '#utility_nav', function(e) {
+  $(document).on('click touchstart', '#utility_nav', function(e) {
     var position = $(this).position();
     var tabs = $('#tabs');
     var width = Math.round(tabs[0].getBoundingClientRect().width);
@@ -52,7 +52,7 @@ $(function() {
     }
   });
 
-  $(document).on('click', 'body', function(e) {
+  $(document).on('click touchstart', 'body', function(e) {
     var tabs = $('#tabs');
     var width = Math.round(tabs[0].getBoundingClientRect().width);
     if (tabs.css('left') == '0px') {
