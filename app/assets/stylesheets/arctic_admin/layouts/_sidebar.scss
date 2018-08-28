@@ -58,10 +58,6 @@
           @include transform(translateY(-50%));
           color: $text-color;
         }
-        
-        &:hover {
-          @include icon("\f0d8");
-        }
       }
       
       &:hover ul {
