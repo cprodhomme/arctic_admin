@@ -60,6 +60,10 @@ body.logged_in {
         height: 30px;
       }
 
+      select[multiple] {
+        height: 100px;
+      }
+
       .fragment {
         margin-right: 10px;
 
