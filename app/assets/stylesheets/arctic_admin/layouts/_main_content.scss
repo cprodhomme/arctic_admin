@@ -1,6 +1,9 @@
 #main_content_wrapper {
   float: left;
   width: 100%;
+  //agg
+  //padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
 
   @include clear-fix();
 }
