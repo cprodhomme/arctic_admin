@@ -1,7 +1,7 @@
 # ArcticAdmin
 [![Gem Version](https://img.shields.io/gem/v/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
 [![Gem Downloads](https://img.shields.io/gem/dt/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
-[![Dependency Status](https://gemnasium.com/badges/github.com/cle61/arctic_admin.svg)](https://gemnasium.com/github.com/cle61/arctic_admin)
+[![Dependency Status](https://gemnasium.com/badges/github.com/cprodhomme/arctic_admin.svg)](https://gemnasium.com/github.com/cprodhomme/arctic_admin)
 
 Simple theme for ActiveAdmin
 
@@ -103,7 +103,7 @@ Then restart your webserver if it was previously running.
 
 ## Contributing
 
-1. Fork it ( https://github.com/cle61/arctic_admin/fork )
+1. Fork it ( https://github.com/cprodhomme/arctic_admin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
