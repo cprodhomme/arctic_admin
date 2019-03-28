@@ -2,7 +2,7 @@ body.logged_in {
   &.new, &.edit, &.create, &.update {
     @include sidebar-container();
 
-    .formtastic legend {
+    form legend {
       font-weight: normal;
     }
 
