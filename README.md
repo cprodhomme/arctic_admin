@@ -49,7 +49,7 @@ Then restart your webserver if it was previously running.
 :exclamation: **Remove the line `@import "active_admin/base"`**
 
 If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
-`active_admin.css.scss` file:
+`active_admin.scss` file:
 
 ```scss
 @import "arctic_admin/base";
@@ -57,7 +57,7 @@ If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 
 If you use the
 [Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
-add this to your `active_admin.css.sass` file:
+add this to your `active_admin.sass` file:
 
 ```sass
 @import arctic_admin/base
@@ -80,7 +80,7 @@ For this, you need to use sass to custom the theme.
 You can even change basic color of the theme by placing some other variables:
 
 If you use the [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
-`active_admin.css.scss` file:
+`active_admin.scss` file:
 
 ```scss
 $primary-color: #2dbb43;
@@ -90,7 +90,7 @@ $primary-color: #2dbb43;
 
 If you use the
 [Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html),
-add this to your `active_admin.css.sass` file:
+add this to your `active_admin.sass` file:
 
 ```sass
 $primary-color: #2dbb43
