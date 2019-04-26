@@ -69,4 +69,9 @@ $(function() {
       }
     }
   });
+
+  $(document).on('click', '#tabs .has_nested', function(e) {
+    e.stopPropagation();
+    $(this).toggleClass('open');
+  });
 });
