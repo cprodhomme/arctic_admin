@@ -6,12 +6,12 @@
   padding: 3px 5px 2px 5px;
   font-size: 0.8em;
   border-radius: $border-radius;
-}
 
-.status_tag.ok, .status_tag.published, .status_tag.complete, .status_tag.completed, .status_tag.green {
-  background-color: $status-tag-background-valid-color;
-}
+  &.ok, &.published, &.complete, &.completed, &.green, &.yes {
+    background-color: $status-tag-background-valid-color;
+  }
 
-.status_tag.cancel, .status_tag.red {
-  background-color: $status-tag-background-error-color;
+  &.cancel, &.red, &.no {
+    background-color: $status-tag-background-error-color;
+  }
 }
