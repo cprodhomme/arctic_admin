@@ -14,11 +14,11 @@ body.active_admin.logged_in {
   }
 
   #active_admin_content {
-    padding: 30px 0;
+    padding: 20px 0;
     @include clear-fix();
 
     @media screen and (min-width: $lg-width) {
-      padding: 30px 25px;
+      padding: 20px 25px;
     }
   }
 }
