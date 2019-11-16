@@ -2,11 +2,11 @@
   border: 1px solid $border-color;
 
   .nav {
-    text-align: center;
     border-bottom: 1px solid $border-color;
     
     li {
       display: inline-block;
+      text-align: center;
       @include outline();
 
       a {
