@@ -76,13 +76,16 @@ body.index {
   }
 
   .table_actions {
+    margin-bottom: -4px;
+
     .member_link {
       @include primary-button($primary-color, white);
-      padding: 2px 9px;
+      padding: 4px 8px;
       margin-right: 4px;
+      margin-bottom: 4px;
     }
   }
-  
+
   .scopes {
     .scope {
       @include group-button($primary-color);
