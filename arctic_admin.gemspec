@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake"
   s.add_dependency 'activeadmin', ['>= 1.1.0', '< 3.0']
   s.add_dependency 'jquery-rails'
-  s.add_dependency 'font-awesome-sass', '~> 5.6.1'
+  s.add_dependency 'font-awesome-sass', '~> 5.0'
 end
