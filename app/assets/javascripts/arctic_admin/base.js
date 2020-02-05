@@ -3,26 +3,29 @@
 //= require active_admin/base
 
 $(function() {
+  var animationFilterDone = true;
   $(document).on('click touchstart', '#sidebar', function(e) {
-    var position = $(this).position();
-    var width = $(this).width();
-    var target = e.target;
-    if ((e.pageX < position.left) && (target.tagName != 'SELECT') && (target.tagName != 'OPTION')) {
-      if ($(this).css('right') == '0px') {
-        $(this).css('position', 'fixed');
-        $(this).animate({
-          right: "-="+width
-        }, 600, function() {
-          $(this).removeAttr('style');
-          animationFilterDone = true;
-        });
-      } else {
-        $(this).animate({
-          right: "+="+width
-        }, 600, function() {
-          $(this).css('position', 'absolute');
-          animationFilterDone = true;
-        });
+    if(animationFilterDone == true) {
+      var position = $(this).position();
+      var width = $(this).width();
+      var target = e.target;
+      if ((e.pageX < position.left) && (target.tagName != 'SELECT') && (target.tagName != 'OPTION')) {
+        if ($(this).css('right') == '0px') {
+          $(this).css('position', 'fixed');
+          $(this).animate({
+            right: "-="+width
+          }, 600, function() {
+            $(this).removeAttr('style');
+            animationFilterDone = true;
+          });
+        } else {
+          $(this).animate({
+            right: "+="+width
+          }, 600, function() {
+            $(this).css('position', 'absolute');
+            animationFilterDone = true;
+          });
+        }
       }
     }
   });
