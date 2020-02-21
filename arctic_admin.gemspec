@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "A responsive theme for Active Admin"
   s.authors     = ["Clément Prod'homme"]
   s.files       = Dir["{app,lib}/**/*"] + ["Readme.md", 'LICENCE.txt']
-  s.homepage    = 'https://github.com/cle61/arctic_admin'
+  s.homepage    = 'https://github.com/cprodhomme/arctic_admin'
   s.license     = 'MIT'
   s.require_paths = ["lib"]
   s.add_development_dependency "bundler", "~> 1.5"
