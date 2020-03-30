@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+:warning: ArcticAdmin is a simple gem, if you found a bug, you can easily fix it and make a pull-request. :pray: Thanks !
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
