@@ -1,12 +1,2 @@
 @import 'activeadmin_addons/all';
-.select2-container--default .select2-selection--single .select2-selection__rendered{ line-height: 36px; color: $text-color; font-size: 14px; }
-.select2-container .select2-selection--single{ height: 36px }
-.select2-container--default .select2-selection--single .select2-selection__arrow{ height: 36px }
-.select2-container--default .select2-selection--single { border-color: $border-color }
-.select2-container .select2-selection--single .select2-selection__rendered{ padding-left: 12px }
-.select2-dropdown{ border-color: $border-color }
-.select2-container--default .select2-results__option--highlighted[aria-selected]{ background-color: $primary_color }
-.select2-container--default .select2-search--dropdown .select2-search__field{ border-color: $border-color }
-.select2-container--default .select2-results__option[aria-selected=true]{ background_color: $body-background }
-.select2-search--dropdown .select2-search__field{ padding-left: 12px }
-.select2-results__option{ padding-left: 12px }
+@import 'arctic_admin/components/_select2'
