@@ -6,7 +6,7 @@ body.index {
 
   .table_tools {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: $font-size;
 
     &:after {
       content: '';
@@ -47,7 +47,7 @@ body.index {
   }
 
   #index_footer {
-    font-size: 14px;
+    font-size: $font-size;
   }
 
   .sortable {
@@ -62,7 +62,7 @@ body.index {
       @include transform(translateY(-50%));
 
       @media screen and (min-width: $md-width) {
-        font-size: 14px/1;
+        font-size: $font-size/1;
       }
     }
 
