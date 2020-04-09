@@ -10,7 +10,7 @@ input[type="number"], textarea {
   width: 100%;
   height: $input-height;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: $font-size;
   line-height: 1.57142857;
   color: $text-color;
   background-color: #fff;
@@ -88,7 +88,7 @@ select {
   border: 1px solid $border-color;
   outline: 0;
   border-radius: $border-radius;
-  font-size: 14px;
+  font-size: $font-size;
   color: #5a5a5a;
   @include transition(border-color ease-in-out .15s);
 

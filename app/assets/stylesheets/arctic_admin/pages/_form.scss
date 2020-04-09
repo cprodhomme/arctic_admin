@@ -17,7 +17,7 @@ body.logged_in {
         margin: auto 0;
         padding-top: 8px;
         text-align: right;
-        font-size: 14px;
+        font-size: $font-size;
 
         @media screen and (min-width: $sm-width) {
           padding-bottom: 0;
@@ -85,7 +85,7 @@ body.logged_in {
         }
 
         label {
-          font-size: 14px;
+          font-size: $font-size;
           cursor: pointer;
           padding: 5px 5px 5px 0;
         }

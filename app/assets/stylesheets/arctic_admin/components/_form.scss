@@ -40,7 +40,7 @@
     
     .inline-hints {
       margin: 5px 0 20px 25%;
-      font-size: 14px;
+      font-size: $font-size;
       font-style: italic;
     }
 
@@ -48,7 +48,7 @@
       color: $error;
       margin-top: 5px;
       margin-bottom: 20px;
-      font-size: 14px;
+      font-size: $font-size;
     }
 
     label.error {
