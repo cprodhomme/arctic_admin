@@ -1,16 +1,16 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered{
-  line-height: 36px; 
+  line-height: $input-height; 
   color: $text-color; 
-  font-size: 14px;
+  font-size: $font-size;
 }
 
 .select2-container .select2-selection--single{ 
-  height: 36px;
+  height: $input-height;
   outline: 0;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow{ 
-  height: 36px;
+  height: $input-height;
 }
 
 .select2-container--default .select2-selection--single { 
@@ -42,7 +42,7 @@
 }
 
 .select2-results{
-  font-size: 14px;
+  font-size: $font-size;
 }
 
 .select2-results__option{
