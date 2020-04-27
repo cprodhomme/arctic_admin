@@ -8,3 +8,5 @@ vendor/ruby
 gemfiles/vendor/ruby
 .rbenv-version
 .sass-cache
+/node_modules
+/src
