@@ -1,0 +1,54 @@
+@import 'reset';
+
+@import './variables/variables';
+
+@import './mixins/mixins';
+
+@import 'common';
+@import 'buttons';
+@import 'grid';
+
+@import './components/columns';
+@import './components/comments';
+@import './components/date_picker';
+@import './components/dialogs';
+@import './components/flash';
+@import './components/form';
+@import './components/inputs';
+@import './components/pagination';
+@import './components/panel_contents';
+@import './components/select2';
+@import './components/status_tag';
+@import './components/tables';
+@import './components/tabs';
+
+@import './layouts/filter';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/main_content';
+@import './layouts/sidebar';
+@import './layouts/wrapper';
+
+@import './pages/form';
+@import './pages/index';
+@import './pages/login';
+@import './pages/show';
+body {
+  font-family: $font-family-body;
+  background-color: $body-background;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}

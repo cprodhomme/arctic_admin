@@ -1,0 +1,29 @@
+{
+  "name": "arctic_admin",
+  "version": "1.0.0",
+  "description": "Responsive Theme for ActiveAdmin",
+  "main": "app/assets/javascripts/arctic_admin/main.js",
+  "files": [
+    "app/assets/javascripts/arctic_admin/*.js",
+    "src/**/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "rm -rf src && cp -R app/assets/javascripts/arctic_admin src && cp -R app/assets/stylesheets/arctic_admin src/scss && cp -R app/assets/fonts src/fonts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cprodhomme/arctic_admin.git"
+  },
+  "keywords": [
+    "activeadmin",
+    "theme",
+    "arctic_admin"
+  ],
+  "author": "cprodhomme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cprodhomme/arctic_admin/issues"
+  },
+  "homepage": "https://github.com/cprodhomme/arctic_admin#readme"
+}
