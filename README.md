@@ -73,6 +73,32 @@ In your `active_admin.js`, include the js file:
 
 :exclamation:  **Remove the line `//= require active_admin/base`**
 
+## Use with webpacker
+
+### CSS
+
+In your `app/javascript/stylesheets/active_admin.scss`, add the line:
+
+```scss
+@import '~arctic_admin/src/scss/main';
+```
+
+Remove:
+
+```scss
+@import "~@activeadmin/activeadmin/src/scss/mixins";
+@import "~@activeadmin/activeadmin/src/scss/base";
+```
+
+### JS
+
+In your `app/javascript/packs/active_admin.js`, add the line:
+
+```js
+import 'arctic_admin'
+```
+
+
 ### Customization
 
 For this, you need to use sass to custom the theme.
