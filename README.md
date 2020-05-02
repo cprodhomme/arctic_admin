@@ -1,6 +1,8 @@
 # ArcticAdmin
 [![Gem Version](https://img.shields.io/gem/v/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
 [![Gem Downloads](https://img.shields.io/gem/dt/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
+[![Gem Version](https://img.shields.io/npm/v/arctic_admin.svg)](https://www.npmjs.com/package/arctic_admin)
+[![Gem Downloads](https://img.shields.io/npm/dt/arctic_admin.svg)](https://www.npmjs.com/package/arctic_admin)
 
 Simple theme for ActiveAdmin :ok_hand:
 
