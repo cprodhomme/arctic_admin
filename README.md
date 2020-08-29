@@ -77,7 +77,16 @@ In your `active_admin.js`, include the js file:
 
 ## Use with webpacker
 
-### CSS
+### 1 - Preparation
+
+Install the assets from npm or yarn
+
+```
+yarn add arctic_admin
+```
+
+
+### 2 - CSS
 
 In your `app/javascript/stylesheets/active_admin.scss`, add the line:
 
@@ -92,7 +101,7 @@ Remove:
 @import "~@activeadmin/activeadmin/src/scss/base";
 ```
 
-### JS
+### 3 - JS
 
 In your `app/javascript/packs/active_admin.js`, add the line:
 
