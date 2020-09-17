@@ -8,6 +8,12 @@
   z-index: 1;
   overflow: auto;
   left: - $header-width;
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+
+  &.tabs_open {
+    left: 0;
+  }
 
   @media screen and (min-width: $sm-width) {
     top: 60px;

@@ -94,7 +94,13 @@ body.index {
 
   #sidebar {
     position: fixed;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
     right: - $filter-width;
+
+    &.sidebar_open {
+      right: 0;
+    }
 
     @media screen and (min-width: $x-lg-width) {
       right: - $lg-filter-width;
