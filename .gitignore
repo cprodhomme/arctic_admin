@@ -10,3 +10,4 @@ gemfiles/vendor/ruby
 .sass-cache
 /node_modules
 /src
+.idea

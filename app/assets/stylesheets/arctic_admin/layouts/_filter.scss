@@ -49,6 +49,11 @@
     .filter_date_range input {
       width: 45%;
       display: inline-block;
+
+      // consistent look of all filters
+      &:nth-child(2) {
+        float: right;
+      }
     }
 
     input[type="submit"] {
@@ -56,9 +61,21 @@
       line-height: 31px;
       margin-right: 10px;
     }
+
+    &.panel {
+      position: relative;
+    }
   }
 
   #search-status-_sidebar_section {
     font-size: 14px;
+  }
+
+  // 'Filter' and 'Clear Filters' buttons
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
   }
 }
