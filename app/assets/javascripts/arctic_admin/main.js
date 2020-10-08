@@ -57,7 +57,9 @@ function addListeners() {
   }
 
   // left menu sidebar toggle with menu button
-  menuButton().addEventListener('click', menuToggle)
+  if (menuButton()) {
+    menuButton().addEventListener('click', menuToggle)
+  }
 
   // left menu sidebar close on any click outside
   document.body.addEventListener('click', menuClose)
