@@ -14,6 +14,8 @@ Simple theme for ActiveAdmin :ok_hand:
 
 ## Installation
 
+>**⚠️ If you are using webpacker (Standard with Rails 6) look below**
+
 - Add this to your Gemfile:
 
 ```ruby
@@ -79,10 +81,10 @@ In your `active_admin.js`, include the js file:
 
 ### 1 - Preparation
 
-Install the assets from npm or yarn
+Install the needed assets with npm or yarn:
 
 ```
-yarn add arctic_admin
+yarn add arctic_admin @fortawesome/fontawesome-free
 ```
 
 
@@ -103,26 +105,24 @@ Remove:
 
 ### 3 - JS
 
-In your `app/javascript/packs/active_admin.js`, add the line:
+Search for `app/javascript/packs/active_admin.js` in your rails project and add the following lines:  
 
 ```js
+import "@fortawesome/fontawesome-free/css/all.css";
 import 'arctic_admin'
 ```
 
 
 ### Customization
 
-For this, you need to use sass to custom the theme.
+For this, you need to use SASS to customize the theming.
 
-You can even change basic color of the theme by placing some other variables:
-
-If you use the [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
-`active_admin.scss` file:
+Right now you can change the primary color of the theme by placing the following variable in your `active_admin.scss` file:
 
 ```scss
 $primary-color: #2dbb43;
 
-@import "arctic_admin/base";
+@import "~arctic_admin/src/scss/main";
 ```
 
 If you use the
@@ -132,7 +132,7 @@ add this to your `active_admin.sass` file:
 ```sass
 $primary-color: #2dbb43
 
-@import arctic_admin/base
+@import ~arctic_admin/src/scss/main
 ```
 
 Then restart your webserver if it was previously running.
