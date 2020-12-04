@@ -1,5 +1,5 @@
 body.logged_in {
-  &.new, &.edit, &.create, &.update {
+  &.new, &.edit, &.create, &.update, &.show {
     @include sidebar-container();
 
     form legend {
