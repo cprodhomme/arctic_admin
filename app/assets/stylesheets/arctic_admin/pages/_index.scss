@@ -39,6 +39,10 @@ body.index {
       position: absolute;
       z-index: 1;
     }
+
+    .indexes.table_tools_segmented_control {
+      text-align: right;
+    }
   }
 
   .paginated_collection_contents {
@@ -89,6 +93,10 @@ body.index {
   .scopes {
     .scope {
       @include group-button($primary-color);
+
+      a {
+        margin-right: .25rem;
+      }
     }
   }
 
