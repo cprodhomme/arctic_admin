@@ -55,8 +55,9 @@
       & > a:nth-child(1) {
         position: relative;
 
+        @include icon-after($fa-var-caret-down);
+
         &:after {
-          @include icon("\f0d7");
           display: inline;
           position: absolute;
           top: 50%;
@@ -96,9 +97,7 @@
         & > a:nth-child(1) {
           position: relative;
 
-          &:after {
-            @include icon("\f0d8");
-          }
+          @include icon-after($fa-var-caret-up);
         }
 
         & > ul {

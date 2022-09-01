@@ -68,9 +68,9 @@ body.active_admin.logged_in {
     background-color: $header-background;
     border-bottom: 1px solid $header-border-color;
 
-    &:before {
-      @include icon("\f0c9");
+    @include icon-before($fa-var-bars);
 
+    &:before {
       display: inline;
       visibility: visible;
       cursor: pointer;
@@ -124,9 +124,9 @@ body.active_admin.logged_in {
         height: 49px;
         display: inline-block;
 
-        &:before {
-          @include icon("\f007");
+        @include icon-before($fa-var-user);
 
+        &:before {
           display: inline;
           visibility: visible;
           cursor: pointer;
@@ -163,9 +163,9 @@ body.active_admin.logged_in {
         width: 50px;
         display: block;
 
-        &:before {
-          @include icon("\f2f5");
+        @include icon-before($fa-var-sign-out-alt);
 
+        &:before {
           display: inline;
           visibility: visible;
           cursor: pointer;

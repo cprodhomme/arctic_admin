@@ -53,11 +53,16 @@
   }
 }
 
-@mixin icon($code-icon) {
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font: 900 normal normal 14px/1 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
-  content: $code-icon;
+@mixin icon-before($code-icon) {
+  &:before {
+    @extend .fas;
+    content: fa-content($code-icon);
+  }
+}
+
+@mixin icon-after($code-icon) {
+  &:after {
+    @extend .fas;
+    content: fa-content($code-icon);
+  }
 }

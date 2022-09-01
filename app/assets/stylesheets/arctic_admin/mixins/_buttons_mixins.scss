@@ -55,8 +55,9 @@
   padding: 6px 25px 6px 10px;
   position: relative;
 
+  @include icon-after($fa-var-sort-down);
+
   &:after {
-    @include icon("\f0dd");
     position: absolute;
     right: 8px;
   }
