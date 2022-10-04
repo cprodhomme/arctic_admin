@@ -32,9 +32,17 @@ config.meta_tags = meta_tags_options
 config.meta_tags_for_logged_out_pages = meta_tags_options
 ```
 
-## Usage
+## Use with Sprockets
 
-### CSS
+### 1 - Preparation
+
+Install the needed assets with Gemfile:
+
+```ruby
+gem 'font-awesome-sass', '~> 5.0'
+```
+
+### 2a - CSS
 
 In your `active_admin.css`, include the css file:
 
@@ -48,7 +56,7 @@ In your `active_admin.css`, include the css file:
 
 Then restart your webserver if it was previously running.
 
-### Sass Support
+### 2b - Sass Support
 
 :exclamation: **Remove the line `@import "active_admin/base"`**
 
@@ -67,7 +75,7 @@ add this to your `active_admin.sass` file:
 @import arctic_admin/base
 ```
 
-### JS
+### 3 - JS
 
 In your `active_admin.js`, include the js file:
 
