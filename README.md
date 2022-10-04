@@ -14,7 +14,7 @@ Simple theme for ActiveAdmin :ok_hand:
 
 ## Installation
 
->**⚠️ If you are using webpacker (Standard with Rails 6) look below**
+### For Sprockets users
 
 - Add this to your Gemfile:
 
@@ -32,9 +32,17 @@ config.meta_tags = meta_tags_options
 config.meta_tags_for_logged_out_pages = meta_tags_options
 ```
 
-## Usage
+### For webpacker / jsbundling-rails or other JS-based asset solutions
 
-### CSS
+Install the needed assets with npm or yarn:
+
+```bash
+yarn add arctic_admin @fortawesome/fontawesome-free
+```
+
+## Use with Sprockets
+
+### 1a - CSS
 
 In your `active_admin.css`, include the css file:
 
@@ -48,7 +56,7 @@ In your `active_admin.css`, include the css file:
 
 Then restart your webserver if it was previously running.
 
-### Sass Support
+### 1b - Sass Support
 
 :exclamation: **Remove the line `@import "active_admin/base"`**
 
@@ -67,7 +75,7 @@ add this to your `active_admin.sass` file:
 @import arctic_admin/base
 ```
 
-### JS
+### 2 - JS
 
 In your `active_admin.js`, include the js file:
 
@@ -79,16 +87,7 @@ In your `active_admin.js`, include the js file:
 
 ## Use with webpacker
 
-### 1 - Preparation
-
-Install the needed assets with npm or yarn:
-
-```
-yarn add arctic_admin @fortawesome/fontawesome-free
-```
-
-
-### 2 - CSS
+### 1 - CSS
 
 In your `app/javascript/stylesheets/active_admin.scss`, add the line:
 
@@ -103,7 +102,7 @@ Remove:
 @import "~@activeadmin/activeadmin/src/scss/base";
 ```
 
-### 3 - JS
+### 2 - JS
 
 Search for `app/javascript/packs/active_admin.js` in your rails project and add the following lines:  
 
