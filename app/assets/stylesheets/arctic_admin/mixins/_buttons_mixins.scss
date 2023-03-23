@@ -37,6 +37,7 @@
   background-color: #fff;
   color: $color;
   border: 1px solid $color;
+  padding: 4px 8px;
   @include button();
 
   &:hover {
