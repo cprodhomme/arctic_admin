@@ -39,12 +39,6 @@ thead th {
 }
 
 tbody tr {
-  border: 1px solid $border-color;
-
-  &:hover {
-    background-color: rgba(228, 234, 236, 0.3);
-  }
-
   th {
     font-size: $font-size;
   }
@@ -61,6 +55,17 @@ tbody tr {
 
     @media screen and (min-width: $md-width) {
       padding: 8px;
+    }
+  }
+}
+
+// style only for table
+.index_as_table {
+  tbody tr {
+    border: 1px solid $border-color;
+
+    &:hover {
+      background-color: rgba(228, 234, 236, 0.3);
     }
   }
 }
