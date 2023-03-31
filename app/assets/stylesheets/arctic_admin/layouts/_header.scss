@@ -69,7 +69,7 @@ body.active_admin.logged_in {
     border-bottom: 1px solid $header-border-color;
 
     &:before {
-      @include icon("\f0c9");
+      @include icon($icon-menu);
 
       display: inline;
       visibility: visible;
@@ -125,7 +125,7 @@ body.active_admin.logged_in {
         display: inline-block;
 
         &:before {
-          @include icon("\f007");
+          @include icon($icon-user);
 
           display: inline;
           visibility: visible;
@@ -164,7 +164,7 @@ body.active_admin.logged_in {
         display: block;
 
         &:before {
-          @include icon("\f2f5");
+          @include icon($icon-logout);
 
           display: inline;
           visibility: visible;
