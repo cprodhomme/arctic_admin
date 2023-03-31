@@ -58,6 +58,6 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 900 normal normal 14px/1 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
+  font: 900 normal normal 14px/1 $font-icon;
   content: $code-icon;
 }

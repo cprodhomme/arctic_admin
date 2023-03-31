@@ -72,7 +72,7 @@ body.index {
     position: relative;
 
     &:after {
-      @include icon("\f0dc");
+      @include icon($icon-sort);
       font-size: 12px;
       position: absolute;
       top: 50%;
@@ -139,7 +139,7 @@ body.index {
       @include box-shadow(-1px 0 4px 0 rgba(0,0,0,.04));
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-      @include icon("\f0b0");
+      @include icon($icon-filter);
       font-size: 20px;
       padding: 15px 10px;
     }

@@ -57,7 +57,7 @@
   position: relative;
 
   &:after {
-    @include icon("\f0dd");
+    @include icon($icon-sort-down);
     position: absolute;
     right: 8px;
   }
