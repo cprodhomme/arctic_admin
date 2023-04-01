@@ -56,7 +56,7 @@
         position: relative;
 
         &:after {
-          @include icon("\f0d7");
+          @include icon($icon-down);
           display: inline;
           position: absolute;
           top: 50%;
@@ -97,7 +97,7 @@
           position: relative;
 
           &:after {
-            @include icon("\f0d8");
+            @include icon($icon-up);
           }
         }
 

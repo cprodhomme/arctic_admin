@@ -37,6 +37,7 @@
   background-color: #fff;
   color: $color;
   border: 1px solid $color;
+  padding: 4px 8px;
   @include button();
 
   &:hover {
@@ -56,7 +57,7 @@
   position: relative;
 
   &:after {
-    @include icon("\f0dd");
+    @include icon($icon-sort-down);
     position: absolute;
     right: 8px;
   }

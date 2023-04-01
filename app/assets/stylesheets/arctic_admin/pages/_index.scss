@@ -43,7 +43,19 @@ body.index {
     }
 
     .indexes.table_tools_segmented_control {
-      text-align: right;
+      display: flex;
+      justify-content: right;
+
+      a {
+        @include secondary-button($primary-color);
+      }
+
+      .index {
+        margin-right: 4px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 
@@ -60,7 +72,7 @@ body.index {
     position: relative;
 
     &:after {
-      @include icon("\f0dc");
+      @include icon($icon-sort);
       font-size: 12px;
       position: absolute;
       top: 50%;
@@ -68,7 +80,7 @@ body.index {
       @include transform(translateY(-50%));
 
       @media screen and (min-width: $md-width) {
-        font-size: math.div($font-size, 1);
+        // font-size: math.div($font-size, 1px);
       }
     }
 
@@ -127,7 +139,7 @@ body.index {
       @include box-shadow(-1px 0 4px 0 rgba(0,0,0,.04));
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-      @include icon("\f0b0");
+      @include icon($icon-filter);
       font-size: 20px;
       padding: 15px 10px;
     }

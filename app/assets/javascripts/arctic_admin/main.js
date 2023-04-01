@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sidebar) {
     sidebar.addEventListener('click', event => {
       const insideSection = document.querySelector('#filters_sidebar_section')
-      if (!(event.target === insideSection || insideSection.contains(event.target))) {
+      if (!(event.target === insideSection || insideSection.contains(event.target)) && event.target.className != "select2-selection__choice__remove") {
         sidebar.classList.toggle('sidebar_open')
       }
     })
