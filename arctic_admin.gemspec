@@ -11,6 +11,11 @@ Gem::Specification.new do |s|
   s.authors     = ["Clément Prod'homme"]
   s.files       = Dir["{app,lib}/**/*"] + ["README.md", 'LICENCE.txt']
   s.homepage    = 'https://github.com/cprodhomme/arctic_admin'
+  s.metadata    = {
+    "source_code_uri" => "https://github.com/cprodhomme/arctic_admin",
+    "changelog_uri"   => "https://github.com/cprodhomme/arctic_admin/releases",
+  }
+
   s.license     = 'MIT'
   s.require_paths = ["lib"]
   s.add_development_dependency "bundler", "~> 1.5"
