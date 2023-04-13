@@ -3,7 +3,7 @@ name: Node.js Package
 on:
   push:
     tags:
-      - '*'
+      - '**'
 
 jobs:
   publish-npm:
