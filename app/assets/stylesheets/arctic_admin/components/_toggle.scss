@@ -24,12 +24,12 @@ $toggle-transition: 200ms ease-out !default;
     position: relative;
     display: inline-flex;
     align-items: center;
-    width: var(--toggle-width);
-    height: var(--toggle-height);
-    background-color: var(--toggle-outer-default);
+    width: $toggle-width;
+    height: $toggle-height;
+    background-color: $toggle-outer-default;
     border-radius: 100vw;
     cursor: pointer;
-    transition: var(--toggle-transition);
+    transition: $toggle-transition;
 
     &::before {
       // reset style
@@ -41,16 +41,16 @@ $toggle-transition: 200ms ease-out !default;
 
       content: "";
       position: absolute;
-      top: var(--toggle-offset);
-      left: var(--toggle-offset);
-      bottom: var(--toggle-offset);
+      top: $toggle-offset;
+      left: $toggle-offset;
+      bottom: $toggle-offset;
       
       aspect-ratio: 1 / 1;
       
-      background-color: var(--toggle-inner-default);
+      background-color: $toggle-inner-default;
       border-radius: 50%;
       box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-      transition: var(--toggle-transition);
+      transition: $toggle-transition;
     }
 
     &.on {
@@ -61,12 +61,12 @@ $toggle-transition: 200ms ease-out !default;
 
       &::before {
         // reset style
-        left: var(--toggle-offset);
+        left: $toggle-offset;
         //
 
-        background-color: var(--toggle-inner-active);
+        background-color: $toggle-inner-active;
         transform: translateX(
-          calc(var(--toggle-width) - var(--toggle-height))
+          calc($toggle-width - $toggle-height)
         );
       }
     }
