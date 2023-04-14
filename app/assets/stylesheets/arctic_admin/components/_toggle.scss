@@ -65,9 +65,8 @@ $toggle-transition: 200ms ease-out !default;
         //
 
         background-color: $toggle-inner-active;
-        transform: translateX(
-          calc($toggle-width - $toggle-height)
-        );
+        $toggle-translate-x: calc(( #{$toggle-width} - #{$toggle-height} ));
+        transform: translateX($toggle-translate-x);
       }
     }
   }
