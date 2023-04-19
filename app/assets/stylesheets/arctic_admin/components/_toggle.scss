@@ -10,8 +10,12 @@ $toggle-inner-active: #fff !default;
 $toggle-transition: 200ms ease-out !default;
 
 .toggle-bool-switches-container {
-
+  display: flex;
   text-align: left;
+
+  span {
+    line-height: 0;
+  }
 
   .toggle-bool-switch {
     // reset style
