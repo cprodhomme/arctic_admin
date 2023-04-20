@@ -6,7 +6,7 @@
 
 Simple theme for ActiveAdmin :ok_hand:
 
->**Complete demo here : https://arctic-admin.herokuapp.com/**
+>**Complete demo here : https://arcticadmin.osc-fr1.scalingo.io**
 >
 >*admin user : admin@example.com / password*
 
