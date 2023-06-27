@@ -79,3 +79,10 @@
     margin-top: 1rem;
   }
 }
+
+// fix pour search select filter de ActiveAdmin_Addons
+.search_select_filter, .filter_boolean {
+  .select2.select2-container {
+    width: 100% !important;
+  }
+}
