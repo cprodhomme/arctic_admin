@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_development_dependency "bundler", "~> 1.5"
   s.add_development_dependency "rake"
-  s.add_dependency 'activeadmin', ['>= 1.1.0', '< 3.0']
+  s.add_dependency 'activeadmin', ['>= 1.1.0', '< 4.0']
   s.add_dependency 'font-awesome-sass', '~> 6.0'
 end
