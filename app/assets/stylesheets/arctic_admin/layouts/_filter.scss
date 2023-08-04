@@ -11,6 +11,8 @@
 
   .sidebar_section {
     padding: 15px 20px;
+    overflow-y: scroll;
+    max-height: 80vh;
 
     h3 {
       margin: 0 0 10px 0;
