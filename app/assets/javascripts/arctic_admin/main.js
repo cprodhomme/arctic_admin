@@ -59,7 +59,9 @@ function addListeners() {
   }
 
   // left menu sidebar close on any click outside
-  document.body.addEventListener('click', menuClose)
+  if (menu()) {
+    document.body.addEventListener('click', menuClose)
+  }  
 
   // nested menu items toggle
   nestedMenuItems().forEach(
@@ -81,10 +83,14 @@ function removeListeners() {
   }
 
   // left menu sidebar toggle with menu button
-  menuButton().removeEventListener('click', menuToggle)
+  if (menuButton()) {
+    menuButton().removeEventListener('click', menuToggle)
+  }  
 
   // left menu sidebar close on any click outside
-  document.body.removeEventListener('click', menuClose)
+  if (menu()) {
+    document.body.removeEventListener('click', menuClose)
+  }  
 
   // nested menu items toggle
   nestedMenuItems().forEach(
