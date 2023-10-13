@@ -29,7 +29,7 @@ body.index {
     }
 
     .dropdown_menu_button{
-      @include secondary-dropdown($primary-color);
+      @include secondary-dropdown($button-primary-color);
     }
 
     .dropdown_menu_list {
@@ -47,7 +47,7 @@ body.index {
       justify-content: right;
 
       a {
-        @include secondary-button($primary-color);
+        @include secondary-button($button-primary-color);
       }
 
       .index {
@@ -97,7 +97,7 @@ body.index {
     margin-bottom: -4px;
 
     .member_link {
-      @include primary-button($primary-color, white);
+      @include primary-button($button-primary-color, white);
       padding: 4px 8px;
       margin-right: 4px;
       margin-bottom: 4px;
@@ -106,7 +106,7 @@ body.index {
 
   .scopes {
     .scope {
-      @include group-button($primary-color);
+      @include group-button($button-primary-color);
 
       a {
         margin-right: .25rem;

@@ -228,7 +228,7 @@ body.active_admin.logged_in {
     float: right;
 
     .action_item a {
-      @include primary-button($primary-color, #fff);
+      @include primary-button($button-primary-color, #fff);
       padding: 5px 8px;
     }
   }

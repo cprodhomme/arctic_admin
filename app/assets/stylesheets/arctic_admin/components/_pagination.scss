@@ -12,11 +12,11 @@
     @include transition-button();
 
     &:hover {
-      color: $primary-color;
+      color: $link-primary-color;
     }
   }
   .page.current {
-    background-color: $primary-color;
+    background-color: $link-primary-color;
     color: #fff;
     border-radius: $border-radius;
     padding: .3rem .4rem;
