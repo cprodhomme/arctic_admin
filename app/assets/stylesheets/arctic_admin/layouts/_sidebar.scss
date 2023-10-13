@@ -47,7 +47,7 @@
 
     &.current {
       a {
-        color: $primary-color;
+        color: $link-primary-color;
       }
     }
 
@@ -88,7 +88,7 @@
         }
 
         .current a {
-          color: $primary-color;
+          color: $link-primary-color;
         }
       }
 

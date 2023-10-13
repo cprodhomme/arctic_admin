@@ -18,10 +18,10 @@
       }
       
       &.ui-tabs-active {
-        border-bottom: 2px solid $primary-color;
+        border-bottom: 2px solid $link-primary-color;
 
         a {
-          color: $primary-color;
+          color: $link-primary-color;
         }
       }
     }

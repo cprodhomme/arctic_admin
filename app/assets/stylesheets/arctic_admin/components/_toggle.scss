@@ -3,7 +3,7 @@ $toggle-height: 20px !default;
 $toggle-offset: 3px !default;
 
 $toggle-outer-default: #ddd !default;
-$toggle-outer-active: $primary-color !default;
+$toggle-outer-active: $link-primary-color !default;
 $toggle-inner-default: #fff !default;
 $toggle-inner-active: #fff !default;
 
@@ -61,7 +61,7 @@ $toggle-transition: 200ms ease-out !default;
       // reset style
       background-image: none;
       //
-      background: $primary-color;
+      background: $link-primary-color;
 
       &::before {
         // reset style

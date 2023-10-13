@@ -38,7 +38,7 @@ input[type="number"], textarea {
 
 input[type="submit"] {
   @include appearance();
-  @include primary-button($primary-color, white);
+  @include primary-button($button-primary-color, white);
   width: 100%;
   padding: 0 12px;
   font-size: 15px;

@@ -11,7 +11,7 @@
     margin-bottom: 10px;
 
     .ui-datepicker-prev, .ui-datepicker-next {
-      @include primary-button($primary-color, #fff);
+      @include primary-button($button-primary-color, #fff);
       padding: 2px 5px;
       font-size: 14px;
     }
