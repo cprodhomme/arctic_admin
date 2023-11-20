@@ -23,7 +23,7 @@ function menuToggle(event) {
   const forbiddenLinks = event.target === logout ||
     logout.contains(event.target) ||
     event.target === currentUser ||
-    currentUser.contains(event.target)
+    currentUser?.contains(event.target)
   if (!forbiddenLinks) {
     menu().classList.toggle('tabs_open')
   }
