@@ -1,5 +1,13 @@
-$screen-sm: 640px !default;
 $screen-md: 768px !default;
-$screen-lg: 992px !default;
-$screen-xl: 1400px !default;
+$screen-sm: 640px !default;
+$screen-lg: 1024px !default;
+$screen-xl: 1280px !default;
 $screen-2xl: 1536px !default;
+
+// filter
+$filter-width-md: 230px !default;
+$filter-width-lg: 270px !default;
+
+// site title
+$site-title-width-md: 200px !default;
+$site-title-width-lg: 250px !default;

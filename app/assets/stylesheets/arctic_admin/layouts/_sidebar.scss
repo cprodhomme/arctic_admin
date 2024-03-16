@@ -1,5 +1,5 @@
 .header #tabs {
-  width: $header-width;
+  width: $site-title-width-md;
   height: calc(100% - 60px);
   position: fixed;
   top: 50px;
@@ -7,7 +7,7 @@
   border-right: 1px solid $sidebar-border-color;
   z-index: 1;
   overflow: auto;
-  left: - $header-width;
+  left: - $site-title-width-md;
   transition: .5s;
   transition-timing-function: ease-in-out;
 
@@ -24,7 +24,7 @@
   }
 
   @media screen and (min-width: $screen-xl) {
-    width: $lg-header-width;
+    width: $site-title-width-lg;
   }
 
   li {

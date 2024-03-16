@@ -1,12 +1,12 @@
 #sidebar {
-  width: $filter-width;
+  width: $filter-width-md;
   background-color: #fff;
   border-radius: $border-radius;
   @include box-shadow(0 0 4px 0 rgba(0,0,0,.04));
   margin-bottom: 30px;
 
   @media screen and (min-width: $screen-xl) {
-    width: $lg-filter-width;
+    width: $filter-width-lg;
   }
 
   .sidebar_section {

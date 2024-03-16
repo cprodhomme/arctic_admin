@@ -1,7 +1,7 @@
 @mixin sidebar-container() {
   #active_admin_content.with_sidebar {
     #main_content_wrapper {
-      width: $screen-filter-width;
+      width: calc(100% - $filter-width-md);
 
       @media screen and (min-width: $screen-sm) {
         padding-right: 10px;
@@ -9,7 +9,7 @@
 
       @media screen and (min-width: $screen-lg) {
         padding-right: 0;
-        width: $lg-screen-filter-width;
+        width: calc(100% - $filter-width-lg);
       }
     }
 

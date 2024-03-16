@@ -6,11 +6,11 @@ body.active_admin.logged_in {
   }
 
   @media screen and (min-width: $screen-lg) {
-    padding-left: $header-width;
+    padding-left: $site-title-width-md;
   }
 
   @media screen and (min-width: $screen-xl) {
-    padding-left: $lg-header-width;
+    padding-left: $site-title-width-lg;
   }
 
   #active_admin_content {
@@ -38,14 +38,14 @@ body.active_admin.logged_in {
     margin: 0;
 
     @media screen and (min-width: $screen-sm) {
-      width: $header-width;
+      width: $site-title-width-md;
       height: 60px;
       font-size: 20px;
       line-height: 60px;
     }
 
     @media screen and (min-width: $screen-xl) {
-      width: $lg-header-width;
+      width: $site-title-width-lg;
     }
     
     #site_title_image {
@@ -86,7 +86,7 @@ body.active_admin.logged_in {
 
     @media screen and (min-width: $screen-sm) {
       height: 60px;
-      width: $screen-header-width;
+      width: calc(100% - $site-title-width-md);
 
       &:before {
         padding: 20px 0;
@@ -100,7 +100,7 @@ body.active_admin.logged_in {
     }
 
     @media screen and (min-width: $screen-xl) {
-      width: $lg-screen-header-width;
+      width: calc(100% - $site-title-width-lg);
     }
 
     li {

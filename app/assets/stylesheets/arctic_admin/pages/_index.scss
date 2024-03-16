@@ -118,14 +118,14 @@ body.index {
     position: fixed;
     transition: .5s;
     transition-timing-function: ease-in-out;
-    right: - $filter-width;
+    right: - $filter-width-md;
 
     &.sidebar_open {
       right: 0;
     }
 
     @media screen and (min-width: $screen-xl) {
-      right: - $lg-filter-width;
+      right: - $filter-width-lg;
     }
 
     &:before {
