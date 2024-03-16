@@ -37,7 +37,7 @@
       width: 100%;
       height: 100%;
       display: inline-block;
-      color: $text-color;
+      color: $fg-muted;
       padding: 0 20px;
 
       &:hover {
@@ -62,7 +62,7 @@
           top: 50%;
           right: 20px;
           @include transform(translateY(-50%));
-          color: $text-color;
+          color: $fg-subtle;
         }
       }
 
@@ -76,7 +76,7 @@
 
         a {
           padding: 0px 15px 0px 35px;
-          color: $text-color;
+          color: $fg-muted;
 
           &:hover {
             background-color: $sidebar-nested-item-hover-background;

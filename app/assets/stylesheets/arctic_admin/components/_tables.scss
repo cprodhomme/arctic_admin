@@ -18,7 +18,7 @@ thead th {
   text-align: left;
 
   a {
-    color: $text-color-important;
+    color: $fg-default;
     font-weight: normal;
     width: 100%;
     display: inline-block;
@@ -46,7 +46,7 @@ tbody tr {
   td {
     padding: 4px;
     vertical-align: middle;
-    color: $text-color;
+    color: $fg-default;
     font-size: 12px;
 
     &.col-actions {

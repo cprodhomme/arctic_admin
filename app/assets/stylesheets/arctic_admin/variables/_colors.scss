@@ -5,44 +5,112 @@ $blue: #4bacfe !default;
 $black: #36393D !default;
 $grey: #76838f !default;
 
+$white: #fff;
+
+// green
+$apple-50: #f2fbf2;
+$apple-100: #e1f7e1;
+$apple-200: #c4eec4;
+$apple-300: #96df96;
+$apple-400: #61c762;
+$apple-500: #3caf3e;
+$apple-600: #2c8d2e;
+$apple-700: #257027;
+$apple-800: #225924;
+$apple-900: #1e4920;
+$apple-950: #0b280d;
+
+// blue
+$picton-blue-50: #eff8ff;
+$picton-blue-100: #daedff;
+$picton-blue-200: #bde1ff;
+$picton-blue-300: #90cfff;
+$picton-blue-400: #4bacfe;
+$picton-blue-500: #3693fb;
+$picton-blue-600: #2075f0;
+$picton-blue-700: #185edd;
+$picton-blue-800: #1a4cb3;
+$picton-blue-900: #1b448d;
+$picton-blue-950: #152a56;
+
+// red
+$tall-poppy-50: #fdf3f3;
+$tall-poppy-100: #fce4e4;
+$tall-poppy-200: #f9cfcf;
+$tall-poppy-300: #f4adae;
+$tall-poppy-400: #ec7d7e;
+$tall-poppy-500: #e05354;
+$tall-poppy-600: #cc3637;
+$tall-poppy-700: #b02b2c;
+$tall-poppy-800: #8e2627;
+$tall-poppy-900: #762627;
+$tall-poppy-950: #400f0f;
+
+// gray
+$gray-50: #f5f5f5;
+$gray-100: #efefef;
+$gray-200: #dcdcdc;
+$gray-300: #bdbdbd;
+$gray-400: #989898;
+$gray-500: #7c7c7c;
+$gray-600: #656565;
+$gray-700: #525252;
+$gray-800: #464646;
+$gray-900: #3d3d3d;
+$gray-950: #292929;
+
+// orange
+$zest-50: #fdf8ed;
+$zest-100: #f9eccc;
+$zest-200: #f3d794;
+$zest-300: #ecbd5d;
+$zest-400: #e8a637;
+$zest-500: #e0861f;
+$zest-600: #c66619;
+$zest-700: #a54818;
+$zest-800: #86391a;
+$zest-900: #6f3018;
+$zest-950: #3f1709;
+
 // flash
-$error: #dc4747 !default;
-$warning: #f2a654 !default;
-$success: #46be8a !default;
-$info: #57c7d4 !default;
-$flash-text-color: #fff !default;
-$flash-background-color: $grey !default;
+$error: $tall-poppy-700 !default;
+$warning: $zest-400 !default;
+$success: $apple-500 !default;
+$info: $picton-blue-300 !default;
+$flash-text-color: $white !default;
+$flash-background-color: $gray-50 !default;
 
 // status_tag
-$status-tag-text-color: #fff !default;
-$status-tag-background-color: #cacaca !default;
+$status-tag-text-color: $white !default;
+$status-tag-background-color: $gray-100 !default;
 $status-tag-background-valid-color: $success !default;
 $status-tag-background-error-color: $error !default;
 
-$border-color: #e4eaec !default;
+$border-color: $gray-100 !default;
 
 // body
-$body-background: #eee !default;
+$body-background: $gray-100 !default;
 
 // header
-$header-border-color: #e6e6e6 !default;
-$header-background: #fff !default;
+$header-border-color: $gray-100 !default;
+$header-background: $white !default;
 
 // nav action
-$header-nav-action-hover-background: #f5f5f5 !default;
-$header-nav-action-active-background: #f0f0f0 !default;
+$header-nav-action-hover-background: $gray-100 !default;
+$header-nav-action-active-background: $gray-100 !default;
 
 //sidebar
-$sidebar-border-color: $header-border-color !default;
-$sidebar-background: #f5f5f5 !default;
-
-$sidebar-item-hover-background: #f0f0f0 !default;
-$sidebar-nested-item-hover-background: #e7e7e7 !default;
+$sidebar-border-color: $gray-200 !default;
+$sidebar-background: $gray-50 !default;
+$sidebar-item-hover-background: $gray-100 !default;
+$sidebar-nested-item-hover-background: $gray-200 !default;
 
 // text
-$text-color: #5a5a5a !default;
-$text-color-important: #526069 !default;
+$fg-default: $gray-900 !default;
+$fg-muted: $gray-600 !default;
+$fg-subtle: $gray-500 !default;
+$fg-on-emphasis: $white !default;
 
-$primary-color: $blue !default;
+$primary-color: $picton-blue-400 !default;
 $link-primary-color: $primary-color !default;
 $button-primary-color: $primary-color !default;

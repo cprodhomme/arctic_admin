@@ -12,7 +12,7 @@ input[type="number"], textarea {
   padding: 6px 12px;
   font-size: $font-size;
   line-height: 1.57142857;
-  color: $text-color;
+  color: $fg-default;
   background-color: #fff;
   background-image: none;
   border: 1px solid $border-color;
@@ -32,7 +32,7 @@ input[type="number"], textarea {
 
   &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
-    -webkit-text-fill-color: $text-color;
+    -webkit-text-fill-color: $fg-default;
   }
 }
 

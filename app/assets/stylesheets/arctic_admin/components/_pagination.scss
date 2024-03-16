@@ -8,7 +8,7 @@
 
   .page a, .next a, .last a, .first a, .prev a {
     padding: .3rem .4rem;
-    color: $text-color;
+    color: $fg-default;
     @include transition-button();
 
     &:hover {
