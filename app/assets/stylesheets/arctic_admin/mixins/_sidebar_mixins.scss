@@ -3,11 +3,11 @@
     #main_content_wrapper {
       width: $screen-filter-width;
 
-      @media screen and (min-width: $sm-width) {
+      @media screen and (min-width: $screen-sm) {
         padding-right: 10px;
       }
 
-      @media screen and (min-width: $lg-width) {
+      @media screen and (min-width: $screen-lg) {
         padding-right: 0;
         width: $lg-screen-filter-width;
       }

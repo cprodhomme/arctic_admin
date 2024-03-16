@@ -1,15 +1,15 @@
 body.active_admin.logged_in {
   padding-top: 50px;
 
-  @media screen and (min-width: $sm-width) {
+  @media screen and (min-width: $screen-sm) {
     padding-top: 60px;
   }
 
-  @media screen and (min-width: $lg-width) {
+  @media screen and (min-width: $screen-lg) {
     padding-left: $header-width;
   }
 
-  @media screen and (min-width: $x-lg-width) {
+  @media screen and (min-width: $screen-xl) {
     padding-left: $lg-header-width;
   }
 
@@ -17,7 +17,7 @@ body.active_admin.logged_in {
     padding: 20px 0;
     @include clear-fix();
 
-    @media screen and (min-width: $lg-width) {
+    @media screen and (min-width: $screen-lg) {
       padding: 20px 25px;
     }
   }
@@ -37,14 +37,14 @@ body.active_admin.logged_in {
     text-align: center;
     margin: 0;
 
-    @media screen and (min-width: $sm-width) {
+    @media screen and (min-width: $screen-sm) {
       width: $header-width;
       height: 60px;
       font-size: 20px;
       line-height: 60px;
     }
 
-    @media screen and (min-width: $x-lg-width) {
+    @media screen and (min-width: $screen-xl) {
       width: $lg-header-width;
     }
     
@@ -84,7 +84,7 @@ body.active_admin.logged_in {
       font-size: 20px;
     }
 
-    @media screen and (min-width: $sm-width) {
+    @media screen and (min-width: $screen-sm) {
       height: 60px;
       width: $screen-header-width;
 
@@ -93,13 +93,13 @@ body.active_admin.logged_in {
       }
     }
 
-    @media screen and (min-width: $lg-width) {
+    @media screen and (min-width: $screen-lg) {
       &:before {
         display: none;
       }
     }
 
-    @media screen and (min-width: $x-lg-width) {
+    @media screen and (min-width: $screen-xl) {
       width: $lg-screen-header-width;
     }
 
@@ -140,7 +140,7 @@ body.active_admin.logged_in {
           font-size: 20px;
         }
 
-        @media screen and (min-width: $sm-width) {
+        @media screen and (min-width: $screen-sm) {
           width: 60px;
           height: 59px;
 
@@ -181,7 +181,7 @@ body.active_admin.logged_in {
 
       }
       
-      @media screen and (min-width: $sm-width) {
+      @media screen and (min-width: $screen-sm) {
         min-width: 60px;
         min-height: 59px;
 
@@ -206,7 +206,7 @@ body.active_admin.logged_in {
   padding: 8px 10px;
   @include clear-fix();
 
-  @media screen and (min-width: $lg-width) {
+  @media screen and (min-width: $screen-lg) {
     padding: 8px 20px;
     border-radius: $border-radius;
     margin: 15px 25px 0 25px;

@@ -19,7 +19,7 @@ body.logged_in {
         text-align: right;
         font-size: $font-size;
 
-        @media screen and (min-width: $sm-width) {
+        @media screen and (min-width: $screen-sm) {
           padding-bottom: 0;
           height: 25px;
           width: 25%;
@@ -28,7 +28,7 @@ body.logged_in {
         }
       }
       input, textarea {
-        @media screen and (min-width: $sm-width) {
+        @media screen and (min-width: $screen-sm) {
           width: 50%;
         }
 
@@ -45,7 +45,7 @@ body.logged_in {
       }
 
       .select2-container {
-        @media screen and (min-width: $sm-width) {
+        @media screen and (min-width: $screen-sm) {
           width: 50% !important;
         }
 

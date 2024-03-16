@@ -79,7 +79,7 @@ body.index {
       right: 5px;
       @include transform(translateY(-50%));
 
-      @media screen and (min-width: $md-width) {
+      @media screen and (min-width: $screen-md) {
         // font-size: math.div($font-size, 1px);
       }
     }
@@ -124,7 +124,7 @@ body.index {
       right: 0;
     }
 
-    @media screen and (min-width: $x-lg-width) {
+    @media screen and (min-width: $screen-xl) {
       right: - $lg-filter-width;
     }
 

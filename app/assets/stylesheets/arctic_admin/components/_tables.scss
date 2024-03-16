@@ -24,7 +24,7 @@ thead th {
     display: inline-block;
     padding: 4px 20px 4px 4px;
 
-    @media screen and (min-width: $md-width) {
+    @media screen and (min-width: $screen-md) {
       padding: 8px 20px 8px 8px;
     }
   }
@@ -32,7 +32,7 @@ thead th {
   &.col-selectable {
     padding-left: 4px;
 
-    @media screen and (min-width: $md-width) {
+    @media screen and (min-width: $screen-md) {
       padding-left: 8px;
     }
   }
@@ -53,7 +53,7 @@ tbody tr {
       padding: 6px 8px;
     }
 
-    @media screen and (min-width: $md-width) {
+    @media screen and (min-width: $screen-md) {
       padding: 8px;
     }
   }
