@@ -10,7 +10,7 @@ input[type="number"], textarea {
   width: 100%;
   height: $input-height;
   padding: 6px 12px;
-  font-size: $font-size;
+  font-size: $font-md;
   line-height: 1.57142857;
   color: $fg-default;
   background-color: #fff;
@@ -49,10 +49,10 @@ input[type="submit"] {
 }
 
 input[type="checkbox"] {
-  height: 15px;
-  width: 15px;
-  -webkit-appearance: none!important;
-  background-color: #fff;
+  height: $space-4;
+  width: $space-4;
+  -webkit-appearance: none !important;
+  background-color: $white;
   border: 1px solid #e6e6e6;
   border-radius: $border-radius;
   box-sizing: border-box;
@@ -69,10 +69,10 @@ input[type="checkbox"] {
 input[type="radio"] {
   @include appearance();
   border: 2px solid $primary-color;
-  width: 15px;
-  height: 15px;
+  width: $space-4;
+  height: $space-4;
   border-radius: 50%;
-  margin: 1px 5px 1px 1px;
+  margin: 1px $space-1 1px 1px;
   display: inline-flex;
   @include outline();
   @include transition-button();
@@ -88,7 +88,7 @@ select {
   border: 1px solid $border-color;
   outline: 0;
   border-radius: $border-radius;
-  font-size: $font-size;
+  font-size: $font-md;
   color: #5a5a5a;
   @include transition(border-color ease-in-out .15s);
 
@@ -99,12 +99,12 @@ select {
   }
 
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-box-shadow: 0 0 0px 1000px $white inset;
   }
 }
 
 textarea {
-  min-height: 80px;
+  min-height: $space-20;
   height: auto;
-  padding: 5px 10px;
+  padding: $space-1 $space-2;
 }

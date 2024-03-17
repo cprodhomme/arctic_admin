@@ -17,28 +17,28 @@
 
   @media screen and (min-width: $screen-lg) {
     #main_content {
-      margin-right: 20px;
+      margin-right: $space-4;
     }
   }
 
   @media screen and (min-width: $screen-lg) {
     #main_content {
-      margin-right: 20px;
+      margin-right: $space-4;
     }
   }
 }
 
 #main_content {
-  background-color: #fff;
+  background-color: $white;
   @include box-shadow(0 0 4px 0 rgba(0,0,0,.04));
-  padding: 15px 10px;
+  padding: $space-4 $space-2;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: $screen-xs) {
     overflow-x: scroll;
   }
 
   @media screen and (min-width: $screen-lg) {
-    padding: 20px;
+    padding: $space-4;
     border-radius: $border-radius;
   }
 }

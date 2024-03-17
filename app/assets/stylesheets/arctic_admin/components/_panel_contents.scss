@@ -1,14 +1,14 @@
 .panel_contents {
   .paginated_collection {
     #index_footer {
-      margin: 10px;
+      margin: $space-2;
       text-align: right;
-      font-size: 12px;
+      font-size: $font-sm;
     }
   }
 
   th {
     text-align: left;
-    padding: 8px;
+    color: $fg-muted;
   }
 }

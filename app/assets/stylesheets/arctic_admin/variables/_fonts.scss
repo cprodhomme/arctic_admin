@@ -1,4 +1,32 @@
 $font-family-fallback: Arial, sans-serif !default;
 $font-family-body: "LatoWeb", $font-family-fallback !default;
 
-$font-size: 14px !default;
+// font-size
+$font-xs: 0.75rem; /* 12px */
+$font-sm: 0.875rem; /* 14px */
+$font-md: 1rem; /* 16px */
+$font-lg: 1.125rem; /* 18px */
+$font-xl: 1.25rem; /* 20px */
+$font-2xl: 1.5rem; /* 24px */
+$font-3xl: 1.875rem; /* 30px */
+$font-4xl: 2.25rem; /* 36px */
+$font-5xl: 3rem; /* 48px */
+$font-6xl: 3.75rem; /* 60px */
+$font-7xl: 4.5rem; /* 72px */
+$font-8xl: 6rem; /* 96px */
+$font-9xl: 8rem; /* 128px */
+
+// line-height
+$font-xs-leading: 1rem; /* 16px */
+$font-sm-leading: 1.25rem; /* 20px */
+$font-md-leading: 1.5rem; /* 24px */
+$font-lg-leading: 1.75rem; /* 28px */
+$font-xl-leading: 1.75rem; /* 28px */
+$font-2xl-leading: 2rem; /* 32px */
+$font-3xl-leading: 2.25rem; /* 36px */
+$font-4xl-leading: 2.5rem; /* 40px */
+$font-5xl-leading: 1;
+$font-6xl-leading: 1;
+$font-7xl-leading: 1;
+$font-8xl-leading: 1;
+$font-9xl-leading: 1;

@@ -7,8 +7,8 @@ body.index {
   }
 
   .table_tools {
-    margin-bottom: 20px;
-    font-size: $font-size;
+    margin-bottom: $space-4;
+    font-size: $font-md;
 
     &:after {
       content: '';
@@ -34,7 +34,7 @@ body.index {
 
     .dropdown_menu_list {
       background-color: #fff;
-      padding: 10px 15px;
+      padding: $space-2 $space-4;
       border-radius: $border-radius;
       @include box-shadow($box-shadow);
       display: inline-block;
@@ -42,20 +42,8 @@ body.index {
       z-index: 1;
     }
 
-    .indexes.table_tools_segmented_control {
-      display: flex;
-      justify-content: right;
-
-      a {
-        @include secondary-button($button-primary-color);
-      }
-
-      .index {
-        margin-right: 4px;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
+    .table_tools_segmented_control {
+      margin-top: $space-4;
     }
   }
 
@@ -65,7 +53,7 @@ body.index {
   }
 
   #index_footer {
-    font-size: $font-size;
+    font-size: $font-md;
   }
 
   .sortable {
@@ -73,6 +61,7 @@ body.index {
 
     &:after {
       @include icon($icon-sort);
+      color: $fg-muted;
       font-size: 12px;
       position: absolute;
       top: 50%;
@@ -97,7 +86,7 @@ body.index {
     margin-bottom: -4px;
 
     .member_link {
-      @include primary-button($button-primary-color, white);
+      @include secondary-button($grey-700);
       padding: 4px 8px;
       margin-right: 4px;
       margin-bottom: 4px;
@@ -106,11 +95,7 @@ body.index {
 
   .scopes {
     .scope {
-      @include group-button($button-primary-color);
-
-      a {
-        margin-right: .25rem;
-      }
+      @include group-button($grey-700);
     }
   }
 
@@ -141,7 +126,7 @@ body.index {
       border-bottom-left-radius: $border-radius;
       @include icon($icon-filter);
       font-size: 20px;
-      padding: 15px 10px;
+      padding: $space-4 $space-2;
     }
   }
 }

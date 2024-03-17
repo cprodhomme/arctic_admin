@@ -12,7 +12,7 @@
       a {
         color: $fg-default;
         display: inline-block;
-        padding: 15px 25px;
+        padding: $space-4 25px;
         @include outline();
         @include transition-button();
       }
@@ -28,6 +28,10 @@
   }
 
   .tab-content {
-    padding: 10px 20px;
+    padding: $space-4;
+  }
+
+  table {
+    margin-bottom: $space-0;
   }
 }

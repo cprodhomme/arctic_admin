@@ -4,7 +4,7 @@ table {
 
   &:not(.index_table) {
     border-radius: $border-radius;
-    margin-bottom: 10px;
+    margin-bottom: $space-4;
   }
 }
 
@@ -16,16 +16,17 @@ thead tr {
 thead th {
   font-size: 12px;
   text-align: left;
+  color: $fg-muted;
 
   a {
-    color: $fg-default;
+    color: $fg-muted;
     font-weight: normal;
     width: 100%;
     display: inline-block;
-    padding: 4px 20px 4px 4px;
+    padding: $space-2 $space-4 $space-2 $space-2;
 
     @media screen and (min-width: $screen-md) {
-      padding: 8px 20px 8px 8px;
+      padding: $space-3 $space-4 $space-3 $space-3;
     }
   }
 
@@ -40,7 +41,7 @@ thead th {
 
 tbody tr {
   th {
-    font-size: $font-size;
+    font-size: $font-md;
   }
 
   td {
@@ -67,5 +68,12 @@ tbody tr {
     &:hover {
       background-color: rgba(228, 234, 236, 0.3);
     }
+
+    a {
+     color: $fg-default;
+     &:hover {
+       text-decoration: underline;
+     }
+   }
   }
 }

@@ -29,7 +29,7 @@
 
   li {
     width: 100%;
-    font-size: $font-size;
+    font-size: $font-md;
     line-height: 38px;
     cursor: pointer;
 
@@ -75,7 +75,7 @@
         display: none;
 
         a {
-          padding: 0px 15px 0px 35px;
+          padding: 0px $space-4 0px 35px;
           color: $fg-muted;
 
           &:hover {
@@ -83,7 +83,7 @@
           }
 
           @media screen and (min-width: $screen-xl) {
-            padding: 0px 15px 0px 40px;
+            padding: 0px $space-4 0px 40px;
           }
         }
 

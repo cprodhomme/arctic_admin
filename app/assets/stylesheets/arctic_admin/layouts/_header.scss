@@ -14,11 +14,11 @@ body.active_admin.logged_in {
   }
 
   #active_admin_content {
-    padding: 20px 0;
+    padding: 0;
     @include clear-fix();
 
     @media screen and (min-width: $screen-lg) {
-      padding: 20px 25px;
+      padding: 0 $space-4;
     }
   }
 }
@@ -78,7 +78,7 @@ body.active_admin.logged_in {
       top: 0;
       left: 0;
       color: $fg-default;
-      padding: 15px 0;
+      padding: $space-4 0;
       text-align: center;
       width: 40px;
       font-size: 20px;
@@ -134,7 +134,7 @@ body.active_admin.logged_in {
           top: 0;
           right: 0;
           color: $fg-default;
-          padding: 15px 0;
+          padding: $space-4 0;
           text-align: center;
           width: 50px;
           font-size: 20px;
@@ -172,8 +172,8 @@ body.active_admin.logged_in {
           position: absolute;
           top: 0;
           right: 0;
-          color: $fg-default;
-          padding: 15px 0;
+          color: $fg-muted;
+          padding: $space-4 0;
           text-align: center;
           width: 50px;
           font-size: 20px;
@@ -200,17 +200,10 @@ body.active_admin.logged_in {
 }
 
 #title_bar {
-  background-color: #fff;
-  @include box-shadow($box-shadow);
-  margin: 15px 0 0 0;
-  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: $space-6 $space-4;
   @include clear-fix();
-
-  @media screen and (min-width: $screen-lg) {
-    padding: 8px 20px;
-    border-radius: $border-radius;
-    margin: 15px 25px 0 25px;
-  }
 
   #titlebar_left {
     display: inline-block;
@@ -219,13 +212,15 @@ body.active_admin.logged_in {
 
     h2 {
       display: inline-block;
-      font-size: 16px;
+      font-size: $font-2xl;
     }
   }
 
   #titlebar_right {
-    display: inline-block;
-    float: right;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-right: $space-4;
 
     .action_item a {
       @include primary-button($button-primary-color, #fff);

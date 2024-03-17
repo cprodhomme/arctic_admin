@@ -1,7 +1,7 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered{
   line-height: $input-height; 
   color: $fg-default; 
-  font-size: $font-size;
+  font-size: $font-md;
 }
 
 .select2-container .select2-selection--single{ 
@@ -42,7 +42,7 @@
 }
 
 .select2-results{
-  font-size: $font-size;
+  font-size: $font-md;
 }
 
 .select2-results__option{

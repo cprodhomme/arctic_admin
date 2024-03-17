@@ -17,7 +17,7 @@ body.logged_in {
         margin: auto 0;
         padding-top: 8px;
         text-align: right;
-        font-size: $font-size;
+        font-size: $font-md;
 
         @media screen and (min-width: $screen-sm) {
           padding-bottom: 0;
@@ -33,13 +33,13 @@ body.logged_in {
         }
 
         &[type='radio'] {
-          width: 15px;
+          width: $space-4;
           float: left;
           margin-top: 3px;
         }
 
         &[type='checkbox'] {
-          width: 15px;
+          width: $space-4;
           margin: 0 5px -2px 0;
         }
       }
@@ -85,13 +85,13 @@ body.logged_in {
         }
 
         label {
-          font-size: $font-size;
+          font-size: $font-md;
           cursor: pointer;
           padding: 5px 5px 5px 0;
         }
 
         input[type='checkbox'] {
-          width: 15px;
+          width: $space-4;
           margin: 0 5px -2px 0;
         }
       }

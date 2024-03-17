@@ -1,8 +1,8 @@
 .ui-dialog {
-  background-color: #fff;
+  background-color: $white;
   @include box-shadow($box-shadow);
   border-radius: $border-radius;
-  padding: 15px 10px;
+  padding: $space-4 $space-2;
   z-index: 1;
 
   &:focus, &:active {
@@ -13,8 +13,8 @@
   .ui-button {
     @include primary-button($primary-color, #fff);
     border: 0;
-    margin-right: 5px;
-    padding: 5px 10px;
+    margin-right: $space-1;
+    padding: $space-1 $space-2;
   }
 
   .ui-dialog-titlebar-close {

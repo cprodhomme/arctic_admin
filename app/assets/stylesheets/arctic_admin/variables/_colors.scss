@@ -46,18 +46,18 @@ $tall-poppy-800: #8e2627;
 $tall-poppy-900: #762627;
 $tall-poppy-950: #400f0f;
 
-// gray
-$gray-50: #f5f5f5;
-$gray-100: #efefef;
-$gray-200: #dcdcdc;
-$gray-300: #bdbdbd;
-$gray-400: #989898;
-$gray-500: #7c7c7c;
-$gray-600: #656565;
-$gray-700: #525252;
-$gray-800: #464646;
-$gray-900: #3d3d3d;
-$gray-950: #292929;
+// grey
+$grey-50: #f5f5f5;
+$grey-100: #efefef;
+$grey-200: #dcdcdc;
+$grey-300: #bdbdbd;
+$grey-400: #989898;
+$grey-500: #7c7c7c;
+$grey-600: #656565;
+$grey-700: #525252;
+$grey-800: #464646;
+$grey-900: #3d3d3d;
+$grey-950: #292929;
 
 // orange
 $zest-50: #fdf8ed;
@@ -78,37 +78,37 @@ $warning: $zest-400 !default;
 $success: $apple-500 !default;
 $info: $picton-blue-300 !default;
 $flash-text-color: $white !default;
-$flash-background-color: $gray-50 !default;
+$flash-background-color: $grey-50 !default;
 
 // status_tag
 $status-tag-text-color: $white !default;
-$status-tag-background-color: $gray-100 !default;
+$status-tag-background-color: $grey-400 !default;
 $status-tag-background-valid-color: $success !default;
 $status-tag-background-error-color: $error !default;
 
-$border-color: $gray-100 !default;
+$border-color: $grey-100 !default;
 
 // body
-$body-background: $gray-100 !default;
+$body-background: $grey-100 !default;
 
 // header
-$header-border-color: $gray-100 !default;
+$header-border-color: $grey-100 !default;
 $header-background: $white !default;
 
 // nav action
-$header-nav-action-hover-background: $gray-100 !default;
-$header-nav-action-active-background: $gray-100 !default;
+$header-nav-action-hover-background: $grey-100 !default;
+$header-nav-action-active-background: $grey-100 !default;
 
 //sidebar
-$sidebar-border-color: $gray-200 !default;
-$sidebar-background: $gray-50 !default;
-$sidebar-item-hover-background: $gray-100 !default;
-$sidebar-nested-item-hover-background: $gray-200 !default;
+$sidebar-border-color: $grey-200 !default;
+$sidebar-background: $grey-50 !default;
+$sidebar-item-hover-background: $grey-100 !default;
+$sidebar-nested-item-hover-background: $grey-200 !default;
 
 // text
-$fg-default: $gray-900 !default;
-$fg-muted: $gray-600 !default;
-$fg-subtle: $gray-500 !default;
+$fg-default: $grey-900 !default;
+$fg-muted: $grey-600 !default;
+$fg-subtle: $grey-500 !default;
 $fg-on-emphasis: $white !default;
 
 $primary-color: $picton-blue-400 !default;

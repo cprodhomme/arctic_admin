@@ -22,6 +22,7 @@
 
   &:hover {
     background-color: lighten($background-color, 10%);
+    text-decoration: none;
   }
 
   &:active, &:focus {
@@ -43,6 +44,7 @@
   &:hover {
     color: #fff;
     background-color: $color;
+    text-decoration: none;
   }
 
   &:active, &:focus {
