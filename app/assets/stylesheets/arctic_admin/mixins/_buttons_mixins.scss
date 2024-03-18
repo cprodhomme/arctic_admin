@@ -17,16 +17,17 @@
 @mixin primary-button($background-color, $color) {
   background-color: $background-color;
   color: $color;
-  border: none; 
+  border: none;
+  padding: $space-3 $space-4;
   @include button();
 
   &:hover {
-    background-color: lighten($background-color, 10%);
+    background-color: lighten($background-color, 5%);
     text-decoration: none;
   }
 
   &:active, &:focus {
-    background-color: darken($background-color, 10%); 
+    background-color: darken($background-color, 5%); 
   }
 
   &:disabled {
@@ -38,7 +39,7 @@
   background-color: #fff;
   color: $color;
   border: 1px solid $color;
-  padding: 4px 8px;
+  padding: $space-3 $space-4;
   @include button();
 
   &:hover {
@@ -48,8 +49,19 @@
   }
 
   &:active, &:focus {
-    background-color: darken($color, 10%);
+    background-color: darken($color, 5%);
     color: #fff;
+  }
+}
+
+@mixin tertiary-button($color: $primary-color) {
+  @include button();
+  color: $color;
+  padding: $space-3 $space-4;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $grey-100;
   }
 }
 
@@ -65,7 +77,7 @@
   }
 
   &:active, &:focus {
-    background-color: darken($color, 10%); 
+    background-color: darken($color, 5%); 
     color: #fff;
   }
 
@@ -103,16 +115,16 @@
 
   &:hover {
     a {
-      background-color: lighten($color, 10%);
-      border-color: lighten($color, 10%);
+      background-color: lighten($color, 5%);
+      border-color: lighten($color, 5%);
       color: #fff;
     }
   }
 
   &:active, &:focus, &.selected {
     a {
-      background-color: darken($color, 10%);
-      border-color: darken($color, 10%);
+      background-color: darken($color, 5%);
+      border-color: darken($color, 5%);
       color: #fff;
     }
   }

@@ -1,0 +1,17 @@
+.scopes {
+  width: 100%;
+  display: flex;
+
+  @media screen and (min-width: $screen-sm) {
+    width: 75%;
+    justify-content: right;
+  }
+
+  .scope {
+    @include group-button($grey-700);
+  }
+
+  .table_tools_segmented_control {
+    display: flex;
+  }
+}

@@ -9,7 +9,7 @@ input[type="number"], textarea {
   display: block;
   width: 100%;
   height: $input-height;
-  padding: 6px 12px;
+  padding: $space-3 $space-2;
   font-size: $font-md;
   line-height: 1.57142857;
   color: $fg-default;

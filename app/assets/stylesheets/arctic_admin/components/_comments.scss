@@ -2,21 +2,29 @@
   @include clear-fix();
 
   h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 $space-3 0;
+  }
+
+  textarea {
+    height: $space-20;
+  }
+
+  #active_admin_comment_submit_action input {
+    @include secondary-button($primary-color);
   }
   
   .panel_contents .empty {
-    margin-bottom: 10px;
+    margin-bottom: $space-4;
     display: inline-block;
   }
 
   .active_admin_comment:not(#new_active_admin_comment) {
-    margin-bottom: 20px;
+    margin-bottom: $space-4;
     border: 1px solid $border-color;
 
     .active_admin_comment_meta {
       background-color: $sidebar-background;
-      padding: 8px 10px;
+      padding: $space-3 $space-4;
 
       .active_admin_comment_author {
         margin: 0;
@@ -30,19 +38,19 @@
       }
 
       a[data-method="delete"] {
-        @include primary-button($primary-color, white);
-        padding: 2px 9px;
+        @include secondary-button($primary-color);
+        padding: $space-1 $space-2;
         font-size: 12px;
         float: right;
       }
     }
 
     .active_admin_comment_body {
-      padding: 0 10px;
+      padding: 0 $space-4;
     }
   }
 
   .pagination_information {
-    margin-bottom: 20px;
+    margin-bottom: $space-4;
   }
 }

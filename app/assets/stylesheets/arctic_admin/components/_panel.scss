@@ -1,0 +1,4 @@
+.panel {
+  @include card();
+  margin-bottom: $space-4;
+}

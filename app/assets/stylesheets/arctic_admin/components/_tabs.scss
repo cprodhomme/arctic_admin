@@ -1,5 +1,7 @@
 .tabs.ui-tabs {
-  border: 1px solid $border-color;
+  @include card();
+  padding: $space-0;
+  margin-bottom: $space-4;
 
   .nav {
     border-bottom: 1px solid $border-color;

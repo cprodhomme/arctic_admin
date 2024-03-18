@@ -1,0 +1,8 @@
+.batch_actions_selector {
+  display: flex;
+  width: 100%;
+
+  @media screen and (min-width: $screen-sm) {
+    width: 25%;
+  }
+}
