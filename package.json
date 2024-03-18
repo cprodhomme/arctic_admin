@@ -1,6 +1,6 @@
 {
   "name": "arctic_admin",
-  "version": "4.2.7",
+  "version": "4.2.8",
   "description": "Responsive Theme for ActiveAdmin",
   "main": "app/assets/javascripts/arctic_admin/main.js",
   "files": [
