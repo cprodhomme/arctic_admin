@@ -1,3 +1,3 @@
 module ArcticAdmin
-  VERSION = "4.2.8"
+  VERSION = "4.3.0"
 end
