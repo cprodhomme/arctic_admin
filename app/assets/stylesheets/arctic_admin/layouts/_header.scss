@@ -89,7 +89,7 @@ body.active_admin.logged_in {
       width: calc(100% - $site-title-width-md);
 
       &:before {
-        padding: 20px 0;
+        padding: $space-4 0;
       }
     }
 
@@ -145,7 +145,7 @@ body.active_admin.logged_in {
           height: 59px;
 
           &:before {
-            padding: 20px 0;
+            padding: $space-4 0;
             width: 60px;
           }
         }
@@ -190,7 +190,7 @@ body.active_admin.logged_in {
           height: 59px;
 
           &:before {
-            padding: 20px 0;
+            padding: $space-4 0;
             width: 60px;
           }
         }
@@ -224,7 +224,7 @@ body.active_admin.logged_in {
 
     .action_item a {
       @include primary-button($button-primary-color, #fff);
-      padding: 5px 8px;
+      padding: $space-1 $space-2;
     }
   }
 

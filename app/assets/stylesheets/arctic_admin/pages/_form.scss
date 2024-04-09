@@ -3,7 +3,7 @@ body.logged_in {
     @include sidebar-container();
 
     form {
-      @include card();
+      
     }
 
     form legend {
@@ -16,6 +16,7 @@ body.logged_in {
 
     fieldset.inputs {
       margin-bottom: $space-4;
+      @include card();
     }
 
     .input {

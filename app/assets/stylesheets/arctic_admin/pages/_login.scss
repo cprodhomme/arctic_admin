@@ -18,16 +18,16 @@ body.logged_out {
   border-top: $border-radius solid $primary-color;
   @include box-shadow($box-shadow);
   color: $fg-default;
-  padding: 20px;
+  padding: $space-8;
 
   @media screen and (min-width: 400px) {
     border-radius: $border-radius;
     width: 400px;
-    padding: 30px;
   }
 
   h2 {
     text-align: center;
+    margin-bottom: $space-8;
   }
 
   .label {
@@ -39,7 +39,7 @@ body.logged_out {
   .input.boolean {
     @include disable-user-select();
     label {
-      font-size: 15px;
+      font-size: $font-md;
       cursor: pointer;
       padding: 5px 5px 5px 0;
     }
@@ -53,13 +53,5 @@ body.logged_out {
   a {
     margin-top: 10px;
     display: inline-block;
-  }
-
-  .input_action {
-    min-width: 50%;
-  }
-
-  input[type="submit"] {
-    line-height: 43px;
   }
 }

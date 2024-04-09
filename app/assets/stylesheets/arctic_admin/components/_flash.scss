@@ -1,27 +1,32 @@
 .flash {
   width: 100%;
   padding: $space-4;
+  border-left: $space-1 solid;
   text-align: left;
-  background-color: $flash-background-color;
-  color: $flash-text-color;
+  background-color: $bg-subtle;
+  color: $fg-muted;
 }
 
 .flash_alert, .flash_error {
-  background-color: $error;
-  color: $flash-text-color;
+  background-color: $danger-subtle;
+  color: $danger-fg;
+  border-color: $danger-fg;
 }
 
 .flash_warning {
-  background-color: $warning;
-  color: $flash-text-color;
+  background-color: $attention-subtle;
+  color: $attention-fg;
+  border-color: $attention-fg;
 }
 
 .flash_notice {
-  background-color: $success;
-  color: $flash-text-color;
+  background-color: $success-subtle;
+  color: $success-fg;
+  border-color: $success-fg;
 }
 
 .flash_info {
-  background-color: $info;
-  color: $flash-text-color;
+  background-color: $accent-subtle;
+  color: $accent-fg;
+  border-color: $accent-fg;
 }

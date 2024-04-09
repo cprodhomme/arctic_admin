@@ -1,13 +1,13 @@
 .pagination {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: $space-4;
 
   .page {
     text-align: center;
   }
 
   .page a, .next a, .last a, .first a, .prev a {
-    padding: .3rem .4rem;
+    padding: $space-1 $space-2;
     color: $fg-default;
     @include transition-button();
 
@@ -17,9 +17,9 @@
   }
   .page.current {
     background-color: $link-primary-color;
-    color: #fff;
+    color: $white;
     border-radius: $border-radius;
-    padding: .3rem .4rem;
+    padding: $space-1 $space-2;
     cursor: normal;
   }
 }

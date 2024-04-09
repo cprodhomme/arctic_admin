@@ -38,7 +38,7 @@
       height: 100%;
       display: inline-block;
       color: $fg-muted;
-      padding: 0 20px;
+      padding: 0 $space-4;
 
       &:hover {
         background-color: $sidebar-item-hover-background;

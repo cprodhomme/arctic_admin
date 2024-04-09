@@ -1,12 +1,5 @@
-code {
-  display: block;
-  background-color: #272822;
-  padding: 5px;
-  color: white;
-}
-
 hr {
   border: 1px solid $border-color;
   color: $primary-color;
-  margin: 10px auto 25px auto;
+  margin: $space-2 auto $space-4 auto;
 }

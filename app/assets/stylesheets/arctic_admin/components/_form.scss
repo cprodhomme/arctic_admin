@@ -1,6 +1,6 @@
 .label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: $space-1;
 }
 
 .input {
@@ -16,13 +16,13 @@
     li {
       list-style: none;
     }
-    
+
     legend:not(.label) {
-      margin-bottom: 28px;
-      font-size: 18px;
+      margin-bottom: $space-6;
+      font-size: $font-lg;
       display: block;
       width: 100%;
-      padding-bottom: 12px;
+      padding-bottom: $space-4;
       border-bottom: 1px solid $body-background;
     }
 
@@ -39,21 +39,20 @@
     }
     
     .inline-hints {
-      margin: 5px 0 20px 25%;
+      margin: $space-1 0 $space-4 0;
       font-size: $font-md;
       font-style: italic;
     }
 
     .inline-errors, label.error {
       color: $error;
-      margin-top: 5px;
-      margin-bottom: 20px;
+      margin-top: $space-1;
+      margin-bottom: $space-4;
       font-size: $font-md;
     }
 
     label.error {
       display: block;
-      margin-left: 25%;
     }
 
     .actions {
@@ -69,7 +68,7 @@
       }
 
       .cancel a {
-        @include tertiary-button($grey-600);
+        @include tertiary-button-default();
       }
     }
   }

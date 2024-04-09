@@ -111,6 +111,42 @@ $fg-muted: $grey-600 !default;
 $fg-subtle: $grey-500 !default;
 $fg-on-emphasis: $white !default;
 
+// background
+$bg-default: $white;
+$bg-muted: $grey-100;
+$bg-subtle: $grey-50;
+$bg-emphasis: $grey-950;
+
+// primary
+$primary-fg: $picton-blue-600;
+$primary-emphasis: $picton-blue-500;
+$primary-muted: $picton-blue-400;
+$primary-subtle: $picton-blue-50;
+
+// accent
+$accent-fg: $picton-blue-700;
+$accent-emphasis: $picton-blue-700;
+$accent-muted: $picton-blue-600;
+$accent-subtle: $picton-blue-50;
+
+// success
+$success-fg: $apple-700;
+$success-emphasis: $apple-700;
+$success-muted: $apple-600;
+$success-subtle: $apple-50;
+
+// attention
+$attention-fg: $zest-700;
+$attention-emphasis: $zest-600;
+$attention-muted: $zest-500;
+$attention-subtle: $zest-50;
+
+// danger
+$danger-fg: $tall-poppy-700;
+$danger-emphasis: $tall-poppy-700;
+$danger-muted: $tall-poppy-600;
+$danger-subtle: $tall-poppy-50;
+
 $primary-color: $picton-blue-400 !default;
 $link-primary-color: $primary-color !default;
 $button-primary-color: $primary-color !default;
