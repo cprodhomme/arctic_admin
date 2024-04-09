@@ -70,5 +70,9 @@
         display: inline-block;
       }
     }
+
+    .button.has_many_remove {
+      @include tertiary-button($red);
+    }
   }
 }

@@ -21,7 +21,7 @@
 }
 
 @mixin transition-button() {
-  @include transition(border .2s linear,color .2s linear,width .2s linear,background-color .2s linear);
+  @include transition(border .15s linear,color .2s linear,width .2s linear,background-color .2s linear);
 }
 
 @mixin box-shadow($args...) {
