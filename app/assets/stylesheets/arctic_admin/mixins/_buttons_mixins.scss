@@ -1,3 +1,6 @@
+$bg-tertiary-button: transparent;
+$bg-tertiary-button-hover: rgba($border-color, .3);;
+
 @mixin button() {
   border-radius: $border-radius;
   display: inline-block;
@@ -48,6 +51,24 @@
   &:active, &:focus {
     background-color: darken($color, 10%);
     color: #fff;
+  }
+}
+
+@mixin tertiary-button($color) {
+  background-color: $bg-tertiary-button;
+  color: $color;
+  border: 1px solid $bg-tertiary-button;
+  padding: 4px 8px;
+  @include button();
+
+  &:hover {
+    color: $color;
+    background-color: $bg-tertiary-button-hover;
+  }
+
+  &:active, &:focus {
+    background-color: $bg-tertiary-button-hover;
+    color: $color;
   }
 }
 
