@@ -74,5 +74,9 @@
     .button.has_many_remove {
       @include tertiary-button($red);
     }
+
+    .button.has_many_add {
+      @include secondary-button($primary-color);
+    }
   }
 }
