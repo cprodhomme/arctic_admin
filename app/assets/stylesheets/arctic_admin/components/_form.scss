@@ -55,28 +55,28 @@
       display: block;
       margin-left: 25%;
     }
-
-    .actions {
-      .action {
-        display: inline-block;
-        margin-right: 10px;
-
-        input[type="submit"] {
-          line-height: 43px;
-        }
-      }
-
-      .cancel {
-        display: inline-block;
-      }
-    }
-
+    
     .button.has_many_remove {
       @include tertiary-button($red);
     }
-
+    
     .button.has_many_add {
       @include secondary-button($primary-color);
+    }
+  }
+
+  .actions {
+    .action {
+      display: inline-block;
+      margin-right: 10px;
+
+      input[type="submit"] {
+        line-height: 43px;
+      }
+    }
+
+    .cancel {
+      display: inline-block;
     }
   }
 }
