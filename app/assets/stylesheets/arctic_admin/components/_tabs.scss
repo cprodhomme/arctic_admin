@@ -3,7 +3,7 @@
 
   .nav {
     border-bottom: 1px solid $border-color;
-    
+
     li {
       display: inline-block;
       text-align: center;
@@ -13,10 +13,10 @@
         color: $text-color;
         display: inline-block;
         padding: 15px 25px;
-        @include outline();
         @include transition-button();
+        @include outline();
       }
-      
+
       &.ui-tabs-active {
         border-bottom: 2px solid $link-primary-color;
 

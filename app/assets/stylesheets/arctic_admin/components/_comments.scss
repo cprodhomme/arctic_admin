@@ -5,7 +5,7 @@
   h3 {
     margin: 0 0 10px 0;
   }
-  
+
   .panel_contents .empty {
     margin-bottom: 10px;
     display: inline-block;
@@ -31,10 +31,10 @@
       }
 
       a[data-method="delete"] {
-        @include primary-button($primary-color, white);
         padding: 2px 9px;
         font-size: 12px;
         float: right;
+        @include primary-button($primary-color, white);
       }
     }
 
