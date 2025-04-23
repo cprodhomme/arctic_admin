@@ -11,3 +11,4 @@ gemfiles/vendor/ruby
 /node_modules
 /src
 .idea
+vendor/bundle/
