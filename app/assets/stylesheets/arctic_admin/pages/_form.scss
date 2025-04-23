@@ -1,120 +1,124 @@
+@mixin arctic-admin-form() {
+  @include sidebar-container();
+  
+  form legend {
+    font-weight: normal;
+  }
+  
+  fieldset.inputs {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    .label {
+      padding-bottom: 5px;
+      text-align: left;
+      margin: auto 0;
+      padding-top: 8px;
+      text-align: right;
+      font-size: $font-size;
+  
+      @media screen and (min-width: $sm-width) {
+        padding-bottom: 0;
+        height: 25px;
+        width: $form-margin-left;
+        float: left;
+        padding-right: 20px;
+      }
+    }
+    input, textarea {
+      @media screen and (min-width: $sm-width) {
+        width: $form-input-width;
+      }
+  
+      &[type='radio'] {
+        width: 15px;
+        float: left;
+        margin-top: 3px;
+      }
+  
+      &[type='checkbox'] {
+        width: 15px;
+        margin: 0 5px -2px 0;
+      }
+    }
+  
+    .select2-container {
+      @media screen and (min-width: $sm-width) {
+        width: $form-input-width !important;
+      }
+  
+      a {
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  
+    select {
+      min-width: $form-input-width;
+      height: 30px;
+    }
+  
+    select[multiple] {
+      height: 100px;
+    }
+  
+    .fragment {
+      margin-right: 10px;
+  
+      label {
+        padding-right: 5px;
+      }
+  
+      select {
+        min-width: auto;
+      }
+    }
+  
+    &.boolean {
+      margin-left: $form-margin-left;
+      @include disable-user-select();
+  
+      input {
+        width: auto;
+      }
+  
+      label {
+        font-size: $font-size;
+        cursor: pointer;
+        padding: 5px 5px 5px 0;
+      }
+  
+      input[type='checkbox'] {
+        width: 15px;
+        margin: 0 5px -2px 0;
+      }
+    }
+  
+    li.fragment {
+      display: inline;
+    }
+  
+    li.choice {
+      margin-left: $form-margin-left;
+      
+      .field_with_errors {
+        float: left;
+      }
+    }
+  
+    .inline-errors {
+      padding-left: $form-margin-left;
+    }
+  }
+  
+  .actions {
+    padding-left: $form-margin-left;
+  }
+}
+
 body.logged_in {
   &.new, &.edit, &.create, &.update {
-    @include sidebar-container();
-
-    form legend {
-      font-weight: normal;
-    }
-
-    fieldset.inputs {
-      margin-bottom: 20px;
-    }
-
-    .input {
-      .label {
-        padding-bottom: 5px;
-        text-align: left;
-        margin: auto 0;
-        padding-top: 8px;
-        text-align: right;
-        font-size: $font-size;
-
-        @media screen and (min-width: $sm-width) {
-          padding-bottom: 0;
-          height: 25px;
-          width: 25%;
-          float: left;
-          padding-right: 20px;
-        }
-      }
-      input, textarea {
-        @media screen and (min-width: $sm-width) {
-          width: 50%;
-        }
-
-        &[type='radio'] {
-          width: 15px;
-          float: left;
-          margin-top: 3px;
-        }
-
-        &[type='checkbox'] {
-          width: 15px;
-          margin: 0 5px -2px 0;
-        }
-      }
-
-      .select2-container {
-        @media screen and (min-width: $sm-width) {
-          width: 50% !important;
-        }
-
-        a {
-          height: 30px;
-          line-height: 30px;
-        }
-      }
-
-      select {
-        min-width: 50%;
-        height: 30px;
-      }
-
-      select[multiple] {
-        height: 100px;
-      }
-
-      .fragment {
-        margin-right: 10px;
-
-        label {
-          padding-right: 5px;
-        }
-
-        select {
-          min-width: auto;
-        }
-      }
-
-      &.boolean {
-        margin-left: 25%;
-        @include disable-user-select();
-
-        input {
-          width: auto;
-        }
-
-        label {
-          font-size: $font-size;
-          cursor: pointer;
-          padding: 5px 5px 5px 0;
-        }
-
-        input[type='checkbox'] {
-          width: 15px;
-          margin: 0 5px -2px 0;
-        }
-      }
-
-      li.fragment {
-        display: inline;
-      }
-
-      li.choice {
-        margin-left: 25%;
-        
-        .field_with_errors {
-          float: left;
-        }
-      }
-
-      .inline-errors {
-        padding-left: 25%;
-      }
-    }
-
-    .actions {
-      padding-left: 25%;
-    }
+    @include arctic-admin-form();
   }
 }
