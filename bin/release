@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+BOLD='\033[1m'
+RESET='\033[0m'
+
+VERSION_FILE="lib/arctic_admin/version.rb"
+PACKAGE_FILE="package.json"
+
+err() { echo -e "${RED}✗ $*${RESET}" >&2; exit 1; }
+ok()  { echo -e "${GREEN}✓ $*${RESET}"; }
+info(){ echo -e "${CYAN}→ $*${RESET}"; }
+
+# ── 1. Must be on main ────────────────────────────────────────────────────────
+BRANCH=$(git branch --show-current)
+[[ "$BRANCH" == "main" ]] || err "Tu n'es pas sur main (branche actuelle : $BRANCH)"
+ok "Branche : main"
+
+# ── 2. Git pull ───────────────────────────────────────────────────────────────
+info "git pull origin main..."
+git pull origin main
+ok "Dépôt à jour"
+
+# ── 3. Lecture version courante ───────────────────────────────────────────────
+CURRENT=$(grep -oE '[0-9]+\.[0-9]+\.[0-9]+' "$VERSION_FILE" | head -1)
+[[ -n "$CURRENT" ]] || err "Impossible de lire la version dans $VERSION_FILE"
+
+IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+
+NEXT_PATCH="$MAJOR.$MINOR.$((PATCH + 1))"
+NEXT_MINOR="$MAJOR.$((MINOR + 1)).0"
+NEXT_MAJOR="$((MAJOR + 1)).0.0"
+
+# ── 4. Choix du bump ──────────────────────────────────────────────────────────
+echo ""
+echo -e "${BOLD}Version actuelle : ${YELLOW}$CURRENT${RESET}"
+echo ""
+echo "Quel type de bump ?"
+echo -e "  ${BOLD}1)${RESET} patch  → ${GREEN}$NEXT_PATCH${RESET}"
+echo -e "  ${BOLD}2)${RESET} minor  → ${GREEN}$NEXT_MINOR${RESET}"
+echo -e "  ${BOLD}3)${RESET} major  → ${GREEN}$NEXT_MAJOR${RESET}"
+echo ""
+read -rp "Choix [1/2/3] : " CHOICE
+
+case "$CHOICE" in
+  1) NEW_VERSION="$NEXT_PATCH" ;;
+  2) NEW_VERSION="$NEXT_MINOR" ;;
+  3) NEW_VERSION="$NEXT_MAJOR" ;;
+  *) err "Choix invalide : $CHOICE" ;;
+esac
+
+# ── 5. Confirmation ───────────────────────────────────────────────────────────
+echo ""
+echo -e "Bump ${YELLOW}$CURRENT${RESET} → ${GREEN}${BOLD}$NEW_VERSION${RESET} (tag ${CYAN}v$NEW_VERSION${RESET})"
+read -rp "Confirmer ? [o/N] : " CONFIRM
+[[ "$CONFIRM" =~ ^[oO]$ ]] || err "Annulé."
+
+# ── 6. Mise à jour des fichiers ───────────────────────────────────────────────
+info "Mise à jour de $VERSION_FILE..."
+sed -i '' "s/VERSION = \"$CURRENT\"/VERSION = \"$NEW_VERSION\"/" "$VERSION_FILE"
+
+info "Mise à jour de $PACKAGE_FILE..."
+sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$NEW_VERSION\"/" "$PACKAGE_FILE"
+
+ok "Fichiers mis à jour"
+
+# ── 7. Commit ─────────────────────────────────────────────────────────────────
+info "Commit..."
+git add "$VERSION_FILE" "$PACKAGE_FILE"
+git commit -m "🔖 Set version $NEW_VERSION"
+ok "Commit créé"
+
+# ── 8. Tag ────────────────────────────────────────────────────────────────────
+info "Tag v$NEW_VERSION..."
+git tag "v$NEW_VERSION"
+ok "Tag v$NEW_VERSION créé"
+
+# ── 9. Push ───────────────────────────────────────────────────────────────────
+info "Push du commit et du tag..."
+git push origin main
+git push origin "v$NEW_VERSION"
+ok "Push effectué"
+
+# ── 10. Résumé ────────────────────────────────────────────────────────────────
+echo ""
+echo -e "${GREEN}${BOLD}Release v$NEW_VERSION lancée !${RESET}"
+echo -e "La CI GitHub Actions va publier la gem sur RubyGems, GitHub Packages et npm."
+echo -e "Suivi : ${CYAN}https://github.com/cprodhomme/arctic_admin/actions${RESET}"
