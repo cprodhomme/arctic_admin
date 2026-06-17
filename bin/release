@@ -86,7 +86,24 @@ git push origin main
 git push origin "v$NEW_VERSION"
 ok "Push effectué"
 
-# ── 10. Résumé ────────────────────────────────────────────────────────────────
+# ── 10. GitHub Release ────────────────────────────────────────────────────────
+info "Création de la GitHub Release..."
+
+PREV_TAG=$(git tag --sort=-version:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sed -n '2p')
+
+if [[ -n "$PREV_TAG" ]]; then
+  RELEASE_NOTES=$(git log "${PREV_TAG}..v${NEW_VERSION}" --pretty=format:"- %s" --no-merges | grep -v "^- 🔖")
+else
+  RELEASE_NOTES=$(git log "v${NEW_VERSION}" --pretty=format:"- %s" --no-merges | grep -v "^- 🔖")
+fi
+
+gh release create "v$NEW_VERSION" \
+  --title "v$NEW_VERSION" \
+  --notes "$RELEASE_NOTES"
+
+ok "GitHub Release créée"
+
+# ── 11. Résumé ────────────────────────────────────────────────────────────────
 echo ""
 echo -e "${GREEN}${BOLD}Release v$NEW_VERSION lancée !${RESET}"
 echo -e "La CI GitHub Actions va publier la gem sur RubyGems, GitHub Packages et npm."
