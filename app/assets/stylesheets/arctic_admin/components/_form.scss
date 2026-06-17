@@ -39,7 +39,7 @@
     }
     
     .inline-hints {
-      margin: 5px 0 20px 25%;
+      margin: 5px 0 20px $form-margin-left;
       font-size: $font-size;
       font-style: italic;
     }
@@ -53,7 +53,7 @@
 
     label.error {
       display: block;
-      margin-left: 25%;
+      margin-left: $form-margin-left;
     }
     
     .button.has_many_remove {

@@ -4,7 +4,7 @@
   border-radius: $border-radius;
   z-index: 3!important;
   padding: 8px 10px;
-  @include box-shadow(0 0 4px 0 rgba(0,0,0,.1));
+  @include box-shadow($box-shadow);
 
   .ui-datepicker-header {
     margin-bottom: 10px;
