@@ -2,18 +2,18 @@
   background-color: #fff;
   padding: 5px;
   border-radius: $border-radius;
-  @include box-shadow($box-shadow);
   z-index: 3!important;
   padding: 8px 10px;
+  @include box-shadow($box-shadow);
 
   .ui-datepicker-header {
-    @include clear-fix();
     margin-bottom: 10px;
+    @include clear-fix();
 
     .ui-datepicker-prev, .ui-datepicker-next {
-      @include primary-button($button-primary-color, #fff);
       padding: 2px 5px;
       font-size: 14px;
+      @include primary-button($button-primary-color, #fff);
     }
 
     .ui-datepicker-prev {

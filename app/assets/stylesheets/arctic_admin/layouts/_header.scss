@@ -47,7 +47,7 @@ body.active_admin.logged_in {
     @media screen and (min-width: $x-lg-width) {
       width: $lg-header-width;
     }
-    
+
     #site_title_image {
       height: 100%;
       padding: 6px 0;
@@ -180,7 +180,7 @@ body.active_admin.logged_in {
         }
 
       }
-      
+
       @media screen and (min-width: $sm-width) {
         min-width: 60px;
         min-height: 59px;
@@ -228,8 +228,8 @@ body.active_admin.logged_in {
     float: right;
 
     .action_item a {
-      @include primary-button($button-primary-color, #fff);
       padding: 5px 8px;
+      @include primary-button($button-primary-color, #fff);
     }
   }
 

@@ -20,7 +20,7 @@ $bg-tertiary-button-hover: rgba($border-color, .3);;
 @mixin primary-button($background-color, $color) {
   background-color: $background-color;
   color: $color;
-  border: none; 
+  border: none;
   @include button();
 
   &:hover {
@@ -28,7 +28,7 @@ $bg-tertiary-button-hover: rgba($border-color, .3);;
   }
 
   &:active, &:focus {
-    background-color: darken($background-color, 10%); 
+    background-color: darken($background-color, 10%);
   }
 
   &:disabled {
@@ -73,9 +73,12 @@ $bg-tertiary-button-hover: rgba($border-color, .3);;
 }
 
 @mixin secondary-dropdown($color) {
-  @include secondary-button($color);
-  padding: 6px 25px 6px 10px;
   position: relative;
+  @include secondary-button($color);
+
+  & {
+    padding: 6px 25px 6px 10px; // Preserve padding on Sass > 1.77.6 (See cprodhomme/arctic_admin#123)
+  }
 
   &:after {
     @include icon($icon-sort-down);
@@ -84,7 +87,7 @@ $bg-tertiary-button-hover: rgba($border-color, .3);;
   }
 
   &:active, &:focus {
-    background-color: darken($color, 10%); 
+    background-color: darken($color, 10%);
     color: #fff;
   }
 
